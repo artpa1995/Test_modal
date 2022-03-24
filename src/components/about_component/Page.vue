@@ -40,18 +40,16 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 .page_content{
 
-    background-color: #FAF9F9FF;
+    background-color: var( --bg);
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 60px;
     height: 350px;
-    background-image: url(../../assets/svg/bgcity.svg);
-    background-color: #FAF9F9FF;
+    background-image: url(../../assets/svg/bgcity.svg);;
      background-position: center center;
      background-repeat: no-repeat;
     /*background-size: cover;*/
@@ -64,31 +62,31 @@ export default {
    
 }
 .page_content_head>h1{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
 }
 .page_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
 .page_content_head>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 60px;
     max-width: 520px;
     text-align: center;

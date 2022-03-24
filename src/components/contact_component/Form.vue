@@ -60,7 +60,7 @@ export default {
       return re.test(email_login);
     },
      async consultation () {
-       console.log(this.check)
+       
          this.errors = [];
          let flag = true;
       
@@ -117,7 +117,7 @@ export default {
         return this.errors;
       }
       this.data_consultation = [this.name, this.phone, this.message, this.email, this.check];  
-      console.log(this.data_consultation); 
+      
      try {
         await axios.post(`http://jsonplaceholder.typicode.com/users`, {
           body: this.data_consultation
@@ -133,9 +133,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Overpass:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 .form_content{
-    background-color: #FAF9F9FF;
+    background-color: var( --bg);
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -148,20 +147,20 @@ export default {
     align-items: center;
 }
 .form_content_head>h1{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color:var( --color5);
 }
 .form_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
 .form_content_head>p{
@@ -172,7 +171,7 @@ export default {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 20px;
     max-width: 400px;
     text-align: center;
@@ -188,7 +187,7 @@ export default {
 }
 .form_form input, textarea{
     border-radius: 5px;
-    border: 1px solid #E199FC;
+    border: 1px solid var( --color-head_r1);
     font-family: 'Overpass';
     font-style: italic;
     font-weight: 400;
@@ -196,7 +195,7 @@ export default {
     line-height: 18px;
     /* text-align: center; */
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     padding: 10px;
     max-width: 600px;
     width: 100%!important;
@@ -204,13 +203,13 @@ export default {
     margin-top: 30px;
 }
 .form_form input:hover{
-    border: 2px solid #9240FC;
-    box-shadow: 0px 0px 4px #D289FC;
+    border: 2px solid var( --color4);
+    box-shadow: 0px 0px 4px var( --color3);
     margin-bottom: -2px;
 }
 .form_form textarea:hover{
-    border: 2px solid #9240FC;
-    box-shadow: 0px 0px 4px #D289FC;
+    border: 2px solid var( --color4)C;
+    box-shadow: 0px 0px 4px var( --color3);
     margin-bottom: -2px;
 }
 .form_form input {
@@ -233,8 +232,8 @@ export default {
     border-radius: 2px;
 }
 .check{
-    border: 1px solid #FAF9F9FF;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    border: 1px solid var( --bg);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color4) 97.28%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     
@@ -250,20 +249,20 @@ export default {
    justify-content: end;
 }
 .form_check_text{
-  font-family: 'Lato';
+  font-family: var( --font_texts);
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #828282;
+  color: var( --texts_color);
 }
 .erorrs{
   list-style: none;
   color:red;
   background: #ff000021;
-   font-family: 'Lato';
+   font-family: var( --font_texts);
   font-style: italic;
   font-weight: 400;
   font-size: 16px;

@@ -14,7 +14,7 @@ import { createI18n } from 'vue-i18n'
 //             }
 
 //         })
-//         // console.log(messages);
+
 //     return messages
 // }
 
@@ -286,8 +286,17 @@ const messages = {
     },
 };
 
+function langs(){
+    let lang = localStorage.getItem('lang');
+    if(lang){
+        return lang;
+    }
+    return "ru";
+}
+
 const i18n = createI18n({
-    locale: "ru",
+   
+    locale: langs(),
     messages: messages,
 });
 

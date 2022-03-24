@@ -124,7 +124,6 @@
 // scene.add(ambient);
 
 
-//       console.log(pointLight)
 
 
         scene.add(camera);
@@ -281,9 +280,13 @@ function scen2(){
     right: 0;
     max-width: 400px;
     margin: 0 auto;
-    border: 1px solid #E199FC;
+    border: 1px solid var( --color-head_r1);
     border-radius: 50%;
     padding: 30px;
+    background-image: url(../assets/namak/bg.svg);
+     background-position: center center;
+     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #target {
@@ -292,7 +295,7 @@ function scen2(){
     height: 400px;
     margin: auto;
     /* background-color: red; */
-    border: 1px solid #E199FC;
+    border: 1px solid var( --color-head_r1);
     border-radius: 50%;
 }
 @media screen and (max-width: 1024px) {

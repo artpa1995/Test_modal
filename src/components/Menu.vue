@@ -28,23 +28,23 @@ export default {
 }
 .menus ul li {
     margin-top: 45px;
-    font-family: Montserrat;
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
-    color: #012350;
+    color: var( --color5);
     opacity: 0.98;
     cursor: pointer;
 }
 .menus ul li a{
     
-    font-family: Montserrat;
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
-    color: #012350;
+    color: var( --color5);
     opacity: 0.98;
     cursor: pointer;
     text-decoration: none;
@@ -55,7 +55,7 @@ export default {
     position: absolute;
     width: 16px;
     height: 2px;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 25px; 
     margin-left: -15px;
 }
@@ -66,12 +66,12 @@ export default {
     }
     .menus ul li {
     margin-top: 25px;
-    font-family: Montserrat;
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
-    color: #012350;
+    color: var( --color5);
     }
     .menus ul {
         align-items: center;

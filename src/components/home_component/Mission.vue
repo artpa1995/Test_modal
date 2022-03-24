@@ -32,9 +32,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 .mission_content{
-    /* background-color: #FAF9F9FF; */
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -49,31 +47,31 @@ export default {
     padding: 40px;
 }
 .mission_content_head>h1{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
 }
 .mission_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 25px; 
 }
 .mission_content_head>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 20px;
     max-width: 400px;
     text-align: center;

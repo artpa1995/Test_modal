@@ -180,8 +180,8 @@
   transform-origin: 50% 93px;
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   animation: lid-screen infinite 7s ease;
-  /* background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%); */
-  background-image: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+  /* background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%); */
+  background-image: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
   background-position: left bottom;
   background-size: 300px 300px;
   box-shadow: inset 0 3px 7px rgba(255,255,255,0.5);
@@ -204,7 +204,7 @@
   border-radius: 7px;
   background: #d3d3d3;
   transform: translateZ(2px);
-  background-image: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);;
+  background-image: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);;
 }
 .screen .face-one .camera {
   width: 3px;
@@ -257,7 +257,7 @@
   transform-origin: 50% bottom;
   transform: rotateX(-90deg);
   animation: lid-body infinite 7s ease;
-  background-image:linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);;
+  background-image:linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);;
 }
 .body .face-one {
   width: 150px;
@@ -270,7 +270,7 @@
   background: #dfdfdf;
   animation: lid-keyboard-area infinite 7s ease;
   transform: translateZ(-2px);
-  background-image: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);;
+  background-image: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);;
 }
 .body .touchpad {
   width: 40px;
@@ -525,6 +525,11 @@ padding: 0 0 0 2px;
   color : #555;
   margin-left: 10px;
   text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+    #container{
+      display: none;
+    }
 }
 
 </style>

@@ -58,14 +58,15 @@ export default {
     methods:{
      selectLang: function (event) {
       let langs  = event.target.className;
-      // console.log(langs);
-      //if (langs == 'RU') {
+    
         this.$i18n.locale = 'ru';
-      //}
+        localStorage.setItem('lang', 'ru');
+     
       if (langs == 'EN') {
         this.$i18n.locale = 'en';
+        localStorage.setItem('lang', 'en');
       }
-      // console.log(this.$i18n.locale)
+     
     }
   },
 };
@@ -85,7 +86,7 @@ export default {
     padding-left: 1em;
     cursor: pointer;
     user-select: none;
-    font-family: Montserrat;
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -121,14 +122,14 @@ export default {
   padding-left: 1em;
   cursor: pointer;
   user-select: none;
-  font-family: Montserrat;
+  font-family: var( --font_head);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
 }
 .custom-select .items div:hover {
-   background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+   background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
   /* background: linear-gradient(265.11deg, #F3E9FF -0.1%, #F3E9FF 97.28%); */
   color: #1D4685;
 }

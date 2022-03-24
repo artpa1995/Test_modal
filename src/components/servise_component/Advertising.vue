@@ -49,11 +49,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-}
 .advertising_content{
     max-width: 1920px;
     width: 100%;
@@ -69,20 +64,20 @@ export default {
     padding: 40px;
 }
 .advertising_title>h1{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
 }
 .advertising_title>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
 .advertising_blok{
@@ -105,24 +100,24 @@ export default {
   width: 100%;
 }
 .advertising_bloks>h3{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
     text-align: center;
 }
 .advertising_bloks>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 350;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 20px;
     max-width: 320px;
     text-align: center;

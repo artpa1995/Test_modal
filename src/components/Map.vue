@@ -131,7 +131,6 @@
                             controlsd.noPan = true;
                            // controlsd.noZoom = true;
                            
-                            console.log(controlsd)
 
                             // var planeGeometry = new THREE.PlaneGeometry(30, 30, 1, 1);
                             // var texture = new THREE.TextureLoader().load( this.img);

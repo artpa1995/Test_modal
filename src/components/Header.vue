@@ -27,7 +27,7 @@
                   <nav v-show="navOpen">
                     <div class="sidemenu__wrapper">
                       <Menu :page="page" />
-                      <CustomSelect :options="this.lang" :default="this.lang[0]"  class="select"/>
+                      <CustomSelect :options="this.lang" :default="this.lokallang ? this.lokallang  : this.lang[0]"  class="select"/>
                     </div>
                   </nav>
                 </transition>
@@ -41,13 +41,13 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M6.92041 17.7207C7.09816 18.1503 7.29269 18.5617 7.50334 18.9501C8.34409 20.4993 9.38893 21.5701 10.3554 21.9141V17.2372C9.18416 17.2818 8.02417 17.447 6.92041 17.7207ZM16.326 18.0844C17.1101 18.3487 17.8533 18.6705 18.5368 19.0446C17.3367 20.1717 15.8849 21.0341 14.2756 21.5361C14.7577 20.9915 15.2137 20.3308 15.6293 19.5649C15.8846 19.0948 16.1169 18.5997 16.326 18.0844ZM10.3557 15.9473V11.6583H5.65527C5.71402 13.3328 5.99969 14.9973 6.47806 16.5044C7.72331 16.1852 9.03453 15.9943 10.3557 15.9473ZM10.3557 6.0804V10.3694H5.65527C5.71402 8.69495 5.99969 7.03024 6.47806 5.52315C7.72331 5.84256 9.03453 6.0334 10.3557 6.0804ZM10.3554 4.79053V0.113647C9.38893 0.457565 8.34409 1.52843 7.50334 3.07765C7.29269 3.46605 7.09816 3.87744 6.92041 4.30696C8.02417 4.58072 9.18416 4.74588 10.3554 4.79053ZM15.0795 4.30696C14.9018 3.87744 14.7072 3.46588 14.4966 3.07765C13.6558 1.52843 12.611 0.457565 11.6445 0.113647V4.79053C12.8158 4.74588 13.9758 4.58072 15.0795 4.30696ZM11.6445 10.3694V6.0804C12.9658 6.03323 14.2769 5.84256 15.5221 5.52315C16.0005 7.03024 16.2862 8.69495 16.3451 10.3694H11.6445ZM11.6445 11.6583V15.9473C12.9658 15.9943 14.2769 16.1852 15.5221 16.5044C16.0005 14.9973 16.2862 13.3328 16.3449 11.6583H11.6445ZM5.23698 5.15456C4.72169 6.77696 4.42226 8.55261 4.36469 10.3694H0C0.141159 7.93393 1.07674 5.70845 2.55093 3.94841C3.37204 4.42493 4.27724 4.82944 5.23698 5.15456ZM15.6293 2.46262C15.8844 2.93292 16.1167 3.42807 16.326 3.94336C17.1101 3.679 17.8533 3.35724 18.5369 2.98311C17.3367 1.85602 15.8849 0.993622 14.2756 0.491592C14.7577 1.03625 15.2137 1.69673 15.6293 2.46262ZM5.67384 3.94336C4.88983 3.679 4.14661 3.35724 3.46313 2.98311C4.66324 1.85585 6.11494 0.993622 7.72426 0.491425C7.24237 1.03625 6.78633 1.69673 6.37057 2.46262C6.11528 2.93292 5.88298 3.42807 5.67384 3.94336ZM17.6355 11.6583C17.5779 13.4751 17.2785 15.2507 16.7632 16.8731C17.7229 17.1982 18.6281 17.6026 19.4492 18.0791C20.9234 16.3191 21.859 14.0938 22.0002 11.6583H17.6355ZM16.7632 5.15456C17.7229 4.82944 18.6281 4.42509 19.4492 3.94858C20.9234 5.70862 21.859 7.9341 22.0002 10.3694H17.6355C17.5779 8.55261 17.2785 6.77696 16.7632 5.15456ZM11.6445 17.2372V21.9141C12.611 21.5701 13.6558 20.4993 14.4966 18.9501C14.7074 18.5617 14.9018 18.1503 15.0795 17.7206C13.9758 17.447 12.8158 17.2818 11.6445 17.2372ZM5.23698 16.8731C4.27724 17.1982 3.37204 17.6026 2.55093 18.0791C1.07657 16.3191 0.141159 14.0936 0 11.6583H4.36469C4.42226 13.4751 4.72169 15.2507 5.23698 16.8731ZM6.3705 19.5649C6.11537 19.0948 5.88307 18.5997 5.67377 18.0844C4.88976 18.3487 4.14653 18.6705 3.46289 19.0446C4.66316 20.1717 6.11487 21.0341 7.72418 21.5361C7.24213 20.9915 6.78609 20.331 6.3705 19.5649Z" fill="url(#paint0_linear_496_100)"/>
                   <defs>
                   <linearGradient id="paint0_linear_496_100" x1="22.717" y1="13.8875" x2="-0.366279" y2="11.8956" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#E199FC"/>
-                  <stop offset="1" stop-color="#9240FC"/>
+                  <stop stop-color="var( --color-head_r1);"/>
+                  <stop offset="1" stop-color="var( --color-head_r2)"/>
                   </linearGradient>
                   </defs>
                 </svg>
                 <div class="lang_select">
-                  <CustomSelect :options="this.lang" :default="this.lang[0]"  class="select"/>
+                  <CustomSelect :options="this.lang" :default="select_lang()"  class="select"/>
                 </div>
               </div>
               <div class="menu">
@@ -102,13 +102,28 @@ export default {
       open: false,
       modal: false,
       navOpen:false,
+      lokallang:localStorage.getItem('lang'),
     }
   },
-  
+   mounted() {
+ 
+  },
   methods:{
-    
+    select_lang: function (){
+
+        if(localStorage.getItem('lang') == "ru"){
+          this.lokallang = this.lang[0];
+          return this.lokallang;
+        }
+        if(localStorage.getItem('lang') == "en"){
+          this.lokallang = this.lang[1];
+          return this.lokallang;
+        }
+        return  this.lang[0];
+
+    },
      close_modal: function (event) {
-       console.log(this.$i18n)
+       
       let tests = event.target.className;
       if (tests == 'modal') {
         this.modal = false;
@@ -125,9 +140,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
+
 .modal_info{
-  font-family: Montserrat;
+  font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -166,7 +181,7 @@ export default {
   width: 25%;
 }
 .close {
-  color: #E199FC ;
+  color: var(--color-head_r1);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -174,7 +189,7 @@ export default {
 
 .close:hover,
 .close:focus {
-  color: #9240FC;
+  color: var( --color-head_r2);
   text-decoration: none;
   cursor: pointer;
 }
@@ -255,7 +270,7 @@ legend{
   padding-left: 60px;
   }
 .content_left_left_texts h1 {
-  font-family: Montserrat;
+  font-family: var(--font_head);
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -268,11 +283,11 @@ legend{
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 30px; 
 }
 .content_left_left_texts h4 {
-  font-family: Montserrat;
+  font-family: var( --font_head);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -282,7 +297,7 @@ legend{
   margin-top: 25px;
   }
 .check_more{
-  background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+  background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
   border-radius: 100px;
   width: 130px;
   height: 39px;
@@ -350,7 +365,6 @@ legend{
   transform: rotate(45deg);
 }
 #sidemenu .sidemenu__wrapper {
-  /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -401,78 +415,14 @@ legend{
     width: 80%;
   }
   .content_left_left_texts{
-  
-  padding-left: 0px;
-}
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 332px) {
   #sidemenu nav {
-   
-    height: 80%;
-}
-}
-
-
-  
-
-  /* .btn{
-    margin-top:36px;
-    position: relative;
-    color: white;
-    background: rgb(146,64,252);
-    background: linear-gradient(90deg, rgba(146,64,252,1) 0%, rgba(225,153,252,1) 100%);
-    border: 0;
-    padding: .9em 2.6em;
-    border-radius: 2em;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-.btn.loading {
-    color: rgba(0, 0, 0, 0);
-    user-select: none;
-    background: #E199FC;
-}
-.btn.loading::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("/images/loading.svg");
-    width: 28px;
-    height: 28px;
-    top: 50%;
-    left: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: loading-animation 1s linear infinite;
-}
-.btn.large {
-    padding: 1em 5em;
-}
-.btn.modern {
-    background: #3DB7FF;
-    background: linear-gradient(90deg, #3DEE87 0%, #3DB7FF 100%);
-    border-radius: .3em;
-    padding: .7em 2em;
-}
-.btn:enabled:not(.loading):hover{
-    box-shadow: 0 0 .2em #D289FC;
-    cursor: pointer;
-}
-.btn:enabled:not(.loading):active {
-    background: #9240FC;
-}
-.btn:disabled{
-    background: #C4C4C4;
+      height: 80%;
+  }
 }
 
-@keyframes loading-animation {
-    from{
-        transform: translate(-50%, -47%) rotate(0turn);
-    }
-    to {
-        transform: translate(-50%, -47%) rotate(1turn);
-    }
-} */
 </style>

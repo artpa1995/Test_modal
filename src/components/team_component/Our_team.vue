@@ -8,7 +8,9 @@
            <div class="our_team_content_blok">
               <div class="our_team_content_blok_item"  v-for="our_team_content_blok_item in this.$i18n.messages[this.$i18n.locale].our_team_content_blok_items" :key="our_team_content_blok_item">
                    <div class="our_team_content_blok_item_title">
-                       <img v-bind:src="our_team_content_blok_item.icon" alt="">
+                       <div class="our_team_content_blok_item_img">
+                            <img v-bind:src="our_team_content_blok_item.icon" alt="">
+                       </div>
                        <h3>{{our_team_content_blok_item.title}}</h3>
                         <p>{{our_team_content_blok_item.description}} </p>
                    </div>
@@ -50,9 +52,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 .our_team_content{
-    background-color: #FAF9F9FF;
+    background-color: var( --bg);
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -65,31 +66,31 @@ export default {
     align-items: center;
 }
 .our_team_content_head>h1{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
 }
 .our_team_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2)46.11%);
     margin-top: 25px; 
 }
 .our_team_content_head>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 20px;
     max-width: 400px;
     text-align: center;
@@ -116,34 +117,24 @@ export default {
 .our_team_content_blok_item:nth-child(2n + 1) {
   border-right: 1px dashed grey;
 }
-/* .our_team_content_blok_item:nth-child(2n + 1)>.our_team_content_blok_item_title::after {
-    content: "";
-    width: 2px;
-    height: 80%;
-  background: grey;
-  position: absolute;
-  top: 40px;
-  right: 0px;
-} */
 .our_team_content_blok_item:last-child{
     border-right:unset;
 }
-/* .our_team_content_blok_item:last-child .our_team_content_blok_item_title::after {
-   content: "";
-    width: 2px;
-    height: 80%;
-  background: unset;
-  position: absolute;
-  top: 40px;
-  right: 0px;
-} */
-.our_team_content_blok_item_title>img{
+.our_team_content_blok_item_img{
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    width: 170px;
+    height: 170px;
+    transition: 1s;
+}
+.our_team_content_blok_item_img>img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    position: relative;
+    /* position: relative; */
     z-index: 2 ;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .our_team_content_blok_item_title::before { 
     content: " ";
@@ -151,25 +142,25 @@ export default {
     width: 159px;
     height: 159px;
     border-radius: 50%;
-    border: 1px solid #B87FFBFF;
+    border: 1px solid var( --color6);
     margin-top: -10px;
     margin-left: -8px;
 }
-.our_team_content_blok_item_title:hover img { 
-    top: -10px;
-    left: -8px;
+.our_team_content_blok_item_img:hover img { 
+    margin-top: -10px;
+    margin-left: -8px;
     width: 159px;
     height: 159px;
-    margin-bottom: -9px;
+    /* margin-bottom: -9px; */
 }
 .our_team_content_blok_item_title>h3{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
     opacity: 0.98;
     margin-top: 20px;
 }
@@ -179,17 +170,17 @@ export default {
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1)-0.1%, var( --color-head_r2) 97.28%);
     margin-top: 25px; 
 }
 
 .our_team_content_blok_item_title>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 15px;
     max-width: 370px;
 }

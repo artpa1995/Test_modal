@@ -105,15 +105,9 @@ alert(this.email);
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-}
 label {
   position: relative;
 }
-
 label:before {
   content: "";
   position: absolute;
@@ -123,7 +117,6 @@ label:before {
   width: 20px;
   background: url(../assets/svg/crar.svg) center / contain no-repeat;
 }
-
 .subscription_input {
     max-width: 278px;
     width: 100%;
@@ -145,7 +138,7 @@ label:before {
 }
 .contents_footer{
     background-image: url(../assets/svg/footer.svg);
-    background-color: #FAF9F9FF;
+    background-color: var( --bg);
      background-position: center center;
      background-repeat: no-repeat;
     background-size: cover;
@@ -153,11 +146,11 @@ label:before {
     width: 100%;
 }
 .contents_footer_down{
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     opacity: 0.8;
     padding: 8px;
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -172,32 +165,32 @@ label:before {
     align-items: center;
 }
 .contents_footer_blok>h3{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    color: #828282;
+    color: var( --texts_color);
 }
 .contents_footer_blok>h2{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 160%;
+    line-height: 160%;  
     text-transform: capitalize;
-    color: #828282;
+    color: var( --texts_color);
     max-width: 333px;
 }
 .contents_footer_blok>p{
     margin-top: 20px;
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     max-width: 250px;
 }
 
@@ -207,13 +200,13 @@ label:before {
 }
 .contents_footer_blok>ul>li>a{
     text-decoration: none;
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     max-width: 250px;
 }
 .contents_footer_blok>ul>li>a:hover {
@@ -229,7 +222,7 @@ label:before {
     border-radius: 4px;
 }
 .subscription_button{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -237,7 +230,7 @@ label:before {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     padding: 16px 8px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     border-radius: 5px;
     border: unset;
     margin-top: 28px;

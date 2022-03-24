@@ -58,9 +58,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 .methods_content{
-    background-color: #FAF9F9FF;
+    background-color: var( --bg);
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -73,31 +72,31 @@ export default {
     align-items: center;
 }
 .methods_content_head>h1{
-    font-family: 'Montserrat';
+    font-family: var( --color-head_r1);
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
 }
 .methods_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(256.38deg, #3DEE87 -47.45%, #3DB7FF 146.11%);
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
 .methods_content_head>p{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 20px;
     max-width: 400px;
     text-align: center;
@@ -126,29 +125,29 @@ export default {
     align-items: center;
 }
 .methods_content_blok_item_title>span{
-    font-family: 'Montserrat';
+    font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #012350;
+    color: var( --color5);
     opacity: 0.98;
     margin-left: 10px;
 }
 .methods_content_blok_item_line{
     width: 55px;
     height: 4px;
-    background: linear-gradient(265.11deg, #E199FC -0.1%, #9240FC 97.28%);
+    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 20px; 
 }
 .methods_content_blok_item_text{
-    font-family: 'Lato';
+    font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #828282;
+    color: var( --texts_color);
     margin-top: 15px;
     max-width: 370px;
 }
