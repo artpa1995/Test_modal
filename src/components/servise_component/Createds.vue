@@ -1,11 +1,11 @@
 <template>
   <div class="createds_content">
       <div class="createds_title"  >
-            <h1>{{ $t('createds_cont.title')}}</h1>
+            <h1>{{ $t('createds_title.title')}}</h1>
         </div>
     <div class="createds_blok">
         <div class="createds_blok_title" >
-             {{ $t('createds_cont.title2')}}
+             {{ $t('createds_title.title2')}}
         </div>
         <div class="createds_bloks" v-for="(createds_contents, index) in this.$i18n.messages[this.$i18n.locale].createds_content" :key="createds_contents" :class="'createds_content'+index">
             <img :src="createds_contents.img" alt="" >
@@ -69,7 +69,7 @@ export default {
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var( --color5);
 }
 .createds_title>h1::before { 
@@ -128,7 +128,7 @@ export default {
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
 
 color: var( --color5);

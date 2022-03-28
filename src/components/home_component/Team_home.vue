@@ -11,7 +11,8 @@
             <p>
                 {{ $t('home_team_content.description')}}
             </p>
-            <a class="btn _team" href="/team" value="" >{{ $t('more_info')}}</a>
+            <router-link class="btn _team" to="/team">{{ $t('more_info')}}</router-link>
+            <!-- <a class="btn _team" href="/team" value="" >{{ $t('more_info')}}</a> -->
         </div>
       </div>
   </div>

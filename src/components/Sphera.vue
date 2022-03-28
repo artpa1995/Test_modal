@@ -16,7 +16,7 @@
         img: require('@/assets/test1.png'),
         img2: require('@/assets/test3.png'),
         img3: require('@/assets/test4.png'),
-        img4: require('@/assets/8.png'),
+        img4: require('@/assets/test1.png'),
         camera: null,
         scene: null,
         renderer: null,

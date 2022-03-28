@@ -12,12 +12,13 @@
                <h3 style="margin-top:36px;">{{ $t('info')}}</h3>
                     <ul>
                         <li v-for="info in this.$i18n.messages[this.$i18n.locale].info_menu" :key="info">
-                            <a :href="info.url">{{info.name}}</a>
+                            <router-link :to="info.url">{{info.name}}</router-link>
+                            <!-- <a :href="info.url">{{info.name}}</a> -->
                         </li>
                     </ul>
                 </div>
                 <div class="contents_footer_blok" v-for="contact in contacts" :key="contact">
-               <h3 style="margin-top:33px;">{{contact.title}}</h3>
+               <h3 style="margin-top:33px;">{{ $t('menu.contact')}} </h3>
                    <p>
                        {{contact.tel}}
                     </p>
@@ -28,7 +29,7 @@
                        {{contact.addres}}
                     </p>
                 </div>
-                <div class="contents_footer_blok">
+                <!-- <div class="contents_footer_blok">
                     <p v-if="errors.length">
                         <ul>
                             <li class="erorrs"  v-for="error in errors" :key="error">{{ error }}</li>
@@ -42,7 +43,7 @@
                     </span>
                     
                     <button class="subscription_button" @click="subscription">{{$t('subscription')}}</button>
-                </div>
+                </div> -->
           </div>
       </div> 
        <div class="contents_footer_down">
@@ -73,7 +74,7 @@ export default {
             {url: '/', name: 'Главная'},
             {url: '/about', name: 'О Нас'},
             {url: '/servise', name: 'Услуги'},
-            {url: '/teame', name: 'Команда'},
+            {url: '/team', name: 'Команда'},
             {url: '/contacts', name: 'Контакты'},
         ],
         contacts:[
@@ -88,7 +89,7 @@ export default {
       return re.test(email);
     },
      async subscription(){
-alert(this.email);
+      //alert(this.email);
        this.errors = [];
       let flag = true;
       if (!this.email) {
@@ -222,6 +223,7 @@ label:before {
     border-radius: 4px;
 }
 .subscription_button{
+    cursor: pointer;
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;

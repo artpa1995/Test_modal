@@ -66,6 +66,10 @@ export default {
         this.$i18n.locale = 'en';
         localStorage.setItem('lang', 'en');
       }
+      if (langs == 'Հայ') {
+        this.$i18n.locale = 'arm';
+        localStorage.setItem('lang', 'arm');
+      }
      
     }
   },

@@ -1,8 +1,8 @@
 <template>
   <div class="form_content">
-    <div class="form_content_head"  v-for="form_content_heads in form_content_head" :key="form_content_heads">
-        <h1>{{form_content_heads.title}}</h1>
-        <p>{{form_content_heads.description}}</p>
+    <div class="form_content_head" >
+        <h1>{{ $t('form_content_head.title')}}</h1>
+        <p>{{ $t('form_content_head.description')}}</p>
     </div>
     <div class="form_form">
         <p v-if="errors.length">
@@ -69,18 +69,23 @@ export default {
         flag = false;
         
         if (this.$i18n.locale == 'en') {
-          this.errors.push('Required to specify Email.');
-        }else{
+          this.errors.push('Email is required.');
+        }else if(this.$i18n.locale == 'ru'){
           this.errors.push('Требуется указать Email.');
+        }else{
+          this.errors.push('Պահանջվում է էլ. հասցեն');
         }
       } else if (!this.validEmail(this.email)) {
         this.email_error = true;
         flag = false;
         if (this.$i18n.locale == 'en') {
           this.errors.push('Please enter a valid email address.');
-        }else{
+        }else if(this.$i18n.locale == 'ru'){
           this.errors.push('Укажите корректный адрес электронной почты.');
+        }else{
+          this.errors.push('Խնդրում ենք մուտքագրել գործող էլեկտրոնային հասցե.');
         }
+        
         
       }
       if (!this.name) {
@@ -88,8 +93,10 @@ export default {
         flag = false;
         if (this.$i18n.locale == 'en') {
           this.errors.push('Name is required.');
+        }else if(this.$i18n.locale == 'ru'){
+          this.errors.push('Требуется указать ФИО');
         }else{
-          this.errors.push('Требуется указать ФИО.');
+          this.errors.push('Անունը պարտադիր է');
         }
         
       }
@@ -97,9 +104,11 @@ export default {
          this.phone_error = true;
         flag = false;
           if (this.$i18n.locale == 'en') {
-          this.errors.push('Required to specify a repeated Phone.');
+          this.errors.push('Required to specify a  Phone.');
+        }else if(this.$i18n.locale == 'ru'){
+          this.errors.push('Требуется указать  Телефон.');
         }else{
-           this.errors.push('Требуется указать повторный Телефон.');
+           this.errors.push('Հեռախոսահամարը պարտադիր է։');
         }
        
       }
@@ -108,8 +117,10 @@ export default {
         flag = false;
           if (this.$i18n.locale == 'en') {
           this.errors.push('A message is required.');
-        }else{
+        }else if(this.$i18n.locale == 'ru'){
           this.errors.push('Требуется указать  Сообщение');
+        }else{
+          this.errors.push('Պահանջվում է հաղորդագրություն');
         }
         
       }
@@ -122,7 +133,7 @@ export default {
         await axios.post(`http://jsonplaceholder.typicode.com/users`, {
           body: this.data_consultation
         }).then(() => {
-          alert('Form was submitted successfully')
+         // alert('Form was submitted successfully')
         })
       } catch (e) {
         this.errors.push(e)
@@ -152,7 +163,7 @@ export default {
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color:var( --color5);
 }
 .form_content_head>h1::before { 

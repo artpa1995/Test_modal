@@ -31,7 +31,7 @@
           let x = 0;
           let y = 6
           var elem = document.getElementById('crar');
-         clearInterval(id);
+        clearInterval(id);
   id = setInterval(frame, 5);
         function frame() {
             
@@ -48,6 +48,7 @@
     //   elem.style.transform = "rotateY(-"+y+"deg)";
       //elem.style.left = pos + "px"; 
     }
+    //frame();
   }
 
       }

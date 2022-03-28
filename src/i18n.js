@@ -42,6 +42,7 @@ import { createI18n } from 'vue-i18n'
 
 const messages = {
     en: {
+        not_found:"Page not found",
         home_page: "Contextual advertising and Website development",
         about_page:"Development of turnkey websites and their subsequent promotion",
         contact_page:"How to contact us",
@@ -105,9 +106,9 @@ const messages = {
             {icon:require('./assets/svg/10.svg'), title: 'Information analysis', description: 'We receive data and discuss the wishes of the client. We analyze the specifics of the company`s activities, set tasks'},
             {icon:require('./assets/svg/11.svg'), title: 'Structure design', description: 'We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks'},
             {icon:require('./assets/svg/12.svg'), title: 'Interface', description: 'We individually approach the formation of an adaptive interface, carefully work out the details and graphic elements'},
-            {icon:require('./assets/svg/13.svg'), title: 'Information analysis', description: 'We receive data and discuss the wishes of the client. We analyze the specifics of the company`s activities, set tasks'},
-            {icon:require('./assets/svg/14.svg'), title: 'Structure design', description: 'We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks'},
-            {icon:require('./assets/svg/15.svg'), title: 'Interface', description: 'We individually approach the formation of an adaptive interface, carefully work out the details and graphic elements'},
+            {icon:require('./assets/svg/13.svg'), title: 'Technical implementation', description: 'We approach the resource in terms of its scalability. We take into account the usability indicator, i.e. ease of use'},
+            {icon:require('./assets/svg/14.svg'), title: 'Promotion and optimization', description: 'We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks'},
+            {icon:require('./assets/svg/15.svg'), title: 'Follow-up site support', description: 'We accompany both those projects that we have done ourselves, and any others that have come to us for service'},
             
          ],
          methods_content_head:{ title: 'WEB DEVELOPMENT - OUR METHODS', description: 'We are a company engaged in the creation and development of websites, their optimization and subsequent promotio'},
@@ -126,11 +127,10 @@ const messages = {
         ],
         createds_title: { title: 'Contextual advertising',  title2: 'Creating a structure for the site pages'},
         createds_content: [
-           { img:require('./assets/svg/21.svg'), description: 'One specialist manages no more than 3 clients at the same time - this allows you to quickly solve the problems of your business'},
-           { img:require('./assets/svg/21.svg'), description: 'We don`t waste a single ruble. The cost of the work is fully justified!'},
-           { img:require('./assets/svg/21.svg'), description: 'We are responsible for our work and do everything to achieve our goals'},
-           { img:require('./assets/svg/21.svg'),  description: 'It is important for us not only to create the visible popularity of the resource, but to convert it into your real income.'},
-           { img:require('./assets/svg/21.svg'), title: 'Development and training', description: 'We will tell and show everything about marketing activities as clearly as possible.',}
+           { img:require('./assets/svg/21.svg'), description: 'The site structure is the logical construction of all pages of the resource. The scheme by which the path to folders, categories, subcategories is distributed'},
+           { img:require('./assets/svg/21.svg'), description: 'Based on the website architecture, we prepare a design taking into account your brand book, corporate style and preferred colors'},
+           { img:require('./assets/svg/21.svg'),  description: 'We start developing the site back to back, using different programming languages'},
+           { img:require('./assets/svg/21.svg'), title: 'YOUR SITE IS READY!', description: 'Adding the last elements and that`s it',}
         ],
         our_team_content_head:  { title: 'Our employees', description: 'In our team, everything is debugged, everyone is doing their part in creating and promoting the project'},
         our_team_content_blok_items: [
@@ -149,14 +149,15 @@ const messages = {
             {icon:require('./assets/svg/em.svg'), title :'Email', value: 'L-it@mail.com'},
             {icon:require('./assets/svg/ad.svg'), title :'Addres', value: 'Yerevan '},
          ],
-         form_content_head:{ title: 'write your messag', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
+         //form_content_head:{ title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
+         form_content_head:{ title: 'Write your messag', description: 'Our project manager will contact you after filling out this form'},
          form_inputs:{
             form_check_text:'By submitting the form, I consent to the processing of personal data',
             submit:'Order a Consultation',
             message:'Message',
             phone:'Phone',
             name:'Full name',
-         }
+         },
 
 
 
@@ -165,7 +166,8 @@ const messages = {
 
     },
     ru: {
-        home_page: "Контекстная реклама и Разработка сайтовen",
+        not_found:"Страница не найдена",
+        home_page: "Контекстная реклама и Разработка сайтов",
         about_page:"Разработка сайтов под ключ и их последующее продвижение",
         contact_page:"Как связаться с нами",
         servise_page:"Контекстная реклама для Вас и Веб разработка сайтов",
@@ -226,9 +228,9 @@ const messages = {
             {icon:require('./assets/svg/10.svg'), title: 'Анализ информации', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
             {icon:require('./assets/svg/11.svg'), title: 'Проектирование структурыа', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
             {icon:require('./assets/svg/12.svg'), title: 'Интерфейс', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
-            {icon:require('./assets/svg/13.svg'), title: 'Анализ информации', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-            {icon:require('./assets/svg/14.svg'), title: 'Проектирование структурыа', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
-            {icon:require('./assets/svg/15.svg'), title: 'Интерфейс', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
+            {icon:require('./assets/svg/13.svg'), title: 'Техническая реализация', description: 'Подходим к ресурсу с точки зрения его масштабируемости. Учитываем показатель юзабилити, т.е. удобство пользования'},
+            {icon:require('./assets/svg/14.svg'), title: 'Продвижение и оптимизация', description: 'Проводим плотную работу по поисковому продвижению. Внутренняя и внешняя оптимизация проекта'},
+            {icon:require('./assets/svg/15.svg'), title: 'Последующая поддержка сайта', description: 'Сопровождаем как те проекты, которые сами сделали, так и любые другие, которые пришли к нам на обслуживание'},
             
          ],
          methods_content_head:{ title: 'ВЕБ РАЗРАБОТКА - НАШИ МЕТОДЫ', description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.'},
@@ -246,13 +248,12 @@ const messages = {
             { img:require('./assets/svg/19.svg'), title: 'Только целевой трафик', description: 'Нам важно не просто создать видимую популярность ресурса, а конвертировать ее в ваш реальный доход'},
             { img:require('./assets/svg/20.svg'), title: 'Развитие и обучение', description: 'Мы максимально доходчиво расскажем и покажем все про маркетинговые активности'}
          ],
-         createds_title: { title: 'Контекстная реклама',  title2: 'Создаем структуру для страниц сайта'},
+         createds_title: { title: 'Создание сайтов',  title2: 'Создаем структуру для страниц сайта'},
          createds_content: [
-            { img:require('./assets/svg/21.svg'), description: 'Один специалист ведет не более 3 клиентов одновременно — это позволяет оперативно решать задачи вашего бизнеса'},
-            { img:require('./assets/svg/21.svg'), description: 'Мы не расходуем ни одного рубля впустую. Стоимость работ полностью оправдана!'},
-            { img:require('./assets/svg/21.svg'), description: 'Мы отвечаем за свою работу и делаем все, чтобы достичь поставленных целей'},
-            { img:require('./assets/svg/21.svg'),  description: 'Нам важно не просто создать видимую популярность ресурса, а конвертировать ее в ваш реальный доход'},
-            { img:require('./assets/svg/21.svg'), title: 'Развитие и обучение', description: 'Мы максимально доходчиво расскажем и покажем все про маркетинговые активности',}
+            { img:require('./assets/svg/21.svg'), description: 'Структура сайта - это логическое построение всех страниц ресурса. Схема, по которой распределяется путь к папкам, категориям, подкатегориям '},
+            { img:require('./assets/svg/21.svg'), description: 'На основе архитектуры сайта подготавливаем дизайн с учетом вашего брендбука, фирменной стилистики и предпочитаемых цветов'},
+            { img:require('./assets/svg/21.svg'), description: 'Начинаем разработку сайта вплотную, используя разные языки программирования '},
+            { img:require('./assets/svg/21.svg'), title: 'ВАШ САЙТ ГОТОВ!', description: 'Добавление последних элементов и все ',}
          ],
          our_team_content_head:  { title: 'Наши сотрудники ', description: 'В нашей команде все отлажено, каждый занимается своей частью в создании и продвижении проекта'},
         our_team_content_blok_items: [
@@ -271,6 +272,7 @@ const messages = {
             {icon:require('./assets/svg/em.svg'), title :'Email', value: 'L-it@mail.com'},
             {icon:require('./assets/svg/ad.svg'), title :'АДРЕС', value: 'Yerevan '},
          ],
+        // form_content_head:  { title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_content_head:{ title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_inputs:{
             form_check_text:'Отправляя форму, я даю согласие на обработку персональных данных',
@@ -278,6 +280,127 @@ const messages = {
             message:'Сообщение',
             phone:'Телефон',
             name:'ФИО',
+         }
+
+
+
+
+    },
+    arm: {
+        not_found:"Էջը չի գտնվել",
+        home_page: "Համատեքստային գովազդ և կայքերի մշակում",
+        about_page:"Ստանդարտ կայքերի մշակում և դրանց հետագա առաջխաղացում",
+        contact_page:"Ինչպես կապվել մեզ հետ",
+        servise_page:"Համատեքստային գովազդ ձեզ համար և վեբ կայքի մշակում",
+        team_page:"Բարձր որակավորում ունեցող աշխատակիցներ՝ մեծ փորձով",
+        home_content_text:"Մենք կստեղծենք անհատական ​​կայք, կմիացնենք գովազդային ընկերություն, երաշխավորում ենք հաճախորդների հոսք",
+        about_content_text:"Մեր որակյալ մասնագետները կարճ ժամանակում կստեղծեն կայք ձեր ցանկությամբ՝ առանց բողոքների",
+        contact_content_text:"Դուք կարող եք կապվել մեզ հետ, լրացնել ձևը կայքում, և մենք կզանգահարենք ձեզ:",
+        servise_content_text:"Կայքի պատրաստում ըստ ներկայացված դիզայնի և հաճախորդի ցանկության, կարճ ժամանակում ֆունկցիոնալության ավելացում և փոփոխություն, կայքի առաջխաղացում, կոնտեքստային գովազդային կապ",
+        team_content_text:"Մեր թիմը բաղկացած է որակյալ մասնագետներից, այդ թվում՝ նախագծերի մենեջերներից, վեբ ծրագրավորողներից, դասավորության դիզայներներից, դիզայներներից, SEO-ի մասնագետներից, բովանդակության մենեջերներից, պատճենահանողներից:",
+        head_button:"Ավելին",
+        menu:{
+            home:"Գլխավոր",
+            about:"Մեր մասին",
+            servise:"Ծառայություններ",
+            team:"Մեր թիմը",
+            contact:"Կոնտակտներ",
+        },
+        about_content_blok_items: [
+            { icon: require('./assets/svg/4.svg'), title: 'Տեղեկատվության վերլուծություն', description: 'Մենք ստանում ենք տվյալներ և քննարկում հաճախորդի ցանկությունները: Մենք վերլուծում ենք ընկերության գործունեության առանձնահատկությունները, առաջադրանքներ ենք դնում'},
+            { icon: require('./assets/svg/5.svg'), title: 'Կառուցվածքի ձևավորում', description: 'Մենք մտածում ենք տեղեկատվության ներկայացման, տվյալների ելքի շուրջ՝ հաշվի առնելով վարքագծային գործոնը։ Փոխակերպման բլոկների տեղադրում'},
+            { icon: require('./assets/svg/6.svg'), title: 'Ինտերֆեյս', description: 'Մենք անհատապես մոտենում ենք հարմարվողական ինտերֆեյսի ձևավորմանը, ուշադիր մշակում մանրամասները և գրաֆիկական տարրերը'},
+            
+         ],
+        about_content_blok_items_2: [
+            {icon:require('./assets/svg/7.svg'), title: 'Տեխնիկական իրականացում', description: 'Մենք ռեսուրսին մոտենում ենք իր մասշտաբայնությամբ: Մենք հաշվի ենք առնում օգտագործելիության ցուցանիշը, այսինքն. օգտագործման հեշտությունը'},
+            {icon:require('./assets/svg/8.svg'), title: 'Առաջխաղացում և օպտիմալացում', description: 'Մենք քրտնաջան աշխատում ենք որոնման խթանման վրա: Նախագծի ներքին և արտաքին օպտիմիզացում'},
+            {icon:require('./assets/svg/9.svg'), title: 'Հետագա կայքի աջակցություն', description: 'Մենք ուղեկցում ենք ինչպես այն նախագծերը, որոնք մենք ինքներս ենք արել, այնպես էլ ցանկացած այլ, որը եկել է մեզ ծառայության համար'},
+            
+        ],
+        about_content_head:{ 
+            title: 'Մեր մասին',
+            description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:',
+        },
+        home_servise_content_heads: { title: 'Մեր ծառայությունները', description: 'Մենք ստեղծում և գովազդում ենք տարբեր տեսակի կայքեր, մենք զբաղվում ենք դրանց հետագա աջակցությամբ'},
+        servise_content_bloks: [
+            {icon:require('./assets/svg/1.svg'), title: 'Կայքի մշակում', description: 'Մենք ստեղծում ենք տարբեր տեսակի կայքեր՝ առցանց խանութներ, այցեքարտերի կայքեր, վայրէջք էջեր, պրոմո կայքեր։ Դասավորություն ըստ մեր առաջարկած դիզայնի կամ ըստ ձերի, և համապատասխան ծրագրավորում'},
+            {icon:require("./assets/svg/2.svg"), title: 'Համատեքստային գովազդ', description: 'Մենք կստեղծենք արդյունավետ գովազդային արշավ, որը ներառում է տեղեկատվության ներկայացման տարբեր ձևաչափեր (տեքստ, գրաֆիկա, վիդեո), մենք կընտրենք անհավանական թվով հիմնաբառեր։'},
+            {icon:require('./assets/svg/3.svg'), title: 'UI/UX կայքի դիզայն', description: 'Մենք ձեզ համար կստեղծենք վեբ կայքի անհատական ​​դիզայն՝ գրավիչ ինտերֆեյսով, լավ մտածված վեբկայքի ճարտարապետությամբ և հարմարավետությամբ և օգտագործման հեշտությամբ, որը համապատասխանում է բիզնես նպատակներին:'},
+            
+         ],
+         mission_content_heads: { title: 'ՄԵՐ ԱՌԱՔԵԼՈՒԹՅՈՒՆԸ', description: 'Ստեղծեք հաջողված ինտերնետային նախագծեր՝ օգտագործելով ժամանակակից տեխնոլոգիաները, անհատական ​​մոտեցում յուրաքանչյուր բիզնեսին'},
+         home_team_content:{ title: 'Մեր թիմը', description: 'Մեր թիմը բաղկացած է որակյալ մասնագետներից, այդ թվում՝ նախագծերի մենեջերներից, վեբ ծրագրավորողներից, դասավորության դիզայներներից, դիզայներներից, SEO-ի մասնագետներից, բովանդակության մենեջերներից, պատճենահանողներից:'},
+         more_info:"Ավելին", 
+        footer_contacts:{title:'կոնտակտներ', tel: '+37455555555', email:'L-it@mail.com', addres:'Erevani komery eli'},
+        info:"Տեղեկատվություն", 
+        info_menu: [
+            {url: '/', name: 'Գլխավոր'},
+            {url: '/about', name: 'Մեր մասին'},
+            {url: '/servise', name: 'Ծառայություններ'},
+            {url: '/teame', name: 'Մեր թիմը'},
+            {url: '/contacts', name: 'Կոնտակտներ'},
+        ], 
+        contents_footer_mission: { title: 'Մեր առաքելությունը', description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:'},
+        dop_info:"Լրացուցիչ տեղեկությունների համար կարող եք բաժանորդագրվել մեր նորություններին",
+        write_email:'գրեք ձեր էլփոստի հասցեն',
+        subscription:"Բաժանորդագրվել",
+        methods_content_blok_items: [
+            {icon:require('./assets/svg/10.svg'), title: 'Տեղեկատվության վերլուծություն', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
+            {icon:require('./assets/svg/11.svg'), title: 'Կառուցվածքի ձևավորում', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
+            {icon:require('./assets/svg/12.svg'), title: 'Ինտերֆեյս', description: 'Մենք անհատապես մոտենում ենք հարմարվողական ինտերֆեյսի ձևավորմանը, ուշադիր մշակում մանրամասները և գրաֆիկական տարրերը'},
+            {icon:require('./assets/svg/13.svg'), title: 'Տեխնիկական իրականացում', description: 'Մենք ռեսուրսին մոտենում ենք իր մասշտաբայնությամբ: Մենք հաշվի ենք առնում օգտագործելիության ցուցանիշը, այսինքն. օգտագործման հեշտությունը'},
+            {icon:require('./assets/svg/14.svg'), title: 'Առաջխաղացում և օպտիմալացում', description: 'Մենք քրտնաջան աշխատում ենք որոնման խթանման վրա: Նախագծի ներքին և արտաքին օպտիմիզացում'},
+            {icon:require('./assets/svg/15.svg'), title: 'Հետագա կայքի աջակցություն', description: 'Մենք ուղեկցում ենք ինչպես այն նախագծերը, որոնք մենք ինքներս ենք արել, այնպես էլ ցանկացած այլ, որը եկել է մեզ ծառայության համար'},
+            
+         ],
+         methods_content_head:{ title: 'ՎԵԲ ԶԱՐԳԱՑՈՒՄ - ՄԵՐ ՄԵԹՈԴՆԵՐԸ', description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:'},
+         page_content_head:{ 
+                title: 'Մեր մասին',
+                description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:',
+                description2: 'Ինտեգրված վեբ մշակումը, մեկ կապալառուի կողմից տրամադրվող ինտերնետային նախագծի ստեղծումը և հետագա զարգացումը թույլ կտա նվազեցնել ծախսերը, և մենք կկարողանանք ստեղծել առավելագույն արդյունավետությամբ ռեսուրս երկարատև գոյության և ինտերնետում հաջող գործունեության համար:'
+          },
+
+        advertising_title: { title: 'Համատեքստային գովազդ'},
+        advertising_content: [
+            { img:require('./assets/svg/16.svg'), title: 'Գործարկման արդյունավետություն', description: 'Մեկ մասնագետը միաժամանակ ղեկավարում է ոչ ավելի, քան 3 հաճախորդ. սա թույլ է տալիս արագ լուծել ձեր բիզնեսի խնդիրները'},
+            { img:require('./assets/svg/17.svg'), title: 'Բյուջեի ռացիոնալ օգտագործումը', description: 'Մենք ոչ մի դրամ չենք վատնում։ Աշխատանքի արժեքը լիովին արդարացված է:'},
+            { img:require('./assets/svg/18.svg'), title: 'Արդյունավետություն և արդյունքի երաշխիք', description: 'Մենք պատասխանատու ենք մեր աշխատանքի համար և անում ենք ամեն ինչ մեր նպատակներին հասնելու համար'},
+            { img:require('./assets/svg/19.svg'), title: 'Միայն նպատակային տրաֆիկ', description: 'Մեզ համար կարևոր է ոչ միայն ռեսուրսի տեսանելի ժողովրդականություն ստեղծելը, այլև այն վերածել ձեր իրական եկամտի:'},
+            { img:require('./assets/svg/20.svg'), title: 'Զարգացում և ուսուցում', description: 'Մենք հնարավորինս պարզ կասենք և ցույց կտանք մարքեթինգային գործունեության մասին ամեն ինչ։'}
+         ],
+         createds_title: {title: 'Կայքի մշակում', title2: 'Կայքի էջերի համար կառուցվածքի ստեղծում'},
+         createds_content: [
+            { img:require('./assets/svg/21.svg'), description: 'Կայքի կառուցվածքը ռեսուրսի բոլոր էջերի տրամաբանական կառուցումն է: Սխեման, որով բաշխվում է դեպի թղթապանակներ, կատեգորիաներ, ենթակատեգորիաներ տանող ճանապարհը'},
+            { img:require('./assets/svg/21.svg'), description: 'Կայքի ճարտարապետության հիման վրա մենք պատրաստում ենք դիզայն՝ հաշվի առնելով ձեր բրենդային գիրքը, կորպորատիվ ոճը և նախընտրած գույները'},
+            { img:require('./assets/svg/21.svg'), description: 'Մենք սկսում ենք զարգացնել կայքը հետևաբար՝ օգտագործելով տարբեր ծրագրավորման լեզուներ'},
+            { img:require('./assets/svg/21.svg'), title: 'ՔՈ ԿԱՅՔԸ ՊԱՏՐԱՍՏ Է:', description: 'Վերջին տարրերի ավելացում և վերջ',}
+         ],
+         our_team_content_head:  { title: 'Մեր աշխատակիցները', description: 'Մեր թիմում ամեն ինչ կարգաբերված է, յուրաքանչյուրն իր դերն է կատարում նախագծի ստեղծման և առաջմղման գործում'},
+        our_team_content_blok_items: [
+            {icon:require('./assets/svg/achik.svg'), title: 'ԾՐԱԳՐԻ ՂԵԿԱՎԱՐ ', description: 'Մենք ստանում ենք տվյալներ և քննարկում հաճախորդի ցանկությունները: Մենք վերլուծում ենք ընկերության գործունեության առանձնահատկությունները, առաջադրանքներ ենք դնում'},
+            {icon:require("./assets/svg/achik.svg"), title: 'ՎԵԲ ԴԻԶԱՅՆԵՐ', description: 'Մենք մտածում ենք տեղեկատվության ներկայացման, տվյալների ելքի շուրջ՝ հաշվի առնելով վարքագծային գործոնը։ Փոխակերպման բլոկների տեղադրում'},
+            {icon:require('./assets/svg/achik.svg'), title: 'ԴԻԶԱՅՆԵՐ', description: 'Մենք անհատապես մոտենում ենք հարմարվողական ինտերֆեյսի ձևավորմանը, ուշադիր մշակում մանրամասները և գրաֆիկական տարրերը'},
+            {icon:require('./assets/svg/achik.svg'), title: 'ՎԵԲ ԾՐԱԳՐԱՎՈՐՈՂ', description: 'Մենք ռեսուրսին մոտենում ենք իր մասշտաբայնությամբ: Մենք հաշվի ենք առնում օգտագործելիության ցուցանիշը, այսինքն. օգտագործման հեշտությունը'},
+            {icon:require("./assets/svg/achik.svg"), title: 'ՔՈՓԱՅՐԻՏՐ', description: 'Մենք քրտնաջան աշխատում ենք որոնման խթանման վրա: Նախագծի ներքին և արտաքին օպտիմիզացում'},
+            {icon:require('./assets/svg/achik.svg'), title: 'ԲՈՎԱՆԴԱԿՈՒԹՅԱՆ մենեջեր', description: 'Մենք ուղեկցում ենք ինչպես այն նախագծերը, որոնք մենք ինքներս ենք արել, այնպես էլ ցանկացած այլ, որը եկել է մեզ ծառայության համար'},
+            {icon:require('./assets/svg/achik.svg'), title: 'SEO վերլուծաբան և օպտիմիզատոր', description: 'Մենք ուղեկցում ենք ինչպես այն նախագծերը, որոնք մենք ինքներս ենք արել, այնպես էլ ցանկացած այլ, որը եկել է մեզ ծառայության համար'},
+         ],
+
+        contacts_content_head: { title: 'Կապվեք մեզ հետ', description: 'Եթե ​​ունեք լրացուցիչ հարցեր, խնդրում ենք ազատ զգալ կապվել մեզ հե'},
+        contacts_content_blok_items: [
+            {icon:require('./assets/svg/ph.svg'), title :'Հեռախոս', value: '+7 968 026 66 60 '},
+            {icon:require('./assets/svg/em.svg'), title :'Էլ.ՀԱՍՑԵՆ', value: 'L-it@mail.com'},
+            {icon:require('./assets/svg/ad.svg'), title :'ՀԱՍՑԵՆ', value: 'Yerevan '},
+         ],
+         //form_content_head:  { title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
+         form_content_head:{ title: 'Գրեք ձեր հաղորդագրությունը', description: 'Մեր ծրագրի ղեկավարը կկապվի ձեզ հետ այս ձևը լրացնելուց հետո'},
+         form_inputs:{
+            form_check_text:'Ձևաթուղթը ներկայացնելով՝ ես համաձայնում եմ անձնական տվյալների մշակմանը',
+            submit:'Պատվիրեք խորհրդատվություն',
+            message:'Հաղորդագրություն',
+            phone:'Հեռախոս',
+            name:'Ամբողջական անուն',
          }
 
 
