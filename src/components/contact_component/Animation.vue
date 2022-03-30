@@ -37,7 +37,7 @@
             
     if (x == 360 ) {
       clearInterval(id);
-     console.log(elem);
+    // console.log(elem);
     } else {
         y++
       x++; 

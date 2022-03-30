@@ -124,8 +124,6 @@
 // scene.add(ambient);
 
 
-
-
         scene.add(camera);
         scene.add(mesh);
         scene.add(mesh2);
@@ -290,6 +288,7 @@ function scen2(){
 }
 
 #target {
+  cursor: pointer;
     position: relative;
     width: 400px;
     height: 400px;

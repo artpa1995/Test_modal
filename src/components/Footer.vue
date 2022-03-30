@@ -19,15 +19,9 @@
                 </div>
                 <div class="contents_footer_blok" v-for="contact in contacts" :key="contact">
                <h3 style="margin-top:33px;">{{ $t('menu.contact')}} </h3>
-                   <p>
-                       {{contact.tel}}
-                    </p>
-                    <p>
-                       {{contact.email}}
-                    </p>
-                    <p>
-                       {{contact.addres}}
-                    </p>
+                   <p><a :href="'tel:'+contact.tel ">{{contact.tel}}</a></p>
+                   <p> <a :href="'mailto:'+contact.email">{{contact.email}}</a></p>
+                   <p>{{contact.addres}}</p>
                 </div>
                 <!-- <div class="contents_footer_blok">
                     <p v-if="errors.length">
@@ -47,7 +41,7 @@
           </div>
       </div> 
        <div class="contents_footer_down">
-           L-IT 2020 L-IT
+          info@l-it.am
        </div>
      
   </div>
@@ -78,9 +72,8 @@ export default {
             {url: '/contacts', name: 'Контакты'},
         ],
         contacts:[
-            {title:'контакты', tel: '+37455555555', email:'L-it@mail.com', addres:'Erevani komery eli'}
+            {title:'контакты', tel: '+37496433673', email:'info@l-it.am', addres:'Азатутян 24/17, E Plaza'}
         ]      
-               
     }
   },
   methods:{
@@ -183,7 +176,8 @@ label:before {
     color: var( --texts_color);
     max-width: 333px;
 }
-.contents_footer_blok>p{
+.contents_footer_blok>p, .contents_footer_blok>p>a{
+    text-decoration: none;
     margin-top: 20px;
     font-family: var( --font_texts);
     font-style: normal;

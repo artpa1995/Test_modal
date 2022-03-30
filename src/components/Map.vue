@@ -382,7 +382,7 @@
     right: 0;
     max-width: 800px;
     margin: 0 auto;
-    
+    cursor: pointer;
     border-radius: 50%;
     padding: 30px;
 }

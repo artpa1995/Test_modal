@@ -18,14 +18,16 @@
             <span class="checkbox" @click="check = !check" :class="{ check: check }"></span>
             <span class="form_check_text">{{ $t('form_inputs.form_check_text')}}</span>
         </div>
+        <!-- <div class="submit"><Buttons :value="2" @click="sendEmail"/></div> -->
         <div class="submit"><Buttons :value="$t('form_inputs.submit')" @click="consultation"/></div>
-        
     </div>
+     
   
   </div>
 </template>
 <script>
 import Buttons from '../Buttons.vue';
+import{ emailjs } from '@emailjs/browser';
 export default {
      props: {
         
@@ -52,9 +54,35 @@ export default {
     };
   },
   mounted() {
-    //console.log(this.form_content_img)
+    //console.log(emailjs)
   },
    methods:{
+
+      sendEmail(e) {
+      // emailjs.sendForm('service_665awxi', 'template_1dr6aao', this.$refs.form, 'ezYr1BVTx2-Kwu8on')
+      //   .then((result) => {
+      //       console.log('SUCCESS!', result.text);
+      //   }, (error) => {
+      //       console.log('FAILED...', error.text);
+      //   });
+
+         try {
+        emailjs.sendForm('service_665awxi', 'template_5lrts4b', e.target,'ezYr1BVTx2', {
+         //emailjs.sendForm('service_665awxi', 'template_5lrts4b', e.target,'ezYr1BVTx2', {  init("ezYr1BVTx2-Kwu8on")
+        
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
        validEmail: function (email_login) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email_login);
@@ -219,7 +247,7 @@ export default {
     margin-bottom: -2px;
 }
 .form_form textarea:hover{
-    border: 2px solid var( --color4)C;
+    border: 2px solid var( --color4);
     box-shadow: 0px 0px 4px var( --color3);
     margin-bottom: -2px;
 }

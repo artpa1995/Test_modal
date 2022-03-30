@@ -145,11 +145,10 @@ const messages = {
          ],
         contacts_content_head: { title: 'Contact us', description: 'If you have further questions, please feel free to contact us.'},
         contacts_content_blok_items: [
-            {icon:require('./assets/svg/ph.svg'), title :'Phone', value: '+7 968 026 66 60 '},
-            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'L-it@mail.com'},
-            {icon:require('./assets/svg/ad.svg'), title :'Addres', value: 'Yerevan '},
+            {icon:require('./assets/svg/ph.svg'), title :'Phone', value: '+37496433673'},
+            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
+            {icon:require('./assets/svg/ad.svg'), title :'Addres', value: 'Azatutyan 24/17, E Plaza'},
          ],
-         //form_content_head:{ title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_content_head:{ title: 'Write your messag', description: 'Our project manager will contact you after filling out this form'},
          form_inputs:{
             form_check_text:'By submitting the form, I consent to the processing of personal data',
@@ -158,11 +157,6 @@ const messages = {
             phone:'Phone',
             name:'Full name',
          },
-
-
-
-
-
 
     },
     ru: {
@@ -268,12 +262,11 @@ const messages = {
 
         contacts_content_head: { title: 'Свяжитесь с нами', description: 'Если у вас есть дополнительные вопросы, пожалуйста, не стесняйтесь обращаться к нам.'},
         contacts_content_blok_items: [
-            {icon:require('./assets/svg/ph.svg'), title :'Телефон', value: '+7 968 026 66 60 '},
-            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'L-it@mail.com'},
-            {icon:require('./assets/svg/ad.svg'), title :'АДРЕС', value: 'Yerevan '},
+            {icon:require('./assets/svg/ph.svg'), title :'Телефон', value: '+37496433673'},
+            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
+            {icon:require('./assets/svg/ad.svg'), title :'АДРЕС', value: 'Азатутян 24/17, E Plaza'},
          ],
-        // form_content_head:  { title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
-         form_content_head:{ title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
+         form_content_head:{ title: 'Напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_inputs:{
             form_check_text:'Отправляя форму, я даю согласие на обработку персональных данных',
             submit:'Заказать Консультацию',
@@ -389,11 +382,10 @@ const messages = {
 
         contacts_content_head: { title: 'Կապվեք մեզ հետ', description: 'Եթե ​​ունեք լրացուցիչ հարցեր, խնդրում ենք ազատ զգալ կապվել մեզ հե'},
         contacts_content_blok_items: [
-            {icon:require('./assets/svg/ph.svg'), title :'Հեռախոս', value: '+7 968 026 66 60 '},
-            {icon:require('./assets/svg/em.svg'), title :'Էլ.ՀԱՍՑԵՆ', value: 'L-it@mail.com'},
-            {icon:require('./assets/svg/ad.svg'), title :'ՀԱՍՑԵՆ', value: 'Yerevan '},
+            {icon:require('./assets/svg/ph.svg'), title :'Հեռախոս', value: '+37496433673'},
+            {icon:require('./assets/svg/em.svg'), title :'Էլ.ՀԱՍՑԵՆ', value: 'info@l-it.am'},
+            {icon:require('./assets/svg/ad.svg'), title :'ՀԱՍՑԵՆ', value: 'Ազատության 24/17, E Plaza'},
          ],
-         //form_content_head:  { title: 'напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_content_head:{ title: 'Գրեք ձեր հաղորդագրությունը', description: 'Մեր ծրագրի ղեկավարը կկապվի ձեզ հետ այս ձևը լրացնելուց հետո'},
          form_inputs:{
             form_check_text:'Ձևաթուղթը ներկայացնելով՝ ես համաձայնում եմ անձնական տվյալների մշակմանը',

@@ -4,9 +4,12 @@
           <div class="content_left">
               <div class="content_left_left">
                 <div class="logo">
-                  <a href="https://www.figma.com/file/9bo8sHgD8aTaG8PN2VhPF5/IT-Company-Website-(1)">
+                  <router-link to="/">
                     <img src="../assets/logo.png" alt="">
-                  </a> 
+                 </router-link>
+                 <!-- <a href="https://www.figma.com/file/9bo8sHgD8aTaG8PN2VhPF5/IT-Company-Website-(1)">
+                    <img src="../assets/logo.png" alt="">
+                  </a>  -->
                 </div>
                 <div class="content_left_left_texts">
                   
