@@ -13,10 +13,13 @@
     name: 'ThreeTest',
     data () {
       return {
-        img: require('@/assets/test1.png'),
-        img2: require('@/assets/test3.png'),
-        img3: require('@/assets/test4.png'),
-        img4: require('@/assets/test1.png'),
+        img: require('@/assets/vektor.png'),
+        // img2: require('@/assets/vektor.png'),
+        // img3: require('@/assets/vektor.png'),
+        // img4: require('@/assets/test1.png'),
+        // img5: require('@/assets/test1.png'),
+        // img6: require('@/assets/test1.png'),
+        // img7: require('@/assets/test1.png'),
         camera: null,
         scene: null,
         renderer: null,
@@ -58,14 +61,18 @@
         
         
         var texture = new THREE.TextureLoader().load( this.img );
-        var texture2 = new THREE.TextureLoader().load( this.img2 );
-        var texture3 = new THREE.TextureLoader().load( this.img3 );
-        var texture4 = new THREE.TextureLoader().load( this.img4 );
+        var texture2 = new THREE.TextureLoader().load( this.img );
+        var texture3 = new THREE.TextureLoader().load( this.img );
+        var texture4 = new THREE.TextureLoader().load( this.img );
+        var texture5 = new THREE.TextureLoader().load( this.img );
+        var texture6 = new THREE.TextureLoader().load( this.img );
 
         var material = new THREE.MeshBasicMaterial( { map: texture, transparent: true } );
         var material2 = new THREE.MeshBasicMaterial( { map: texture2, transparent: true} );
         var material3 = new THREE.MeshBasicMaterial( { map: texture3, transparent: true} );
         var material4 = new THREE.MeshBasicMaterial( { map: texture4, transparent: true} );
+        var material5 = new THREE.MeshBasicMaterial( { map: texture5, transparent: true} );
+        var material6 = new THREE.MeshBasicMaterial( { map: texture6, transparent: true} );
 
         element.appendChild(renderer.domElement);
 
@@ -73,23 +80,45 @@
         var mesh = new THREE.Mesh(geometry, material.clone());
         mesh.material.side = THREE.DoubleSide;
         mesh.renderOrder= 0;
-
+        mesh.rotation.z = 5;
+        mesh.rotation.x = 5;
+        mesh.rotation.y = 5;
         var geometry2 = new THREE.SphereGeometry(90, 60, 30);
         var mesh2 = new THREE.Mesh(geometry2, material2.clone());
         mesh2.material.side = THREE.DoubleSide;
         mesh2.renderOrder= -1;
-        
+        mesh2.rotation.z = 15;
+        mesh2.rotation.x = 15;
+        mesh2.rotation.y = 15;
 
         var geometry3 = new THREE.SphereGeometry(80, 60, 30);
         var mesh3 = new THREE.Mesh(geometry3, material3.clone());
         mesh3.material.side = THREE.DoubleSide;
         mesh3.renderOrder= -2;
+        mesh3.rotation.z = 15;
+        mesh3.rotation.x = 15;
+        mesh3.rotation.y = 15;
 
         var geometry4 = new THREE.SphereGeometry(70, 60, 30);
         var mesh4 = new THREE.Mesh(geometry4, material4.clone());
         //outlinePass.selectedObjects = [mesh4];
         mesh4.material.side = THREE.DoubleSide;
         mesh4.renderOrder= -3;
+        mesh4.rotation.z = 65;
+        mesh4.rotation.x = 85;
+        mesh4.rotation.y = 25;
+
+        var geometry5 = new THREE.SphereGeometry(50, 60, 30);
+        var mesh5 = new THREE.Mesh(geometry5, material5.clone());
+        //outlinePass.selectedObjects = [mesh5];
+        mesh5.material.side = THREE.DoubleSide;
+        mesh5.renderOrder= -4;
+
+        var geometry6 = new THREE.SphereGeometry(40, 60, 30);
+        var mesh6 = new THREE.Mesh(geometry6, material6.clone());
+        //outlinePass.selectedObjects = [mesh6];
+        mesh6.material.side = THREE.DoubleSide;
+        mesh6.renderOrder= -5;
 
         // var cube_geometry = new THREE.BoxGeometry(120,120,120);
         // var cube_material = new THREE.MeshLambertMaterial({color:0xffffff});
@@ -129,6 +158,8 @@
         scene.add(mesh2);
         scene.add(mesh3);
         scene.add(mesh4);
+        scene.add(mesh5);
+        scene.add(mesh6);
          // skyBox.scene.add(mesh)
 
        
@@ -144,13 +175,18 @@
           function animate() {
               requestAnimationFrame(animate);    
               mesh.rotation.z -= 0.0005;
-              mesh.rotation.y -= 0.0005;
+              mesh.rotation.y -= 0.0025;
               mesh2.rotation.z -= 0.0005;
               mesh2.rotation.y += 0.0008;
               mesh3.rotation.z -= 0.0005;
               mesh3.rotation.y -= 0.0008;
               // mesh4.rotation.z -= 0.0005;
               mesh4.rotation.y -= 0.0018;
+              mesh5.rotation.y -= 0.0018;
+              mesh5.rotation.z -= 0.0015;
+              mesh6.rotation.y -= 0.0035;
+              mesh6.rotation.z -= 0.0035;
+              mesh6.rotation.x -= 0.0035;
               controls.update();
               renderer.render(scene, camera);
             // composer.render();

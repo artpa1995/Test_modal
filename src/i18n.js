@@ -114,8 +114,8 @@ const messages = {
          methods_content_head:{ title: 'WEB DEVELOPMENT - OUR METHODS', description: 'We are a company engaged in the creation and development of websites, their optimization and subsequent promotio'},
          page_content_head:{ 
             title: 'ABOUT COMPANY',
-            description: 'We are a company engaged in the creation and development of websites, their optimization and subsequent promotion.',
-            description2: 'Integrated web development, creation and subsequent development of an Internet project, provided by one contractor, will allow you to reduce costs, and we will be able to create a resource with maximum efficiency for a long existence and successful activity on the Internet.'
+            description: 'L-IT Armenia formed in 2020 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. ',
+            description2: 'Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team.'
              },
         advertising_title: { title: 'Contextual advertising'},
         advertising_content: [
@@ -230,8 +230,8 @@ const messages = {
          methods_content_head:{ title: 'ВЕБ РАЗРАБОТКА - НАШИ МЕТОДЫ', description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.'},
          page_content_head:{ 
                 title: 'О КОМПАНИИ',
-                description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.',
-                description2: 'Комплексная web разработка, создание и последующее развитие интернет проекта, оказываемая одним исполнителем, позволит вам снизить расходы, а нам даст возможность с максимальной эффективностью создать ресурс для долгого существования и успешной деятельности на просторах интернета.'
+                description: 'L-IT Armenia была создана в 2020 году с целью предоставления услуг аутстаффинга и аутсорсинга, начиная от стратегического консультирования в области ИТ и заканчивая внедрением решений. Мы состоим из смелых и творческих мыслителей из разных слоев общества.',
+                description2: 'Наша открытая культура способствует успеху наших клиентов, а наша ориентация на вовлечение всей компании открывает большие возможности для нашей команды.'
           },
 
         advertising_title: { title: 'Контекстная реклама'},
@@ -350,8 +350,8 @@ const messages = {
          methods_content_head:{ title: 'ՎԵԲ ԶԱՐԳԱՑՈՒՄ - ՄԵՐ ՄԵԹՈԴՆԵՐԸ', description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:'},
          page_content_head:{ 
                 title: 'Մեր մասին',
-                description: 'Մենք ընկերություն ենք, որը զբաղվում է կայքերի ստեղծմամբ և մշակմամբ, դրանց օպտիմալացմամբ և հետագա առաջմղմամբ:',
-                description2: 'Ինտեգրված վեբ մշակումը, մեկ կապալառուի կողմից տրամադրվող ինտերնետային նախագծի ստեղծումը և հետագա զարգացումը թույլ կտա նվազեցնել ծախսերը, և մենք կկարողանանք ստեղծել առավելագույն արդյունավետությամբ ռեսուրս երկարատև գոյության և ինտերնետում հաջող գործունեության համար:'
+                description: 'L-IT Armenia-ն ձևավորվել է 2020թ.-ին արտաքին անձնակազմի և աութսորսինգի ծառայություններ մատուցելու շարժիչ ուժով՝ սկսած ՏՏ ռազմավարական խորհրդատվությունից մինչև լուծումների ներդրում: Մենք կազմված ենք համարձակ և ստեղծագործ մտածողներից, որոնք գալիս են կյանքի բոլոր ոլորտներից:',
+                description2: 'Մեր բաց մշակույթը հաջողություն է բերում մեր հաճախորդներին և մեր կենտրոնացումը ընկերության ամբողջ ընդգրկման վրա, ինչը հիանալի հնարավորություն է ստեղծում մեր թիմի համար:'
           },
 
         advertising_title: { title: 'Համատեքստային գովազդ'},

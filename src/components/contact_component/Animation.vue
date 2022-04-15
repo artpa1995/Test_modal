@@ -1,64 +1,203 @@
+
+
 <template>
     <div id="container">  
         <div class="ramka">
             <div class="mramka"></div>
         </div>
           <div class="pcrar">          
-        </div>
-        <div class="crar" id="crar">
+          </div>
+        <!-- <div class="crar" id="crar">
 
             <img class="kr" id="kr" src="../../assets/namak/kr.svg" alt="">
             <div class="nabg">
                 <img class="na" src="../../assets/namak/na.svg" alt="">
             </div>
              
-        </div>
+        </div> -->
         <!-- <div class="shoxq">
             
         </div> -->
+
+        <div class="flip-container" >
+           <!-- ontouchstart="this.classList.toggle('hover'); -->
+          <div class="flipper" id="el">
+            <div class="front">
+               <img class="kr" id="kr" src="../../assets/namak/kr.svg" alt="">
+              <!-- front content -->
+            </div>
+            <div class="back">
+              <!-- back content -->
+            </div>
+          </div>
+        </div>
     </div>
 </template>
 
 <script>
   export default {
       data(){
-
+        return{
+          flag : false,
+        }
       },
       methods: {
-      init: function () {
-          
-          let id = null;
-          let x = 0;
-          let y = 6
-          var elem = document.getElementById('crar');
-        clearInterval(id);
-  id = setInterval(frame, 5);
-        function frame() {
-            
-    if (x == 360 ) {
-      clearInterval(id);
-    // console.log(elem);
-    } else {
-        y++
-      x++; 
-     // transform: rotateX(115deg) rotateY(-45deg);
-    
-      //elem.style.transform = "rotateX("+x+"deg) rotateY(-"+y+"deg)"; 
-       elem.style.transform = "rotateY("+x+"deg) "; 
-    //   elem.style.transform = "rotateY(-"+y+"deg)";
-      //elem.style.left = pos + "px"; 
-    }
-    //frame();
-  }
+              init: function () {
+                this.flag = true;
+               // console.log(this.flag);
+                var elem = document.getElementById('el');  
+                 var kr = document.getElementById('kr');  
+                var idy = "";
+                let x = 0;
+                let y = 0;
+                var hp = 0;
+                var hd = -150;
+               // var elem = document.getElementById('crar');
+                 var flag = false;
+                var id = '';
+                 var id2 = '';
+                var idup = '';
 
-      }
+                  clearInterval(id);
+                  clearInterval(id2);
+                  clearInterval(idup);
+                 id = setInterval(framex, 1 );
+                  id2 = setInterval(framex, 1 );
+                 idup = setInterval(frameup, 55);
+                if(flag == true){
+                  clearInterval(id);
+                  clearInterval(id2);
+                  clearInterval(idup);
+                }
+              //console.log(flag);
+                var iddown = "";
+
+                function frameup() {
+                   flag = true;
+                  if(hp >= -150){
+                    hp--;
+                    elem.style.top = hp+'px';
+                  }
+                  //console.log(hp);
+                  if(hp == -150){
+                    
+                    const myTimeoutw = setTimeout(function myGreetingw() {
+                    iddown = setInterval(framedown, 55);
+                    }, 5000);
+                    clearInterval(idup);
+                  }
+                }
+
+                function framedown() {
+                 // clearInterval(idup);
+                  if(hd < -30){
+                    hd++;
+                    elem.style.top = hd+'px';
+                  }
+                  //console.log(hd);
+                  if(hd >= -30){
+                     clearInterval(iddown);
+                   // hp = 0;const myTimeoutw = setTimeout(function myGreetingw() {
+                   // idup = setInterval(frameup, 55); }, 1);
+                   
+                  }
+                }
+
+                function framex() {
+                  flag = true;
+                  if (x <=  4320) {
+                    x++; 
+                    elem.style.transform = "rotateY("+x+"deg) ";
+                    y = 3160;
+                  }
+                  if(x == 4320){
+                    kr.classList.add("animkr")
+                    const myTimeout = setTimeout(function myGreeting() {
+                    idy =  setInterval(framey, 1);
+                   }, 5000);
+                   clearInterval(id);
+                   clearInterval(id2);
+                  }
+                }
+
+                function framey() { 
+                  kr.classList.remove("animkr")     
+                  if (y >= 0 ) {
+                    y--; 
+                    elem.style.transform = "rotateY("+y+"deg) ";
+                  } 
+                  if(y == 0) {
+                    x = 0;
+                    id =  setInterval(framex, 1);
+                    clearInterval(idy);
+                  }  
+                }
+
+              }
       },
        mounted () {
-      this.init()
+         console.log(this.flag);
+         if(this.flag == false){
+          this.flag = true;
+          console.log(this.flag);
+          this.init()
+         }
+    
     }
   }
 </script>
 <style scoped>
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 700px;
+  width: 560px;
+  display: flex;
+  justify-content: center;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper {
+		transform: rotateY(360deg);
+	}
+
+ .front, .back {
+	width: 240px;
+	height: 200px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+		width: 240px;
+	height: 200px;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+   background-image: url(../../assets/namak/crar.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+   background-image: url(../../assets/namak/heth.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
 
 #container{
     position: absolute;
@@ -109,6 +248,7 @@
     width: 100%;
 }
 .crar{
+  position: relative;
     max-width: 250px;
     background-image: url(../../assets/namak/crar.svg);
      background-position: center center;
@@ -117,6 +257,8 @@
     height: 250px;
     width: 100%;
         margin: 0 auto;
+        	/* perspective: 1000px;*/
+     /* transform-style: preserve-3d;  */
 }
 .shoxq{
     max-width: 350px;
@@ -145,12 +287,13 @@
 }
 .kr{
     position: relative;
-    width: 177px;
-    top: 10px;
-    left: 28px;
-   /* transform: rotateX(115deg) rotateY(-45deg); */
-    animation: crar infinite 6.5s ;
+    width: 150px;
+    top: 8px;
+    left: 9px;
     z-index: 3;
+}
+.animkr{
+ animation: crar 1 5s ;
 }
 @keyframes namak {
     0%{
@@ -261,19 +404,19 @@
     transform: rotateX(115deg) rotateY(-45deg);
     top: -16px;
   }
-  80% {
+  90% {
    transform: rotateX(105deg) rotateY(-38deg);
     top: -14px;
   }
-   85% {
+   92% {
     transform: rotateX(95deg) rotateY(-32deg);
     top: -10px;
   }
-   88% {
+   94% {
      transform: rotateX(80deg) rotateY(-25deg);
     top: -6px;
   }
-  92% {
+  96% {
     transform: rotateX(60deg) rotateY(-18deg);
     top: 0px;
   }

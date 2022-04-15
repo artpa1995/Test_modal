@@ -4,8 +4,9 @@
     <Animation/>
     <Contacts />
     <Form />
-    <Footer/>
     <Map />
+    <Footer/>
+ 
     
   </div>
 </template>

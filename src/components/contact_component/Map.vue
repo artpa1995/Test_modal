@@ -2,7 +2,7 @@
   <div class="_content">
       <div class="_content_head"  >
           
-         	<!-- <div id="map" style="width: 100%; height: 658px"></div> -->
+         	<div id="map" style="width: 100%; height: 658px"></div>
       </div>
   </div>
 
@@ -32,7 +32,7 @@ export default {
         // Создание карты.
         var myMap = new ymaps.Map("map", {
              // Своё изображение иконки метки.
-            iconImageHref: 'https://goldfinchwoods.ru/wp-content/themes/salyut/img/logo-dark.png', // Адрес до картинки
+           //iconImageHref: 'https://picsum.photos/390/390', // Адрес до картинки
             // Размеры метки.
              iconImageSize: [60, 84],
             // Смещение левого верхнего угла иконки относительно
@@ -42,7 +42,7 @@ export default {
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
             // воспользуйтесь инструментом Определение координат.
-            center: [56.283237, 43.995262],
+            center: [40.207809, 44.529803],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
             zoom: 17
@@ -52,7 +52,7 @@ export default {
 		var myGeoObject = new ymaps.GeoObject({
 			geometry: {
 				type: "Point", // тип геометрии - точка
-				coordinates: [56.283237, 43.995262] // координаты точки
+				coordinates: [40.207809, 44.529803] // координаты точки
 			}
 		});
 

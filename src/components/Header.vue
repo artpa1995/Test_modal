@@ -101,7 +101,7 @@ export default {
   },
   data() {
     return {
-      lang: ['RU', 'EN','Հայ'],
+      lang: ['РУ', 'EN','Հայ'],
       open: false,
       modal: false,
       navOpen:false,
