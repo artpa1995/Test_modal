@@ -8,7 +8,7 @@
         <div class="display">
           <div class="shade"></div>
         </div>
-        <span>MacBook Air</span>
+        <span>MacBook Pro</span>
       </div>
       <img src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg" class="logo" />
     </div>
@@ -139,8 +139,8 @@
 }
 
 .macbook {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -149,10 +149,10 @@
 }
 .shadow {
   position: absolute;
-  width: 60px;
+  width: 90px;
   height: 0px;
   left: 40px;
-  top: 160px;
+  top: 190px;
   transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
   box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
   animation: shadow infinite 7s ease;
@@ -160,8 +160,8 @@
 .inner {
   z-index: 20;
   position: absolute;
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   left: 0;
   top: 0;
   transform-style: preserve-3d;
@@ -169,18 +169,17 @@
   animation: rotate infinite 7s ease;
 }
 .screen {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   position: absolute;
   left: 0;
   bottom: 0;
   border-radius: 7px;
   background: #ddd;
   transform-style: preserve-3d;
-  transform-origin: 50% 93px;
+  transform-origin: 50% 121px;
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   animation: lid-screen infinite 7s ease;
-  /* background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%); */
   background-image: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
   background-position: left bottom;
   background-size: 300px 300px;
@@ -196,8 +195,8 @@
   transform: rotateY(180deg) translateZ(0.1px);
 }
 .screen .face-one {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -217,9 +216,9 @@
   margin-left: -1.5px;
 }
 .screen .face-one .display {
-  width: 130px;
-  height: 74px;
-  margin: 10px;
+  width: 180px;
+  height: 107px;
+  margin: 11px;
   background: url("https://upload.wikimedia.org/wikipedia/en/9/98/MacOS_Monterey_Desktop.png") no-repeat center center #000;
   background-size: 100% 100%;
   border-radius: 1px;
@@ -230,8 +229,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 130px;
-  height: 74px;
+  width: 180px;
+  height: 114px;
   background: linear-gradient(-135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 47%,rgba(255,255,255,0) 48%);
   animation: screen-shade infinite 7s ease;
   background-size: 300px 200px;
@@ -246,8 +245,8 @@
 }
 
 .body {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -260,8 +259,8 @@
   background-image:linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);;
 }
 .body .face-one {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 126px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -273,43 +272,43 @@
   background-image: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);;
 }
 .body .touchpad {
-  width: 40px;
+  width: 44px;
   height: 31px;
   position: absolute;
   left: 50%;
   top: 50%;
   border-radius: 4px;
-  margin: -44px 0 0 -18px;
+  margin: -60px 0 0 -18px;
   background: #cdcdcd;
   background-image: linear-gradient(30deg, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 100%);
   box-shadow: inset 0 0 3px #888;
 }
 .body .keyboard {
-width: 130px;
-height: 45px;
-position: absolute;
-left: 7px;
-top: 41px;
-border-radius: 4px;
-transform-style: preserve-3d;
-background: #cdcdcd;
-background-image: linear-gradient(30deg, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 100%);
-box-shadow: inset 0 0 3px #777;
-padding: 0 0 0 2px;
+    width: 176px;
+    height: 69px;
+    position: absolute;
+    left: 7px;
+    top: 40px;
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    background: #cdcdcd;
+    background-image: linear-gradient(30deg, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 100%);
+    box-shadow: inset 0 0 3px #777;
+    padding: 0 0 0 2px;
 }
 .keyboard .key {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   background: #444;
   float: left;
-  margin: 1px;
+  margin: 1.2px;
   transform: translateZ(-2px);
   border-radius: 2px;
   box-shadow: 0 -2px 0 #222;
   animation: keys infinite 7s ease;
 }
 .key.space {
-  width: 45px;
+  width: 48px;
 }
 .key.f {
   height: 3px;
@@ -382,9 +381,9 @@ padding: 0 0 0 2px;
   }
   20% {
     transform: rotateX(-90deg);
-    background-position: -150px top;
+    /* background-position: -250px top; */
   }
-  25% {
+   /*25% {
     transform: rotateX(15deg);
     background-position: left bottom;
   }
@@ -403,7 +402,7 @@ padding: 0 0 0 2px;
   90% {
     transform: rotateX(0deg);
     background-position: right top;
-  }
+  }  */
   100% {
     transform: rotateX(0deg);
     background-position: right center;

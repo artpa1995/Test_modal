@@ -149,6 +149,7 @@ const messages = {
             {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
             {icon:require('./assets/svg/ad.svg'), title :'Addres', value: 'Azatutyan 24/17, E Plaza'},
          ],
+         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Azatutyan 24/17, E Plaza'},
          form_content_head:{ title: 'Write your messag', description: 'Our project manager will contact you after filling out this form'},
          form_inputs:{
             form_check_text:'By submitting the form, I consent to the processing of personal data',
@@ -266,6 +267,7 @@ const messages = {
             {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
             {icon:require('./assets/svg/ad.svg'), title :'АДРЕС', value: 'Азатутян 24/17, E Plaza'},
          ],
+         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Азатутян 24/17, E Plaza'},
          form_content_head:{ title: 'Напишите ваше сообщение', description: 'Наш проект менеджер свяжется с вами после заполнения данной формы'},
          form_inputs:{
             form_check_text:'Отправляя форму, я даю согласие на обработку персональных данных',
@@ -339,8 +341,8 @@ const messages = {
         write_email:'գրեք ձեր էլփոստի հասցեն',
         subscription:"Բաժանորդագրվել",
         methods_content_blok_items: [
-            {icon:require('./assets/svg/10.svg'), title: 'Տեղեկատվության վերլուծություն', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-            {icon:require('./assets/svg/11.svg'), title: 'Կառուցվածքի ձևավորում', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
+            {icon:require('./assets/svg/10.svg'), title: 'Տեղեկատվության վերլուծություն', description: 'Մենք ստանում ենք տվյալներ և քննարկում հաճախորդի ցանկությունները: Մենք վերլուծում ենք ընկերության գործունեության առանձնահատկությունները, առաջադրանքներ ենք դնում'},
+            {icon:require('./assets/svg/11.svg'), title: 'Կառուցվածքի ձևավորում', description: 'Մենք մտածում ենք տեղեկատվության ներկայացման, տվյալների ելքի շուրջ՝ հաշվի առնելով վարքագծային գործոնը։ Փոխակերպման բլոկների տեղադրում'},
             {icon:require('./assets/svg/12.svg'), title: 'Ինտերֆեյս', description: 'Մենք անհատապես մոտենում ենք հարմարվողական ինտերֆեյսի ձևավորմանը, ուշադիր մշակում մանրամասները և գրաֆիկական տարրերը'},
             {icon:require('./assets/svg/13.svg'), title: 'Տեխնիկական իրականացում', description: 'Մենք ռեսուրսին մոտենում ենք իր մասշտաբայնությամբ: Մենք հաշվի ենք առնում օգտագործելիության ցուցանիշը, այսինքն. օգտագործման հեշտությունը'},
             {icon:require('./assets/svg/14.svg'), title: 'Առաջխաղացում և օպտիմալացում', description: 'Մենք քրտնաջան աշխատում ենք որոնման խթանման վրա: Նախագծի ներքին և արտաքին օպտիմիզացում'},
@@ -386,6 +388,7 @@ const messages = {
             {icon:require('./assets/svg/em.svg'), title :'Էլ.ՀԱՍՑԵՆ', value: 'info@l-it.am'},
             {icon:require('./assets/svg/ad.svg'), title :'ՀԱՍՑԵՆ', value: 'Ազատության 24/17, E Plaza'},
          ],
+         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Ազատության 24/17, E Plaza'},
          form_content_head:{ title: 'Գրեք ձեր հաղորդագրությունը', description: 'Մեր ծրագրի ղեկավարը կկապվի ձեզ հետ այս ձևը լրացնելուց հետո'},
          form_inputs:{
             form_check_text:'Ձևաթուղթը ներկայացնելով՝ ես համաձայնում եմ անձնական տվյալների մշակմանը',

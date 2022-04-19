@@ -2,7 +2,7 @@
   <div class="_content">
       <div class="_content_head"  >
           
-         	<div id="map" style="width: 100%; height: 658px"></div>
+         	<div id="map" style="width: 80%; height: 608px"></div>
       </div>
   </div>
 

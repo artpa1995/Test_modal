@@ -1,5 +1,8 @@
 <template>
   <div class="footer">
+     <a class="back_to_top" ref="scroll" title="Наверх" @click="backToTop()">
+         <span class="back_to_top_span">&#10148;</span>
+     </a>
       <div class="contents_footer">
           <div class="contents_footer_bloks">
                <div class="contents_footer_blok">
@@ -13,37 +16,20 @@
                     <ul>
                         <li v-for="info in this.$i18n.messages[this.$i18n.locale].info_menu" :key="info">
                             <router-link :to="info.url">{{info.name}}</router-link>
-                            <!-- <a :href="info.url">{{info.name}}</a> -->
                         </li>
                     </ul>
                 </div>
-                <div class="contents_footer_blok" v-for="contact in contacts" :key="contact">
+                <div class="contents_footer_blok" >
                <h3 style="margin-top:33px;">{{ $t('menu.contact')}} </h3>
-                   <p><a :href="'tel:'+contact.tel ">{{contact.tel}}</a></p>
-                   <p> <a :href="'mailto:'+contact.email">{{contact.email}}</a></p>
-                   <p>{{contact.addres}}</p>
+                   <p><a :href="'tel:'+$t('contact_for_footer.tel') ">{{$t('contact_for_footer.tel')}}</a></p>
+                   <p> <a :href="'mailto:'+$t('contact_for_footer.email')">{{$t('contact_for_footer.email')}}</a></p>
+                   <p>{{$t('contact_for_footer.addres')}}</p>
                 </div>
-                <!-- <div class="contents_footer_blok">
-                    <p v-if="errors.length">
-                        <ul>
-                            <li class="erorrs"  v-for="error in errors" :key="error">{{ error }}</li>
-                        </ul>
-                    </p>
-                    <h2>{{ $t('dop_info')}}</h2>
-                    <span class="subscription_section">
-                        <label>
-                            <input type="email" name="email" v-model.trim="email" :placeholder="$t('write_email')" class="subscription_input">
-                        </label>
-                    </span>
-                    
-                    <button class="subscription_button" @click="subscription">{{$t('subscription')}}</button>
-                </div> -->
           </div>
       </div> 
        <div class="contents_footer_down">
           info@l-it.am
        </div>
-     
   </div>
 </template>
 
@@ -92,13 +78,69 @@ export default {
         flag = false;
         this.reg_errors.push('Укажите корректный адрес электронной почты.');
       }
-    }
-  }
+    },
+    trackScroll() {
+        var scroll = this.$refs.scroll
+        var scrolled = window.pageYOffset;
+        var coords = document.documentElement.clientHeight;
+       
+        if (scrolled > coords) {
+        scroll.classList.add('back_to_top-show');
+        }
+        if (scrolled < coords) {
+        scroll.classList.remove('back_to_top-show');
+        }
+            },
+    backToTop() {
+            if (window.pageYOffset > 0) {
+            window.scrollBy(0, -30);
+            setTimeout(this.backToTop, 0);
+            }
+        },
+  },
+  created: function () {
+    window.addEventListener('scroll', this.trackScroll)
+  },
+   
 };
 
 </script>
 
 <style scoped>
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: linear-gradient(90deg, rgba(146,64,252,1) 0%, rgba(225,153,252,1) 100%);
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+.back_to_top_span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 41px;
+}
+.back_to_top:hover {
+   box-shadow: 0 0 .2em var( --color3);
+    cursor: pointer;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
 label {
   position: relative;
 }
