@@ -18,7 +18,6 @@
             <span class="checkbox" @click="check = !check" :class="{ check: check }"></span>
             <span class="form_check_text">{{ $t('form_inputs.form_check_text')}}</span>
         </div>
-        <!-- <div class="submit"><Buttons :value="2" @click="sendEmail"/></div> -->
         <div class="submit"><Buttons :value="$t('form_inputs.submit')" @click="consultation"/></div>
     </div>
      
@@ -54,7 +53,7 @@ export default {
     };
   },
   mounted() {
-    //console.log(emailjs)
+
   },
    methods:{
 
@@ -68,8 +67,6 @@ export default {
 
          try {
         emailjs.sendForm('service_665awxi', 'template_5lrts4b', e.target,'ezYr1BVTx2', {
-         //emailjs.sendForm('service_665awxi', 'template_5lrts4b', e.target,'ezYr1BVTx2', {  init("ezYr1BVTx2-Kwu8on")
-        
           name: this.name,
           email: this.email,
           message: this.message
@@ -78,7 +75,7 @@ export default {
       } catch(error) {
           console.log({error})
       }
-      // Reset form field
+     
       this.name = ''
       this.email = ''
       this.message = ''
@@ -191,7 +188,6 @@ export default {
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    /* text-transform: uppercase; */
     color:var( --color5);
 }
 .form_content_head>h1::before { 
@@ -221,8 +217,6 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    /* width: 100%;
-    max-width: 600px; */
 }
 .form_form input, textarea{
     border-radius: 5px;
@@ -232,7 +226,6 @@ export default {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* text-align: center; */
     letter-spacing: 0.1em;
     color: var( --texts_color);
     padding: 10px;
@@ -331,8 +324,6 @@ export default {
 @media screen and (max-width: 530px) {
    .checkbox{
          margin-left: 20px;
-         /* height: 13px;
-         width: 25px; */
     }
     .form_check_text{
       

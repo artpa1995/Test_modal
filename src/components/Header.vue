@@ -7,14 +7,9 @@
                   <router-link to="/">
                     <img src="../assets/logo.png" alt="">
                  </router-link>
-                 <!-- <a href="https://www.figma.com/file/9bo8sHgD8aTaG8PN2VhPF5/IT-Company-Website-(1)">
-                    <img src="../assets/logo.png" alt="">
-                  </a>  -->
                 </div>
                 <div class="content_left_left_texts">
                   
-                  <!-- <p>{{ $t("common.login")}}</p>
-                  <h2>{{ $t("message.hello", {}, { locale: "en" }) }}</h2> -->
                     <h1>{{ $t(head_text) }}</h1>
                     <h4>{{ $t(content_text) }}</h4>
                     <Buttons v-if="page === 'home_page'" @click=" modal = !modal; /* $event.target.classList.toggle('active')*/" :value=" $t('head_button') " />
@@ -76,7 +71,7 @@
         <div class="modal_info">
           <p>Email: L-it@mail.com</p>
           <p>Phone: +374-55-55-55-55</p>
-          <p><a href="/contacts">Больше ...</a></p>
+          <p><router-link to="/contact">{{ $t("menu.contact") }}</router-link></p>
         </div>
       </div>
     </div>
@@ -130,10 +125,9 @@ export default {
 
     },
      close_modal: function (event) {
-       
-      let tests = event.target.className;
-      if (tests == 'modal') {
-        this.modal = false;
+      let close = event.target.className;
+      if (close == 'modal') {
+        this.close = false;
       }
     }
   },
@@ -143,7 +137,6 @@ export default {
     }
   },
 };
- //
 </script>
 
 <style scoped>
@@ -311,22 +304,20 @@ legend{
   border: unset;
   margin-top:36px;
   color: #ffff;
-
   }
-
 #sidemenu{
   display: none;
   padding-top: 50px;
   padding-right: 30px;
 }
 #sidemenu nav {
-    width: 100%;
-    background: radial-gradient(43.71% 89.06% at 54.48% 49%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
-    position: absolute;
-    left: 0;
-    z-index: 99;
-    height: 92%;
-    margin-top: 10px;
+  width: 100%;
+  background: radial-gradient(43.71% 89.06% at 54.48% 49%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  height: 92%;
+  margin-top: 10px;
 }
 #sidemenu .sidemenu__btn {
   display: block;
@@ -337,8 +328,8 @@ legend{
   position: relative;
   z-index: 100;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
   outline: none;
 }
@@ -376,19 +367,15 @@ legend{
   flex-direction: column;
   align-items: center;
 }
-
-
 .translateX-enter {
   transform: translateX(-200px);
   opacity: 0;
 }
-
 .translateX-enter-active,
 .translateX-leave-active {
   transform-origin: top left 0;
   transition: 0.2s ease;
 }
-
 .translateX-leave-to {
   transform: translateX(-200px);
   opacity: 0;
@@ -398,25 +385,23 @@ legend{
 }
 
 @media screen and (max-width: 1024px) {
- .content_right{
-   display: none;
- }
- .content_left_right{
-   display: none;
- }
- .content_left{
-   width: 100%;
-   padding-bottom: 30px;
- }
- #sidemenu{
-  display: block;
+  .content_right{
+    display: none;
+  }
+  .content_left_right{
+    display: none;
+  }
+  .content_left{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  #sidemenu{
+    display: block;
+  }
+  .modal_content{
+    width: 45%;
+  }
 }
-.modal_content{
-  width: 45%;
-}
-  
-}
-
 @media screen and (max-width: 450px) {
   .modal_content{
     width: 80%;
@@ -425,11 +410,9 @@ legend{
     padding-left: 0px;
   }
 }
-
 @media screen and (max-width: 332px) {
   #sidemenu nav {
       height: 80%;
   }
 }
-
 </style>

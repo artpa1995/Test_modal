@@ -5,9 +5,7 @@
     <Contacts />
     <Form />
     <Map />
-    <Footer/>
- 
-    
+    <Footer/>  
   </div>
 </template>
 
@@ -23,15 +21,11 @@ export default {
   name: 'Home',
   components: {
     Header,Contacts,Animation, Form,Footer,Map
-    
   },
   data () {
-    return{
-     
+    return{  
     }
   }
-  
-   
 }
 </script>
 <style scoped>

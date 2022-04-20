@@ -26,25 +26,13 @@ export default {
   },
   data() {
     return {
-            createds_title: [
-                { title: 'Контекстная реклама',  title2: 'Создаем структуру для страниц сайта'}
-             ],
-             createds_content: [
-                { img:require('../../assets/svg/21.svg'), description: 'Один специалист ведет не более 3 клиентов одновременно — это позволяет оперативно решать задачи вашего бизнеса'},
-                { img:require('../../assets/svg/21.svg'), description: 'Мы не расходуем ни одного рубля впустую. Стоимость работ полностью оправдана!'},
-                { img:require('../../assets/svg/21.svg'), description: 'Мы отвечаем за свою работу и делаем все, чтобы достичь поставленных целей'},
-                { img:require('../../assets/svg/21.svg'),  description: 'Нам важно не просто создать видимую популярность ресурса, а конвертировать ее в ваш реальный доход'},
-                { img:require('../../assets/svg/21.svg'), title: 'Развитие и обучение', description: 'Мы максимально доходчиво расскажем и покажем все про маркетинговые активности',}
-             ],
+          
     }
   },
   mounted() {
   },
    methods:{
-      
-      alerts(){
-      alert("modal");
-    }
+     
    }
 };
 </script>
@@ -69,7 +57,6 @@ export default {
     font-weight: 700;
     font-size: 19px;
     line-height: 19px;
-    /* text-transform: uppercase; */
     color: var( --color5);
 }
 .createds_title>h1::before { 
@@ -99,7 +86,6 @@ export default {
 .createds_bloks>img{
     width: 20px;
 }
-
 .createds_bloks>p{
     font-family: var( --font_texts);
     font-style: normal;
@@ -128,10 +114,7 @@ export default {
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
-    /* text-transform: uppercase; */
-    
-
-color: var( --color5);
+    color: var( --color5);
 }
 @media screen and (max-width: 800px) {
     .createds_bloks{

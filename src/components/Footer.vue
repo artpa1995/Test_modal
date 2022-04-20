@@ -44,59 +44,28 @@ export default {
   
   },
   data() {
-    return {
-        email: null,
-        errors: [],
-        contents_footer_mission:[
-             { title: 'Наша миссия', description: ' Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.'},
-        ],
-        info_menu: [
-            {url: '/', name: 'Главная'},
-            {url: '/about', name: 'О Нас'},
-            {url: '/servise', name: 'Услуги'},
-            {url: '/team', name: 'Команда'},
-            {url: '/contacts', name: 'Контакты'},
-        ],
-        contacts:[
-            {title:'контакты', tel: '+37496433673', email:'info@l-it.am', addres:'Азатутян 24/17, E Plaza'}
-        ]      
+    return {    
     }
   },
   methods:{
-      validEmail: function (email) {
-      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
-    },
-     async subscription(){
-      //alert(this.email);
-       this.errors = [];
-      let flag = true;
-      if (!this.email) {
-        flag = false;
-        this.reg_errors.push('Требуется указать Email.');
-      } else if (!this.validEmail(this.email)) {
-        flag = false;
-        this.reg_errors.push('Укажите корректный адрес электронной почты.');
-      }
-    },
     trackScroll() {
         var scroll = this.$refs.scroll
         var scrolled = window.pageYOffset;
         var coords = document.documentElement.clientHeight;
        
         if (scrolled > coords) {
-        scroll.classList.add('back_to_top-show');
+             scroll.classList.add('back_to_top-show');
         }
         if (scrolled < coords) {
-        scroll.classList.remove('back_to_top-show');
+             scroll.classList.remove('back_to_top-show');
         }
             },
     backToTop() {
-            if (window.pageYOffset > 0) {
+        if (window.pageYOffset > 0) {
             window.scrollBy(0, -30);
             setTimeout(this.backToTop, 0);
-            }
-        },
+        }
+    },
   },
   created: function () {
     window.addEventListener('scroll', this.trackScroll)

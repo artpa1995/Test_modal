@@ -1,106 +1,107 @@
 <template>
     <div id="container">
       <div class="macbook">
-  <div class="inner">
-    <div class="screen">
-      <div class="face-one">
-        <div class="camera"></div>
-        <div class="display">
-          <div class="shade"></div>
+        <div class="inner">
+          <div class="screen">
+            <div class="face-one">
+              <div class="camera"></div>
+              <div class="display">
+                <iframe  type="text/html"  src="https://www.youtube.com/embed/rqaVh4FDZDE?&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=rqaVh4FDZDE" frameborder="0" allowfullscreen></iframe>
+                <div class="shade"></div>
+              </div>
+              <span>MacBook Pro</span>
+            </div>
+            <img src="../../assets/logo.png" alt="" class="logo">
+          </div>
+          <div class="body">
+            <div class="face-one">
+              <div class="touchpad">
+              </div>
+              <div class="keyboard">
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key space"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+                <div class="key f"></div>
+              </div>
+            </div>
+            <div class="pad one"></div>
+            <div class="pad two"></div>
+            <div class="pad three"></div>
+            <div class="pad four"></div>
+          </div>
         </div>
-        <span>MacBook Pro</span>
-      </div>
-      <img src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg" class="logo" />
-    </div>
-    <div class="body">
-      <div class="face-one">
-        <div class="touchpad">
-        </div>
-        <div class="keyboard">
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key space"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-          <div class="key f"></div>
-        </div>
-      </div>
-      <div class="pad one"></div>
-      <div class="pad two"></div>
-      <div class="pad three"></div>
-      <div class="pad four"></div>
-    </div>
-  </div>
-  <div class="shadow"></div>
+        <div class="shadow"></div>
 </div>
     </div>
 </template>
@@ -108,22 +109,18 @@
 <script>
  
   export default {
-    name: 'ThreeTest',
+    name: '',
     data () {
       return {
-       
       }
     },
     methods: {
-      
     },
     mounted () {
-  
     }
   }
 </script>
 <style scoped>
-
 #container{
     position: absolute;
     top: 50px;
@@ -133,11 +130,8 @@
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    /* border: 1px solid #34D6E9FF;
-    border-radius: 50%; */
     padding: 30px;
 }
-
 .macbook {
   width: 200px;
   height: 126px;
@@ -187,7 +181,7 @@
 }
 .screen .logo {
   position: absolute;
-  width: 20px;
+  width: 40px;
   height: 24px;
   left: 50%;
   top: 50%;
@@ -243,7 +237,6 @@
   font-size: 6px;
   color: #666
 }
-
 .body {
   width: 200px;
   height: 126px;
@@ -336,7 +329,10 @@
   left: 20px;
   bottom: 20px;
 }
-
+.display iframe {
+  width: 170px;
+  height: 96px;
+}
 @keyframes rotate {
   0% {
     transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
@@ -381,9 +377,8 @@
   }
   20% {
     transform: rotateX(-90deg);
-    /* background-position: -250px top; */
   }
-   /*25% {
+   25% {
     transform: rotateX(15deg);
     background-position: left bottom;
   }
@@ -402,7 +397,7 @@
   90% {
     transform: rotateX(0deg);
     background-position: right top;
-  }  */
+  }  
   100% {
     transform: rotateX(0deg);
     background-position: right center;

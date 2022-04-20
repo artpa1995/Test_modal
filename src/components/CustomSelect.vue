@@ -13,7 +13,6 @@
           selected = option;
           open = false;
           $emit('input', option);
-        // $event.target.classList.toggle('active')
         "
       >
         {{ option }}
@@ -58,9 +57,8 @@ export default {
     methods:{
      selectLang: function (event) {
       let langs  = event.target.className;
-    
-        this.$i18n.locale = 'ru';
-        localStorage.setItem('lang', 'ru');
+      this.$i18n.locale = 'ru';
+      localStorage.setItem('lang', 'ru');
      
       if (langs == 'EN') {
         this.$i18n.locale = 'en';
@@ -70,7 +68,6 @@ export default {
         this.$i18n.locale = 'arm';
         localStorage.setItem('lang', 'arm');
       }
-     
     }
   },
 };
@@ -95,10 +92,6 @@ export default {
     font-weight: bold;
     font-size: 18px;
 }
-.custom-select .selected.open {
-  
-
-}
 .custom-select .selected:after {
   position: absolute;
   content: "";
@@ -119,7 +112,6 @@ export default {
   z-index: 1;
   background: #FFFFFF;
   box-shadow: 0px 0px 5px rgba(155, 155, 155, 0.25);
-  
 }
 .custom-select .items div {
   color: #1D4685;
@@ -133,26 +125,23 @@ export default {
   line-height: 20px;
 }
 .custom-select .items div:hover {
-   background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
-  /* background: linear-gradient(265.11deg, #F3E9FF -0.1%, #F3E9FF 97.28%); */
+  background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
   color: #1D4685;
 }
 .selectHide {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-    .custom-select .selected {
+  .custom-select .selected {
     color: white;
     margin-top: 20px;
-    
   }
   .custom-select .selected:after {
-  border-color: white transparent transparent transparent;
-  top: 28px;
+    border-color: white transparent transparent transparent;
+    top: 28px;
   }
   .custom-select .items {
     top: 45px;
   }
-
 }
 </style>

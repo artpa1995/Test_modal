@@ -5,8 +5,6 @@
     <Advertising />
     <Createds />
     <Footer/>
-    
-    
   </div>
 </template>
 
@@ -21,15 +19,12 @@ export default {
   name: 'Home',
   components: {
     Header, Map, Advertising, Createds, Footer
-    
   },
   data () {
     return{
      
     }
   }
-  
-   
 }
 </script>
 <style scoped>

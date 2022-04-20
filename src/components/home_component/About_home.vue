@@ -43,28 +43,12 @@ export default {
     },
   data() {
     return {
-        // about_content_head: [
-        //     { title: 'О КОМПАНИИ', description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.'},
-        //      ],
-        // about_content_blok_items: [
-        //     {icon:require('../../assets/svg/4.svg'), title:  ("whatsNext.components") , description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-        //     {icon:require("../../assets/svg/5.svg"), title: 'Проектирование структурыа', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
-        //     {icon:require('../../assets/svg/6.svg'), title: 'Интерфейс', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
-            
-        //  ],
-        //  about_content_blok_items_2: [
-        //     {icon:require('../../assets/svg/7.svg'), title: 'Техническая реализация', description: 'Подходим к ресурсу с точки зрения его масштабируемости. Учитываем показатель юзабилити, т.е. удобство пользования'},
-        //     {icon:require("../../assets/svg/8.svg"), title: 'Продвижение и оптимизация', description: 'Проводим плотную работу по поисковому продвижению. Внутренняя и внешняя оптимизация проекта'},
-        //     {icon:require('../../assets/svg/9.svg'), title: 'Последующая поддержка сайта', description: 'Сопровождаем как те проекты, которые сами сделали, так и любые другие, которые пришли к нам на обслуживание'},
-            
-        //  ],
+      
         about_content_img:[{img: require('../../assets/about_img.png')}],
     };
   },
   mounted() {
       
-    //console.log(this.$i18n.messages[this.$i18n.fallbackLocale].about_content_blok_items)
-    //console.log(this.$i18n.fallbackLocale);
   },
    methods:{
       

@@ -23,19 +23,11 @@ export default {
     },
   data() {
     return {
-        contacts_content_head: [{ title: 'Свяжитесь с нами', description: 'Если у вас есть дополнительные вопросы, пожалуйста, не стесняйтесь обращаться к нам.'}, ],
-        contacts_content_blok_items: [
-            {icon:require('../../assets/svg/ph.svg'), title :'Телефон', value: '+7 968 026 66 60 '},
-            {icon:require('../../assets/svg/em.svg'), title :'Email', value: 'L-it@mail.com'},
-            {icon:require('../../assets/svg/ad.svg'), title :'АДРЕС', value: 'Yerevan '},
-         ],
     };
   },
   mounted() {
-    //console.log(this.contacts_content_img)
   },
-   methods:{
-      
+   methods:{  
    }
 };
 </script>

@@ -21,10 +21,6 @@
            </div>
       </div>
   </div>
-  <!-- <div class="wrap">
-  <div class="note-cap"></div>
-  <div class="note"></div>
-</div> -->
 </template>
 
 <script>
@@ -34,25 +30,12 @@ export default {
     },
   data() {
     return {
-        methods_content_head: [
-            { title: 'ВЕБ РАЗРАБОТКА - НАШИ МЕТОДЫ', description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.'},
-             ],
-        methods_content_blok_items: [
-            {icon:require('../../assets/svg/10.svg'), title: 'Анализ информации', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-            {icon:require('../../assets/svg/11.svg'), title: 'Проектирование структурыа', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
-            {icon:require('../../assets/svg/12.svg'), title: 'Интерфейс', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
-            {icon:require('../../assets/svg/13.svg'), title: 'Анализ информации', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-            {icon:require('../../assets/svg/14.svg'), title: 'Проектирование структурыа', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
-            {icon:require('../../assets/svg/15.svg'), title: 'Интерфейс', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
-            
-         ],
+       
     };
   },
   mounted() {
-    //console.log(this.methods_content_img)
   },
-   methods:{
-      
+   methods:{   
    }
 };
 </script>
@@ -151,102 +134,4 @@ export default {
     margin-top: 15px;
     max-width: 370px;
 }
-/* *,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;margin:0;outline:0}
-@keyframes anim{
-  10%{
-    transform: translatey(-6px)
-    perspective(200px)
-    rotateX(-95deg)
-    scaley(.5)
-    scalex(1)  
-  }
-  20%{
-    transform: translatey(-16px)
-    perspective(200px)
-    rotateX(-80deg)
-    scaley(.5)
-    scalex(1)
-  }
-  30%{
-    transform: translatey(-23px)
-    perspective(200px)
-    rotateX(-70deg)
-    scaley(.5)
-    scalex(1)
-  }
-  40%{
-    transform: translatey(-31px)
-    perspective(200px)
-    rotateX(-60deg)
-    scaley(.5)
-    scalex(1)
-  }
-  50%{
-    transform: translatey(-37px)
-    perspective(200px)
-    rotateX(-50deg)
-    scaley(.5)
-    scalex(0.95)
-  }
-  60%{
-    transform: translatey(-43px)
-    perspective(200px)
-    rotateX(-40deg)
-    scaley(.5)
-    scalex(0.95)
-  }
-  70%{
-    transform: translatey(-48px)
-    perspective(200px)
-    rotateX(-30deg)
-    scaley(.5)
-    scalex(0.9)
-  }
-  80%{
-    transform: translatey(-53px)
-    perspective(200px)
-    rotateX(-20deg)
-    scaley(.5)
-    scalex(0.87)
-  }
-  90%{
-    transform: translatey(-57px)
-    perspective(200px)
-    rotateX(-10deg)
-    scaley(.5)
-    scalex(0.84)
-  }
-  100%{
-    transform: translatey(-60px)
-    perspective(200px)
-    rotateX(0deg)
-    scaley(.5)
-    scalex(.8)
-  }
-}
-.wrap{display:inline-block;margin:200px;position:relative}
-.note-cap{
-  position:absolute;
-  z-index:2;
-  height:200px;
-  width:200px;
-  background:red;
-  transform: translatey(0px)
-    perspective(200px)
-    rotateX(-105deg)
-    scaley(.5)
-    scalex(1);
-  animation:anim 3s linear forwards infinite
-}
-.note{
-  position:absolute;
-  z-index:1;
-  height:200px;
-  width:200px;
-  background:blue;
-  transform: translatey(2px)
-    perspective(200px)
-    rotateX(75deg)
-    scaley(.5)
-} */
 </style>

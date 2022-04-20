@@ -44,7 +44,6 @@ export default {
 .btn.large {
     padding: 1em 5em;
 }
-/* var( --color-head_r1) */
 .btn.modern {
     background: var( --color2);
     background: linear-gradient(90deg, var( --color1) 0%, var( --color2) 100%);

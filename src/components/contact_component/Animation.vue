@@ -7,23 +7,10 @@
         </div>
           <div class="pcrar">          
           </div>
-        <!-- <div class="crar" id="crar">
-
-            <img class="kr" id="kr" src="../../assets/namak/kr.svg" alt="">
-            <div class="nabg">
-                <img class="na" src="../../assets/namak/na.svg" alt="">
-            </div>
-             
-        </div> -->
-        <!-- <div class="shoxq">
-            
-        </div> -->
-
         <div class="flip-container" >
-           <!-- ontouchstart="this.classList.toggle('hover'); -->
-          <div class="flipper frrik" id="el">
+          <div class="flipper rotate" >
             <div class="front">
-               <img class="kr animkr" id="kr" src="../../assets/namak/kr.svg" alt="">
+               <img class="move_blok" src="../../assets/namak/kr.svg" alt="">
               <!-- front content -->
             </div>
             <div class="back">
@@ -38,88 +25,14 @@
   export default {
       data(){
         return{
-          flag : null,
+         
         }
       },
       methods: {
-              init: function () {
-                var elem = document.getElementById('el');  
-                var kr = document.getElementById('kr');  
-                var idy = "";
-                let x = 0;
-                let y = 0;
-                var hp = 0;
-                var hd = -150;
-                framex ();
-                // let id = setInterval(framex, 1 );
-                // let id2 = setInterval(framex, 1 );
-                // let idup = setInterval(frameup, 55);
-                // var iddown = "";
 
-                // function frameup() {
-                   
-                //   if(hp >= -150){
-                //     hp--;
-                //     elem.style.top = hp+'px';
-                //   }
-                //   if(hp == -150){
-                //     myTimeoutw = setTimeout(function myGreetingw() {
-                //     iddown = setInterval(framedown, 55);
-                //     }, 5000);
-                //     clearInterval(idup);
-                //   }
-                // }
-
-                function framedown() {
-                  if(hd < -30){
-                    hd++;
-                    elem.style.top = hd+'px';
-                  }
-                  if(hd >= -30){
-                     clearInterval(iddown);
-                  }
-                }
-
-                function framex() {
-                  
-                  for(var i = 0; i <= 4320; i++){
-                    console.log(i);
-                        elem.style.transform = "rotateY("+i+"deg) ";
-                        console.log(elem);
-                  }
-                  
-                  // if (x <=  4320) {
-                  //   x++; 
-                    
-                  //   y = 3160;
-                  // }
-                  // if(x == 4320){
-                  //   kr.classList.add("animkr")
-                  //   myTimeout = setTimeout(function myGreeting() {
-                  //   idy =  setInterval(framey, 1);
-                  //  }, 5000);
-                  // //  clearInterval(id);
-                  // //  clearInterval(id2);
-                  // }
-                }
-
-                function framey() { 
-                  kr.classList.remove("animkr")     
-                  if (y >= 0 ) {
-                    y--; 
-                    elem.style.transform = "rotateY("+y+"deg) ";
-                  } 
-                  if(y == 0) {
-                    x = 0;
-                    id =  setInterval(framex, 1);
-                    clearInterval(idy);
-                  }  
-                }
-
-              }
       },
   mounted () {
-    // this.init()
+    
     }
   }
 </script>
@@ -142,7 +55,7 @@
 	width: 240px;
 	height: 200px;
 	position: relative;
-  animation: frrik infinite 9s ;
+  animation: rotate infinite 9s ;
 }
 
 .front, .back {
@@ -236,10 +149,7 @@
     width: 100%;
     margin: 0 auto;
 }
-.na{
-    width: 100%;
-    height: 100%;
-}
+
 .nabg{
     background-color: white;
     transform: rotateX(-18deg) rotateY(61deg);
@@ -250,18 +160,17 @@
     top: -73px;
      animation: namak infinite 5s ;
 }
-.kr{
+.move_blok{
     position: relative;
     width: 150px;
     top: 8px;
     left: 9px;
     z-index: 3;
-}
-.animkr{
- animation: crar infinite 9s ;
+    animation: crar infinite 9s ;
 }
 
-@keyframes frrik {
+
+@keyframes rotate {
   1% {
     transform:rotateY(50deg);
     top: -3px;

@@ -38,7 +38,6 @@ export default {
     cursor: pointer;
 }
 .menus ul li a{
-    
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
@@ -62,16 +61,16 @@ export default {
 
 @media screen and (max-width: 1024px) {
     .menus ul li a{
-    color: white;
+         color: white;
     }
     .menus ul li {
-    margin-top: 25px;
-    font-family: var( --font_head);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-    color: var( --color5);
+        margin-top: 25px;
+        font-family: var( --font_head);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: var( --color5);
     }
     .menus ul {
         align-items: center;

@@ -3,10 +3,7 @@
     <Header head_text="team_page" content_text="team_content_text" page="team_page"  />
     <Animation/>
     <OurTeam />
-    
     <Footer/>
-    
-    
   </div>
 </template>
 

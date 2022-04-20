@@ -12,7 +12,6 @@
                 {{ $t('home_team_content.description')}}
             </p>
             <router-link class="btn _team" to="/team">{{ $t('more_info')}}</router-link>
-            <!-- <a class="btn _team" href="/team" value="" >{{ $t('more_info')}}</a> -->
         </div>
       </div>
   </div>
@@ -30,17 +29,14 @@ export default {
   },
   data() {
     return {
-            team_content: [
-                { title: 'Команда', description: 'Наша команда состоит из профессиональных фронтенд и бэкэнд разработчиков, дизайнеров, рекламных аналитиков и других сотрудников, имеющих несколько лет опыта в сфере создания и продвижения сайтов. Мы работаем как с малым, так и со средним бизнесом. Наши заказчики только дают идею, а наша команда все остальное.'},
-             ],
-             team_profile: [
-                { img:'https://picsum.photos/390/390'},
-                { img:'https://picsum.photos/389/389'},
-                { img:'https://picsum.photos/397/397'},
-                { img:'https://picsum.photos/396/396'},
-                { img:'https://picsum.photos/399/399'},
-                { img:'https://picsum.photos/398/398'}
-             ],
+        team_profile: [
+            { img:require('../../assets/team/1.jpg')},
+            { img:require('../../assets/team/2.jpg')},
+            { img:require('../../assets/team/3.jpg')},
+            { img:require('../../assets/team/4.jpg')},
+            { img:require('../../assets/team/5.jpg')},
+            { img:require('../../assets/team/6.jpg')}
+        ],
     }
   },
   mounted() {
@@ -48,10 +44,8 @@ export default {
   },
    methods:{
       
-      alerts(){
-      alert("modal");
     }
-   }
+   
 };
 </script>
 

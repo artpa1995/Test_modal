@@ -8,22 +8,15 @@
       </div>
   </div>
 </template>
-
 <script>
 export default {
-     props: {
-        
-    },
+    
   data() {
     return {
-        mission_content_head: [
-            { title: 'НАША МИССИЯ', description: 'Создавать успешные интернет проекты, используя современные технологии, индивидуальный подход к каждому бизнесу'},
-             ],
-       
+     
     };
   },
   mounted() {
-    //console.log(this.about_content_img)
   },
    methods:{
       

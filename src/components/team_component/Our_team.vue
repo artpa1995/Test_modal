@@ -22,31 +22,15 @@
 
 <script>
 export default {
-     props: {
-        
+     props: { 
     },
   data() {
     return {
-        our_team_content_head: [
-            { title: 'Наши сотрудники ', description: 'В нашей команде все отлажено, каждый занимается своей частью в создании и продвижении проекта'},
-             ],
-        our_team_content_blok_items: [
-            {icon:require('../../assets/svg/achik.svg'), title: 'МЕНЕДЖЕР ПРОЕКТА ', description: 'Получаем данные и обсуждаем пожелания клиента. Анализируем специфику деятельности компании, ставим задачи'},
-            {icon:require("../../assets/svg/achik.svg"), title: 'ВЭБ ДИЗАЙНЕР', description: 'Продумываем представление информации, вывод данных, учитывая поведенческий фактор. Закладываем конверсионные блоки'},
-            {icon:require('../../assets/svg/achik.svg'), title: 'ВЕРСТАЛЬЩИК', description: 'Индивидуально подходим к формированию адаптивного интерфейса, Тщательно прорабатываем детали и графические элементы'},
-            {icon:require('../../assets/svg/achik.svg'), title: 'ВЕБ-ПРОГРАММИСТ', description: 'Подходим к ресурсу с точки зрения его масштабируемости. Учитываем показатель юзабилити, т.е. удобство пользования'},
-            {icon:require("../../assets/svg/achik.svg"), title: 'КОПИРАЙТЕР', description: 'Проводим плотную работу по поисковому продвижению. Внутренняя и внешняя оптимизация проекта'},
-            {icon:require('../../assets/svg/achik.svg'), title: 'КОНТЕНТ МЕНЕДЖЕР', description: 'Сопровождаем как те проекты, которые сами сделали, так и любые другие, которые пришли к нам на обслуживание'},
-            {icon:require('../../assets/svg/achik.svg'), title: 'SEO Аналитик и Оптимизатор', description: 'Сопровождаем как те проекты, которые сами сделали, так и любые другие, которые пришли к нам на обслуживание'},
-            
-         ],
     };
   },
   mounted() {
-    //console.log(this.our_team_content_img)
   },
    methods:{
-      
    }
 };
 </script>
@@ -101,7 +85,6 @@ export default {
     flex-wrap: wrap;
     padding: 30px;
 }
-
 .our_team_content_blok_item{
     margin-top: 50px;
     position: relative;
@@ -112,7 +95,6 @@ export default {
     border-bottom: 1px dashed grey;
     padding-top: 45px;
     padding-left: 40px;
-
 }
 .our_team_content_blok_item:nth-child(2n + 1) {
   border-right: 1px dashed grey;
@@ -132,7 +114,6 @@ export default {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    /* position: relative; */
     z-index: 2 ;
     transition: 0.8s;
 }
@@ -151,7 +132,6 @@ export default {
     margin-left: -8px;
     width: 159px;
     height: 159px;
-    /* margin-bottom: -9px; */
 }
 .our_team_content_blok_item_title>h3{
     font-family: var( --font_head);

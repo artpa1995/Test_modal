@@ -20,28 +20,17 @@ export default {
     },
   data() {
     return {
-        page_content_head: [
-            { 
-                title: 'О КОМПАНИИ',
-                description: 'Мы – компания, занимающая созданием и разработкой сайтов, их оптимизацией и последующим продвижением.',
-                description2: 'Комплексная web разработка, создание и последующее развитие интернет проекта, оказываемая одним исполнителем, позволит вам снизить расходы, а нам даст возможность с максимальной эффективностью создать ресурс для долгого существования и успешной деятельности на просторах интернета.'
-                 },
-             ],
-        page_content_img:[{img: require('../../assets/svg/bgcity.svg')}],
     };
   },
   mounted() {
-    //console.log(this.page_content_img)
   },
-   methods:{
-      
+   methods:{  
    }
 };
 </script>
 
 <style scoped>
 .page_content{
-
     background-color: var( --bg);
     max-width: 1920px;
     width: 100%;
@@ -52,7 +41,6 @@ export default {
     background-image: url(../../assets/svg/bgcity.svg);;
      background-position: center center;
      background-repeat: no-repeat;
-    /*background-size: cover;*/
 }
 .page_content_head{
     display: flex;

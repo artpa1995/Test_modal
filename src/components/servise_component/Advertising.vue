@@ -24,26 +24,14 @@ export default {
   },
   data() {
     return {
-            advertising_title: [
-                { title: 'Контекстная реклама'}
-             ],
-             advertising_content: [
-                { img:require('../../assets/svg/16.svg'), title: 'Оперативность запуска', description: 'Один специалист ведет не более 3 клиентов одновременно — это позволяет оперативно решать задачи вашего бизнеса'},
-                { img:require('../../assets/svg/17.svg'), title: 'Рациональность использования бюджета', description: 'Мы не расходуем ни одного рубля впустую. Стоимость работ полностью оправдана!'},
-                { img:require('../../assets/svg/18.svg'), title: 'Эффективность и гарантия результата', description: 'Мы отвечаем за свою работу и делаем все, чтобы достичь поставленных целей'},
-                { img:require('../../assets/svg/19.svg'), title: 'Только целевой трафик', description: 'Нам важно не просто создать видимую популярность ресурса, а конвертировать ее в ваш реальный доход'},
-                { img:require('../../assets/svg/20.svg'), title: 'Развитие и обучение', description: 'Мы максимально доходчиво расскажем и покажем все про маркетинговые активности'}
-             ],
+            
     }
   },
   mounted() {
-     //console.log(this.advertising_profile);
+
   },
    methods:{
       
-      alerts(){
-      alert("modal");
-    }
    }
 };
 </script>
@@ -90,8 +78,6 @@ export default {
 .advertising_bloks{
     display: flex;
     flex-direction: column;
-    /* max-width: 700px;
-    width: 100%; */
     width: 40%;
     justify-content: center;
     align-items: center;

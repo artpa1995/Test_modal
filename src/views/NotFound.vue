@@ -1,7 +1,6 @@
 <template>
   <div>
       <Header head_text="not_found" content_text="" page=""  />
-     
        <Footer/>
   </div>
 </template>
@@ -13,11 +12,9 @@ export default {
 name: 'Home',
   components: {
     Header,  Footer
-    
   },
   data () {
     return{
-     
     }
   }
 } 

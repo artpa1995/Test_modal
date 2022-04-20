@@ -7,8 +7,6 @@
     <Mission />
     <Team/>
     <Footer/>
-    
-    
   </div>
 </template>
 
@@ -28,12 +26,9 @@ export default {
     
   },
   data () {
-    return{
-     
+    return{  
     }
   }
-  
-   
 }
 </script>
 <style scoped>
