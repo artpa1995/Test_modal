@@ -61,7 +61,7 @@ export default {
 
 @media screen and (max-width: 1024px) {
     .menus ul li a{
-         color: white;
+        color: white;
     }
     .menus ul li {
         margin-top: 25px;

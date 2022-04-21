@@ -123,8 +123,7 @@ export default {
 }
 @media screen and (max-width: 342px) {
     .advertising_title>h1::before {
-    
-    margin-top: 45px;
-}
+        margin-top: 45px;
+    }
 }
 </style>

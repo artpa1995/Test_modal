@@ -59,7 +59,6 @@
             </div>
           </div>
       </div>  
-     
   </div>
   <div class="modal" :class="iconClass"  @click=" close_modal" v-if="page === 'home_page'">
       <div class="modal_content">
@@ -89,7 +88,7 @@ export default {
     content_text :String,
     page :String,
   },
-   components: {
+  components: {
     CustomSelect,
     Buttons,
     Menu,
@@ -103,12 +102,11 @@ export default {
       lokallang:localStorage.getItem('lang'),
     }
   },
-   mounted() {
+  mounted() {
  
   },
   methods:{
     select_lang: function (){
-
         if(localStorage.getItem('lang') == "ru"){
           this.lokallang = this.lang[0];
           return this.lokallang;
@@ -122,7 +120,6 @@ export default {
           return this.lokallang;
         }
         return  this.lang[0];
-
     },
      close_modal: function (event) {
       let close = event.target.className;
@@ -143,14 +140,14 @@ export default {
 
 .modal_info{
   font-family: var( --font_head);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.1em;
-    opacity: 0.8;
-    margin-top: 25px;
-    text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  margin-top: 25px;
+  text-decoration: none;
 }
 .modal_info>p>a{
    text-decoration: none;
@@ -198,9 +195,9 @@ export default {
   z-index: -10;
 }
 .border_line{
-    margin-inline-start: auto;
-    margin-top: calc(-16vh - 138px);
-    width: 74%;
+  margin-inline-start: auto;
+  margin-top: calc(-16vh - 138px);
+  width: 74%;
 }
 .border_line fieldset{
   transform: rotate(90deg);
@@ -239,17 +236,17 @@ legend{
   position: relative;
 }
 .content_left{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    height: 100%;
-    background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  height: 100%;
+  background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
 }
 .content_left_right{
-    border-left: 63px solid transparent;
-    border-bottom: 600px solid white;
-    background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
-    width: 76px;
+  border-left: 63px solid transparent;
+  border-bottom: 600px solid white;
+  background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
+  width: 76px;
 }
 .content_left_left{
   margin-left: 30px;

@@ -80,17 +80,16 @@ export default {
   width: 80px;
   text-align: left;
   outline: none;
-  
 }
 .custom-select .selected {
-    color: #1D4685;
-    padding-left: 1em;
-    cursor: pointer;
-    user-select: none;
-    font-family: var( --font_head);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+  color: #1D4685;
+  padding-left: 1em;
+  cursor: pointer;
+  user-select: none;
+  font-family: var( --font_head);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
 }
 .custom-select .selected:after {
   position: absolute;

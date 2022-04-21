@@ -16,11 +16,6 @@
         img: require('@/assets/svg/servise.svg'),
         img2: require('@/assets/ss.svg'),
         img3: require('@/assets/sss.svg'),
-        img4: require('@/assets/cub.svg'),
-        camera: null,
-        scene: null,
-        renderer: null,
-        mesh: null
       }
     },
     methods: {
@@ -118,8 +113,8 @@
         scene.add( light0 );
 
         light0.position.x = 1;
-        light0.position.y =  1;
-        light0.position.z =  1;
+        light0.position.y = 1;
+        light0.position.z = 1;
 
         var light1 = new THREE.PointLight( 0x0ee82ee, 10, 10 );
         light1.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0x0ee82ee } ) ) );

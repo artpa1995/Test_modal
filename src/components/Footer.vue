@@ -199,10 +199,9 @@ label:before {
     color: var( --texts_color);
     max-width: 250px;
 }
-
 .contents_footer_blok>ul{
     list-style: none;
-     margin-top: 10px;
+    margin-top: 10px;
 }
 .contents_footer_blok>ul>li>a{
     text-decoration: none;
@@ -217,7 +216,6 @@ label:before {
 }
 .contents_footer_blok>ul>li>a:hover {
         text-decoration: underline;
-
 }
 .erorrs{
     list-style: none;
@@ -256,10 +254,8 @@ label:before {
   .footer {
      height: 580px;
   }
-  
 }
 @media screen and (max-width: 380px) {
-  
   .subscription_input{
       padding-right: 0px;
   }

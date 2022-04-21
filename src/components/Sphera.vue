@@ -148,8 +148,8 @@
     border-radius: 50%;
     padding: 30px;
     background-image: url(../assets/namak/bg.svg);
-     background-position: center center;
-     background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 

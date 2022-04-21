@@ -2,12 +2,12 @@
     <div id="container">
         <div class="con">
             <div class="bloks">
-                <div class="blok1 nk"><img class="nk1" src="../../assets/team/blok.svg" alt=""></div>
-                <div class="blok1 nk" style="position: relative; left: 30px;"><img class="nk4" src="../../assets/team/blok.svg" alt=""></div>
+                <div class="blok1 move_up_down"><img class="move_up_down1" src="../../assets/team/blok.svg" alt=""></div>
+                <div class="blok1 move_up_down" style="position: relative; left: 30px;"><img class="move_up_down4" src="../../assets/team/blok.svg" alt=""></div>
             </div>
             <div class="bloks" style="margin-top:230px">
-                <div class="blok nk"><img class="nk2" src="../../assets/team/blok.svg" alt=""></div>    
-                <div class="blok nk"><img class="nk3" src="../../assets/team/blok.svg" alt=""></div>  
+                <div class="blok move_up_down"><img class="move_up_down2" src="../../assets/team/blok.svg" alt=""></div>    
+                <div class="blok move_up_down"><img class="move_up_down3" src="../../assets/team/blok.svg" alt=""></div>  
             </div>
         </div>
     </div>
@@ -75,23 +75,21 @@ export default {
     width: 105px;
 }
 
-.nk>img{
+.move_up_down>img{
     position: relative;
     top: -30px;
-    
-
 }
-.nk1{
-animation: lid-screen infinite 5.5s ease;
+.move_up_down1{
+    animation: lid-screen infinite 5.5s ease;
 }
-.nk2{
-animation: lid-screen infinite 4.5s ease;
+.move_up_down2{
+    animation: lid-screen infinite 4.5s ease;
 }
-.nk3{
-animation: lid-screen infinite 4s ease;
+.move_up_down3{
+    animation: lid-screen infinite 4s ease;
 }
-.nk4{
-animation: lid-screen infinite 3.5s ease;
+.move_up_down4{
+    animation: lid-screen infinite 3.5s ease;
 }
 
 @keyframes lid-screen {

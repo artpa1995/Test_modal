@@ -141,12 +141,9 @@ export default {
     margin-top: -10px;
     margin-left: 5px;
 }
-
-
 .team_profile0:hover img{
-   margin-left:-6px;
+    margin-left:-6px;
     margin-top: -11px;
-    
 }
 .team_profile1:hover img{
     margin-left:5px;
@@ -173,7 +170,7 @@ export default {
     height:100%;
     object-fit: cover; 
     border-radius: 50%;
-     position: relative; 
+    position: relative; 
     transition: 0.5s;
 }
 .team_content_part_right{
@@ -211,7 +208,6 @@ export default {
     color:var( --texts_color);
     margin-top: 20px;
     max-width: 600px;
-    
 }
 .team_content_part_right>button{
     max-width: 230px;
@@ -226,10 +222,8 @@ export default {
 }
 @media screen and (max-width: 1070px) {
     .team_content_part_left{
-   
-   width: 988px;
- 
-}
+        width: 988px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .team_content_part{

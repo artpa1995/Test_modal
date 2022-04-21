@@ -97,7 +97,7 @@ export default {
     padding-left: 40px;
 }
 .our_team_content_blok_item:nth-child(2n + 1) {
-  border-right: 1px dashed grey;
+    border-right: 1px dashed grey;
 }
 .our_team_content_blok_item:last-child{
     border-right:unset;
@@ -144,7 +144,6 @@ export default {
     opacity: 0.98;
     margin-top: 20px;
 }
-
 .our_team_content_blok_item_title>h3::before { 
     content: " ";
     position: absolute;
@@ -153,7 +152,6 @@ export default {
     background: linear-gradient(265.11deg, var( --color-head_r1)-0.1%, var( --color-head_r2) 97.28%);
     margin-top: 25px; 
 }
-
 .our_team_content_blok_item_title>p{
     font-family: var( --font_texts);
     font-style: normal;
@@ -164,7 +162,6 @@ export default {
     margin-top: 15px;
     max-width: 370px;
 }
-
 @media screen and (max-width: 1349px) {
    .our_team_content_blok_item{
        max-width: 545px;
