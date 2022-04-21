@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-     <a class="back_to_top" ref="scroll" title="Наверх" @click="backToTop()">
+     <a class="back_to_top" ref="scroll"  @click="backToTop()">
          <span class="back_to_top_span">&#10148;</span>
      </a>
       <div class="contents_footer">
@@ -52,14 +52,16 @@ export default {
         var scroll = this.$refs.scroll
         var scrolled = window.pageYOffset;
         var coords = document.documentElement.clientHeight;
-       
+        if(scroll == null){
+            return;
+        }
         if (scrolled > coords) {
              scroll.classList.add('back_to_top-show');
         }
         if (scrolled < coords) {
              scroll.classList.remove('back_to_top-show');
         }
-            },
+    },
     backToTop() {
         if (window.pageYOffset > 0) {
             window.scrollBy(0, -30);

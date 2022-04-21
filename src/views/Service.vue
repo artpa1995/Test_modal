@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header head_text="servise_page" content_text="servise_content_text" page="servise_page"  />
+    <Header head_text="service_page" content_text="service_content_text" page="service_page"  />
     <Map />
     <Advertising />
     <Createds />
@@ -11,8 +11,8 @@
 <script>
 import Header from '@/components/Header.vue'
 import Map from '@/components/Map.vue';
-import Advertising from '@/components/servise_component/Advertising.vue';
-import Createds from '@/components/servise_component/Createds.vue';
+import Advertising from '@/components/service_component/Advertising.vue';
+import Createds from '@/components/service_component/Createds.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {

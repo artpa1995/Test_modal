@@ -3,7 +3,7 @@
    <ul>
        <li :class="{ 'isset_page' : page === 'home_page'}" > <router-link to="/">{{ $t("menu.home") }}</router-link> </li>
        <li :class="{ 'isset_page' : page === 'about_page'}">  <router-link to="/about">{{ $t("menu.about") }}</router-link></li>
-       <li :class="{ 'isset_page' : page === 'servise_page'}">  <router-link to="/servise">{{ $t("menu.servise") }}</router-link></li>
+       <li :class="{ 'isset_page' : page === 'service_page'}">  <router-link to="/service">{{ $t("menu.service") }}</router-link></li>
        <li :class="{ 'isset_page' : page === 'team_page'}">   <router-link to="/team">{{ $t("menu.team") }}</router-link></li>
        <li :class="{ 'isset_page' : page === 'contact_page'}">   <router-link to="/contact">{{ $t("menu.contact") }}</router-link></li>
    </ul>

@@ -1,7 +1,6 @@
 <template>
     <div id="container">
         <div id="target"></div>   
-        <a href="https://www.figma.com/file/gT3aldJfrc1FmqW3mov1SI/Untitled?node-id=11%3A29">TEST</a>
     </div>
 </template>
 

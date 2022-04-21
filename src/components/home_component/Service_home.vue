@@ -1,17 +1,17 @@
 <template>
-  <div class="servise_content">
-      <div class="servise_content_head" >
-        <h1>{{ $t('home_servise_content_heads.title') }}</h1>
+  <div class="service_content">
+      <div class="service_content_head" >
+        <h1>{{ $t('home_service_content_heads.title') }}</h1>
         
-        <p> {{ $t('home_servise_content_heads.description') }}</p>
+        <p> {{ $t('home_service_content_heads.description') }}</p>
       </div>
-      <div class="servise_content_bloks">
-            <div class="servise_content_blok" v-for="servise_content_blok in this.$i18n.messages[this.$i18n.locale].servise_content_bloks" :key="servise_content_blok">
-                    <img  v-bind:src="servise_content_blok.icon" />
-                    <h2>{{servise_content_blok.title}}</h2>
+      <div class="service_content_bloks">
+            <div class="service_content_blok" v-for="service_content_blok in this.$i18n.messages[this.$i18n.locale].service_content_bloks" :key="service_content_blok">
+                    <img  v-bind:src="service_content_blok.icon" />
+                    <h2>{{service_content_blok.title}}</h2>
                     <span></span>
                     <p>
-                        {{servise_content_blok.description}}
+                        {{service_content_blok.description}}
                     </p>
             </div>
       </div>
@@ -38,19 +38,19 @@ export default {
 </script>
 
 <style scoped>
-.servise_content{
+.service_content{
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 60px;
 }
-.servise_content_head{
+.service_content_head{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.servise_content_head>h1{
+.service_content_head>h1{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
@@ -59,7 +59,7 @@ export default {
     text-transform: uppercase;
     color: var( --color5);
 }
-.servise_content_head>h1::before { 
+.service_content_head>h1::before { 
     content: " ";
     position: absolute;
     width: 45px;
@@ -67,7 +67,7 @@ export default {
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
-.servise_content_head>p{
+.service_content_head>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 500;
@@ -79,18 +79,18 @@ export default {
     margin-top: 20px;
     max-width: 370px;
 }
-.servise_content_bloks{
+.service_content_bloks{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.servise_content_blok{
+.service_content_blok{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
 }
-.servise_content_blok>p{
+.service_content_blok>p{
     max-width: 347px;
     font-family: var( --font_texts);
     font-style: normal;
@@ -102,7 +102,7 @@ export default {
     color: var( --texts_color);
     margin-top: 10px;
 }
-.servise_content_blok>h2{
+.service_content_blok>h2{
     margin-top: 20px;
     font-family: var( --font_head);
     font-style: normal;
@@ -113,7 +113,7 @@ export default {
     color: var( --color5);
     opacity: 0.98;
 }
-.servise_content_blok>span { 
+.service_content_blok>span { 
     width: 45px;
     height: 4px;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
