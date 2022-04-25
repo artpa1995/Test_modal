@@ -5,13 +5,13 @@
         
         <p> {{ $t('home_service_content_heads.description') }}</p>
       </div>
-      <div class="service_content_bloks">
-            <div class="service_content_blok" v-for="service_content_blok in this.$i18n.messages[this.$i18n.locale].service_content_bloks" :key="service_content_blok">
-                    <img  v-bind:src="service_content_blok.icon" />
-                    <h2>{{service_content_blok.title}}</h2>
+      <div class="service_content_blocs">
+            <div class="service_content_bloc" v-for="service_content_bloc in this.$i18n.messages[this.$i18n.locale].service_content_blocs" :key="service_content_bloc">
+                    <img  v-bind:src="service_content_bloc.icon" />
+                    <h2>{{service_content_bloc.title}}</h2>
                     <span></span>
                     <p>
-                        {{service_content_blok.description}}
+                        {{service_content_bloc.description}}
                     </p>
             </div>
       </div>
@@ -79,18 +79,18 @@ export default {
     margin-top: 20px;
     max-width: 370px;
 }
-.service_content_bloks{
+.service_content_blocs{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.service_content_blok{
+.service_content_bloc{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
 }
-.service_content_blok>p{
+.service_content_bloc>p{
     max-width: 347px;
     font-family: var( --font_texts);
     font-style: normal;
@@ -102,7 +102,7 @@ export default {
     color: var( --texts_color);
     margin-top: 10px;
 }
-.service_content_blok>h2{
+.service_content_bloc>h2{
     margin-top: 20px;
     font-family: var( --font_head);
     font-style: normal;
@@ -113,7 +113,7 @@ export default {
     color: var( --color5);
     opacity: 0.98;
 }
-.service_content_blok>span { 
+.service_content_bloc>span {
     width: 45px;
     height: 4px;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);

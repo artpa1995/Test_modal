@@ -3,8 +3,8 @@
       <div class="advertising_title">
             <h1>{{ $t('advertising_title.title')}}</h1>
         </div>
-    <div class="advertising_blok">
-        <div class="advertising_bloks" v-for="(advertising_contents, index) in this.$i18n.messages[this.$i18n.locale].advertising_content" :key="advertising_contents" :class="'advertising_content'+index">
+    <div class="advertising_bloc">
+        <div class="advertising_blocs" v-for="(advertising_contents, index) in this.$i18n.messages[this.$i18n.locale].advertising_content" :key="advertising_contents" :class="'advertising_content'+index">
             <img :src="advertising_contents.img" alt="" >
             <h3>{{advertising_contents.title}}</h3>
             <p>{{advertising_contents.description}}</p>
@@ -68,24 +68,24 @@ export default {
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
-.advertising_blok{
+.advertising_bloc{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 60px 0px;
 }
-.advertising_bloks{
+.advertising_blocs{
     display: flex;
     flex-direction: column;
     width: 40%;
     justify-content: center;
     align-items: center;
 }
-.advertising_bloks:nth-child(3n + 3) {
+.advertising_blocs:nth-child(3n + 3) {
   width: 100%;
 }
-.advertising_bloks>h3{
+.advertising_blocs>h3{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
@@ -95,7 +95,7 @@ export default {
     color: var( --color5);
     text-align: center;
 }
-.advertising_bloks>p{
+.advertising_blocs>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 350;
@@ -109,7 +109,7 @@ export default {
     text-align: center;
 }
 @media screen and (max-width: 800px) {
-    .advertising_bloks{
+    .advertising_blocs{
         width: unset;
     }
 }

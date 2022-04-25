@@ -6,11 +6,11 @@
            {{ $t('contacts_content_head.description')}}
         </p>
       </div>
-      <div class="contacts_content_bloks">
-        <div class="contacts_content_blok_item"  v-for="contacts_content_blok_item in this.$i18n.messages[this.$i18n.locale].contacts_content_blok_items" :key="contacts_content_blok_item">
-            <img v-bind:src="contacts_content_blok_item.icon" alt="">
-            <h3>{{contacts_content_blok_item.title}}</h3>
-            <p>{{contacts_content_blok_item.value}} </p>
+      <div class="contacts_content_blocs">
+        <div class="contacts_content_bloc_item"  v-for="contacts_content_bloc_item in this.$i18n.messages[this.$i18n.locale].contacts_content_bloc_items" :key="contacts_content_bloc_item">
+            <img v-bind:src="contacts_content_bloc_item.icon" alt="">
+            <h3>{{contacts_content_bloc_item.title}}</h3>
+            <p>{{contacts_content_bloc_item.value}} </p>
         </div>
       </div>
   </div>
@@ -75,13 +75,13 @@ export default {
     max-width: 400px;
     text-align: center;
 }
-.contacts_content_bloks{
+.contacts_content_blocs{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
 }
-.contacts_content_blok_item>h3{
+.contacts_content_bloc_item>h3{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
@@ -92,7 +92,7 @@ export default {
     text-align: center;
     margin: 30px;
 }
-.contacts_content_blok_item>p{
+.contacts_content_bloc_item>p{
     font-family:var( --font_texts);
     font-style: normal;
     font-weight: 400;
@@ -106,7 +106,7 @@ export default {
     text-align: center;
 }
 @media screen and (max-width: 749px) {
-   .contacts_content_blok_item{
+   .contacts_content_bloc_item{
        border-right: unset !important;;
    }
 }

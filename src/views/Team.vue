@@ -17,11 +17,9 @@ export default {
   name: 'Home',
   components: {
     Header,OurTeam,Animation,Footer
-    
   },
   data () {
     return{
-     
     }
   } 
 }

@@ -4,31 +4,31 @@
          <h1>{{ $t('about_content_head.title') }} </h1>
         <p>{{ $t('about_content_head.description') }}</p>
       </div>
-      <div class="about_content_bloks">
-           <div class="about_content_blok">
-               <div class="about_content_blok_item"  v-for="about_content_blok_item in this.$i18n.messages[this.$i18n.locale].about_content_blok_items" :key="about_content_blok_item">
-                   <div class="about_content_blok_item_title">
-                       <img :src="about_content_blok_item.icon" alt="">
-                       <span>{{about_content_blok_item.title}}</span>
+      <div class="about_content_blocs">
+           <div class="about_content_bloc">
+               <div class="about_content_bloc_item"  v-for="about_content_bloc_item in this.$i18n.messages[this.$i18n.locale].about_content_bloc_items" :key="about_content_bloc_item">
+                   <div class="about_content_bloc_item_title">
+                       <img :src="about_content_bloc_item.icon" alt="">
+                       <span>{{about_content_bloc_item.title}}</span>
                    </div>
-                   <div class="about_content_blok_item_line"></div>
-                   <p class="about_content_blok_item_text">
-                        {{about_content_blok_item.description}}
+                   <div class="about_content_bloc_item_line"></div>
+                   <p class="about_content_bloc_item_text">
+                        {{about_content_bloc_item.description}}
                   </p>
                </div>
            </div>
-           <div class="about_content_blok" >
+           <div class="about_content_bloc" >
               <img v-for="about_content_imgs in about_content_img" :key="about_content_imgs"  :src="about_content_imgs.img">
            </div>
-           <div class="about_content_blok">
-               <div class="about_content_blok_item"  v-for="about_content_blok_item in this.$i18n.messages[this.$i18n.locale].about_content_blok_items_2" :key="about_content_blok_item">
-                   <div class="about_content_blok_item_title">
-                       <img v-bind:src="about_content_blok_item.icon" alt="">
-                       <span>{{about_content_blok_item.title}}</span>
+           <div class="about_content_bloc">
+               <div class="about_content_bloc_item"  v-for="about_content_bloc_item in this.$i18n.messages[this.$i18n.locale].about_content_bloc_items_2" :key="about_content_bloc_item">
+                   <div class="about_content_bloc_item_title">
+                       <img v-bind:src="about_content_bloc_item.icon" alt="">
+                       <span>{{about_content_bloc_item.title}}</span>
                    </div>
-                   <div class="about_content_blok_item_line"></div>
-                   <p class="about_content_blok_item_text">
-                        {{about_content_blok_item.description}}
+                   <div class="about_content_bloc_item_line"></div>
+                   <p class="about_content_bloc_item_text">
+                        {{about_content_bloc_item.description}}
                   </p>
                </div>
            </div>
@@ -100,23 +100,23 @@ export default {
     max-width: 400px;
     text-align: center;
 }
-.about_content_bloks{
+.about_content_blocs{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 60px;
 }
-.about_content_blok>img {
+.about_content_bloc>img {
     width: 100%;
 }
-.about_content_blok_item{
+.about_content_bloc_item{
     margin-top: 50px;
 }
-.about_content_blok_item_title{
+.about_content_bloc_item_title{
     display: flex;
     align-items: center;
 }
-.about_content_blok_item_title>span{
+.about_content_bloc_item_title>span{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
@@ -127,13 +127,13 @@ export default {
     opacity: 0.98;
     margin-left: 10px;
 }
-.about_content_blok_item_line{
+.about_content_bloc_item_line{
     width: 55px;
     height: 4px;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 20px; 
 }
-.about_content_blok_item_text{
+.about_content_bloc_item_text{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;

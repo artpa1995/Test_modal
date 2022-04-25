@@ -20,9 +20,7 @@
 <script>
 import Buttons from '@/components/Buttons.vue';
 export default {
-    
      props: {
-        
     },
     components: {
     Buttons,
@@ -38,14 +36,7 @@ export default {
             { img:require('../../assets/team/6.jpg')}
         ],
     }
-  },
-  mounted() {
-  
-  },
-   methods:{
-      
-    }
-   
+  }
 };
 </script>
 

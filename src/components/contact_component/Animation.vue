@@ -10,7 +10,7 @@
         <div class="flip-container" >
           <div class="flipper rotate" >
             <div class="front">
-               <img class="move_blok" src="../../assets/namak/kr.svg" alt="">
+               <img class="move_bloc" src="../../assets/namak/kr.svg" alt="">
               <!-- front content -->
             </div>
             <div class="back">
@@ -160,7 +160,7 @@
     top: -73px;
      animation: namak infinite 5s ;
 }
-.move_blok{
+.move_bloc{
     position: relative;
     width: 150px;
     top: 8px;

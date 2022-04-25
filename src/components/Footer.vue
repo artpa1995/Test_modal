@@ -4,14 +4,14 @@
          <span class="back_to_top_span">&#10148;</span>
      </a>
       <div class="contents_footer">
-          <div class="contents_footer_bloks">
-               <div class="contents_footer_blok">
+          <div class="contents_footer_blocs">
+               <div class="contents_footer_bloc">
                    <h3>{{ $t('contents_footer_mission.title')}}</h3>
                    <p>
                        {{ $t('contents_footer_mission.description')}} 
                     </p>
                 </div>
-                <div class="contents_footer_blok">
+                <div class="contents_footer_bloc">
                <h3 style="margin-top:36px;">{{ $t('info')}}</h3>
                     <ul>
                         <li v-for="info in this.$i18n.messages[this.$i18n.locale].info_menu" :key="info">
@@ -19,7 +19,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contents_footer_blok" >
+                <div class="contents_footer_bloc" >
                <h3 style="margin-top:33px;">{{ $t('menu.contact')}} </h3>
                    <p><a :href="'tel:'+$t('contact_for_footer.tel') ">{{$t('contact_for_footer.tel')}}</a></p>
                    <p> <a :href="'mailto:'+$t('contact_for_footer.email')">{{$t('contact_for_footer.email')}}</a></p>
@@ -164,14 +164,14 @@ label:before {
     line-height: 14px;
     color: #FFFFFF;
 }
-.contents_footer_bloks{
+.contents_footer_blocs{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
 }
-.contents_footer_blok>h3{
+.contents_footer_bloc>h3{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
@@ -179,7 +179,7 @@ label:before {
     line-height: 100%;
     color: var( --texts_color);
 }
-.contents_footer_blok>h2{
+.contents_footer_bloc>h2{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
@@ -189,7 +189,7 @@ label:before {
     color: var( --texts_color);
     max-width: 333px;
 }
-.contents_footer_blok>p, .contents_footer_blok>p>a{
+.contents_footer_bloc>p, .contents_footer_bloc>p>a{
     text-decoration: none;
     margin-top: 20px;
     font-family: var( --font_texts);
@@ -201,11 +201,11 @@ label:before {
     color: var( --texts_color);
     max-width: 250px;
 }
-.contents_footer_blok>ul{
+.contents_footer_bloc>ul{
     list-style: none;
     margin-top: 10px;
 }
-.contents_footer_blok>ul>li>a{
+.contents_footer_bloc>ul>li>a{
     text-decoration: none;
     font-family: var( --font_texts);
     font-style: normal;
@@ -216,7 +216,7 @@ label:before {
     color: var( --texts_color);
     max-width: 250px;
 }
-.contents_footer_blok>ul>li>a:hover {
+.contents_footer_bloc>ul>li>a:hover {
         text-decoration: underline;
 }
 .erorrs{
@@ -249,7 +249,7 @@ label:before {
 .subscription_section{
     width: 100%;
 }
-.contents_footer_blok{
+.contents_footer_bloc{
         max-width: 360px;
 }
 @media screen and (max-width: 600px) {
@@ -261,7 +261,7 @@ label:before {
   .subscription_input{
       padding-right: 0px;
   }
-  .contents_footer_blok{
+  .contents_footer_bloc{
       display: flex;
       flex-direction: column;
       align-items: center;

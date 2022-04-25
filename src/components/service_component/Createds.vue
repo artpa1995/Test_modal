@@ -3,11 +3,11 @@
       <div class="createds_title"  >
             <h1>{{ $t('createds_title.title')}}</h1>
         </div>
-    <div class="createds_blok">
-        <div class="createds_blok_title" >
+    <div class="createds_bloc">
+        <div class="createds_bloc_title" >
              {{ $t('createds_title.title2')}}
         </div>
-        <div class="createds_bloks" v-for="(createds_contents, index) in this.$i18n.messages[this.$i18n.locale].createds_content" :key="createds_contents" :class="'createds_content'+index">
+        <div class="createds_blocs" v-for="(createds_contents, index) in this.$i18n.messages[this.$i18n.locale].createds_content" :key="createds_contents" :class="'createds_content'+index">
             <img :src="createds_contents.img" alt="" >
             <p>{{createds_contents.description}}<span>{{createds_contents.title}}</span></p>
         </div>
@@ -67,7 +67,7 @@ export default {
     background: linear-gradient(256.38deg, var( --color1)-47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
-.createds_blok{
+.createds_bloc{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,15 +78,15 @@ export default {
     max-width: 1200px;
     width: 100%;
 }
-.createds_bloks{
+.createds_blocs{
     display: flex;
     justify-content: center;
     align-items: end;
 }
-.createds_bloks>img{
+.createds_blocs>img{
     width: 20px;
 }
-.createds_bloks>p{
+.createds_blocs>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 350;
@@ -99,7 +99,7 @@ export default {
     text-align: center;
     margin-left: 10px;
 }
-.createds_bloks>p>span{
+.createds_blocs>p>span{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
@@ -108,7 +108,7 @@ export default {
     color: var( --color5);
     margin-left: 10px;
 }
-.createds_blok_title{
+.createds_bloc_title{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
@@ -117,7 +117,7 @@ export default {
     color: var( --color5);
 }
 @media screen and (max-width: 800px) {
-    .createds_bloks{
+    .createds_blocs{
         width: unset;
     }
 }

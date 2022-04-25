@@ -6,16 +6,16 @@
            {{$t('methods_content_head.description')}}
         </p>
       </div>
-      <div class="methods_content_bloks">
-           <div class="methods_content_blok">
-               <div class="methods_content_blok_item"  v-for="methods_content_blok_item in this.$i18n.messages[this.$i18n.locale].methods_content_blok_items" :key="methods_content_blok_item">
-                   <div class="methods_content_blok_item_title">
-                       <img v-bind:src="methods_content_blok_item.icon" alt="">
-                       <span>{{methods_content_blok_item.title}}</span>
+      <div class="methods_content_blocs">
+           <div class="methods_content_bloc">
+               <div class="methods_content_bloc_item"  v-for="methods_content_bloc_item in this.$i18n.messages[this.$i18n.locale].methods_content_bloc_items" :key="methods_content_bloc_item">
+                   <div class="methods_content_bloc_item_title">
+                       <img v-bind:src="methods_content_bloc_item.icon" alt="">
+                       <span>{{methods_content_bloc_item.title}}</span>
                    </div>
-                   <div class="methods_content_blok_item_line"></div>
-                   <p class="methods_content_blok_item_text">
-                        {{methods_content_blok_item.description}}
+                   <div class="methods_content_bloc_item_line"></div>
+                   <p class="methods_content_bloc_item_text">
+                        {{methods_content_bloc_item.description}}
                   </p>
                </div>
            </div>
@@ -84,30 +84,30 @@ export default {
     max-width: 400px;
     text-align: center;
 }
-.methods_content_bloks{
+.methods_content_blocs{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 60px;
     padding: 30px;
 }
-.methods_content_blok{
+.methods_content_bloc{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1470px;
 }
-.methods_content_blok>img {
+.methods_content_bloc>img {
     width: 100%;
 }
-.methods_content_blok_item{
+.methods_content_bloc_item{
     margin-top: 50px;
 }
-.methods_content_blok_item_title{
+.methods_content_bloc_item_title{
     display: flex;
     align-items: center;
 }
-.methods_content_blok_item_title>span{
+.methods_content_bloc_item_title>span{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
@@ -118,13 +118,13 @@ export default {
     opacity: 0.98;
     margin-left: 10px;
 }
-.methods_content_blok_item_line{
+.methods_content_bloc_item_line{
     width: 55px;
     height: 4px;
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 20px; 
 }
-.methods_content_blok_item_text{
+.methods_content_bloc_item_text{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;

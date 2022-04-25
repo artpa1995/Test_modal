@@ -1,13 +1,13 @@
 <template>
     <div id="container">
         <div class="con">
-            <div class="bloks">
-                <div class="blok1 move_up_down"><img class="move_up_down1" src="../../assets/team/blok.svg" alt=""></div>
-                <div class="blok1 move_up_down" style="position: relative; left: 30px;"><img class="move_up_down4" src="../../assets/team/blok.svg" alt=""></div>
+            <div class="blocs">
+                <div class="bloc1 move_up_down"><img class="move_up_down1" src="../../assets/team/bloc.svg" alt=""></div>
+                <div class="bloc1 move_up_down" style="position: relative; left: 30px;"><img class="move_up_down4" src="../../assets/team/bloc.svg" alt=""></div>
             </div>
-            <div class="bloks" style="margin-top:230px">
-                <div class="blok move_up_down"><img class="move_up_down2" src="../../assets/team/blok.svg" alt=""></div>    
-                <div class="blok move_up_down"><img class="move_up_down3" src="../../assets/team/blok.svg" alt=""></div>  
+            <div class="blocs" style="margin-top:230px">
+                <div class="bloc move_up_down"><img class="move_up_down2" src="../../assets/team/bloc.svg" alt=""></div>
+                <div class="bloc move_up_down"><img class="move_up_down3" src="../../assets/team/bloc.svg" alt=""></div>
             </div>
         </div>
     </div>
@@ -17,7 +17,6 @@
 export default {
     data(){
         return{
-
         }
     }
 }
@@ -47,14 +46,14 @@ export default {
     height: 400px;
     width: 100%;
 }
-.bloks{
+.blocs{
     display: flex;
     justify-content: space-between;
     top: 70px;
     position: relative;
     cursor: pointer;
 }
-.blok1{
+.bloc1{
     max-width: 400px;
     background-image: url(../../assets/team/shoxq.svg);
     background-position: center center;
@@ -64,7 +63,7 @@ export default {
     width: 105px;
     
 }
-.blok{
+.bloc{
     max-width: 400px;
     margin: 0 auto;
     background-image: url(../../assets/team/shoxq.svg);
