@@ -128,6 +128,15 @@ const messages = {
             phone:'Phone',
             name:'Full name',
         },
+        error_inputs:{
+            names:'Name is required.',
+            email: 'Email is required.',
+            invalid_email: 'Please enter a valid email address.',
+            check: 'It is not possible to send a message without your consent.',
+            phone: 'Required to specify a  Phone.',
+            message: 'A message is required.'
+        }
+               
     },
     ru: {
         not_found: "Страница не найдена",
@@ -262,7 +271,15 @@ const messages = {
             message:'Сообщение',
             phone:'Телефон',
             name:'ФИО',
-         }
+         },
+         error_inputs:{
+            names:'Требуется указать ФИО',
+            email: 'Требуется указать Email.',
+            invalid_email: 'Укажите корректный адрес электронной почты.',
+            check: 'Без вашего согласие невозможно отправить сообщение.',
+            phone: 'Требуется указать Телефон.',
+            message: 'Требуется указать Сообщение'
+        }
     },
     arm: {
         not_found: "Էջը չի գտնվել",
@@ -393,7 +410,15 @@ const messages = {
             message:'Հաղորդագրություն',
             phone:'Հեռախոս',
             name:'Ամբողջական անուն',
-         }
+         },
+         error_inputs:{
+            names:'Անունը պարտադիր է',
+            email: 'Требуется указать Email.',
+            invalid_email: 'Խնդրում ենք մուտքագրել գործող էլեկտրոնային հասցե.',
+            check: 'Առանց ձեր համաձայնության հնարավոր չէ հաղորդագրություն ուղարկել',
+            phone: 'Հեռախոսահամարը պարտադիր է',
+            message: 'Պահանջվում է հաղորդագրություն'
+        }
     },
 };
 

@@ -5,18 +5,45 @@
         <p>{{ $t('form_content_head.description')}}</p>
     </div>
     <div class="form_form">
+      <p class="erorrs" :class="{ empty_fild:name_error}">{{ $t('error_inputs.names')}}</p>
+      <p class="erorrs" :class="{ empty_fild:email_error}">{{ $t('error_inputs.email')}}</p>
+      <p class="erorrs" :class="{ empty_fild:email_invalid_error}">{{ $t('error_inputs.invalid_email')}}</p>
+      <p class="erorrs" :class="{ empty_fild:phone_error}">{{ $t('error_inputs.phone')}}</p>
+      <p class="erorrs" :class="{ empty_fild:message_error}">{{ $t('error_inputs.message')}}</p>
+      <p class="erorrs" :class="{ empty_fild:check_error}">{{ $t('error_inputs.check')}}</p>
+      <div class="form-field">
+        <div class="form-field__control" :class="{ empty_error:name_error  }" >
+          <label for="firstname" class="form-field__label">{{ $t('form_inputs.name')}} </label>
+          <input id="firstname" type="text" class="form-field__input"  v-model.trim="name" />
+        </div>
+      </div>
+      <div class="form-field">
+          <div class="form-field__control" :class="{ empty_error:email_error }">
+            <label for="email" class="form-field__label">Email</label>
+            <input id="email" type="email" class="form-field__input" v-model.trim="email"  />
+          </div>
+      </div>
+      <div class="form-field">
+          <div class="form-field__control" :class="{ empty_error:phone_error }" >
+            <label for="phone" class="form-field__label">{{$t('form_inputs.phone')}}</label>
+            <input id="phone" type="email" class="form-field__input" v-model.trim="phone" />
+          </div>
+      </div>
+      <div class="form-field">
+        <div class="form-field__control" :class="{ empty_error:message_error }">
+          <label for="additionalInfo" class="form-field__label">{{$t('form_inputs.message')}}</label>
+          <textarea id="additionalInfo" class="form-field__textarea"  v-model="message" ></textarea>
+        </div>
+      </div> 
         <p v-if="errors.length">
             <ul>
                 <li class="erorrs"  v-for="error_reg in errors" :key="error_reg">{{ error_reg }}</li>
             </ul>
         </p>
-        <input type="text" :placeholder=" $t('form_inputs.name')" v-model.trim="name" :class="{ empty_error:name_error  }">
-        <input type="email" placeholder="Email" v-model.trim="email" :class="{ empty_error:email_error }">
-        <input type="text" :placeholder=" $t('form_inputs.phone')" v-model.trim="phone" :class="{ empty_error:phone_error }">
-        <textarea name="" id="" cols="30" rows="10" :placeholder=" $t('form_inputs.message')" v-model="message" :class="{ empty_error:message_error }"></textarea>
-        <div class="form_check">
-            <span class="checkbox" @click="check = !check" :class="{ check: check }"></span>
-            <span class="form_check_text">{{ $t('form_inputs.form_check_text')}}</span>
+        
+        <div class="form_check" >
+            <span class="checkbox" @click="check = !check" :class="{ check: check, empty_error:check_error }" ></span>
+            <span class="form_check_text" @click="check = !check" >{{ $t('form_inputs.form_check_text')}}</span>
         </div>
         <div class="submit"><Buttons :value="$t('form_inputs.submit')" @click="consultation"/></div>
     </div>
@@ -42,9 +69,11 @@ export default {
         phone: null,
         message: null,
         email_error: false,
+        email_invalid_error:false,
         name_error: false,
         phone_error: false,
         message_error: false,
+        check_error: false,
         empty_error: false,
         check : false,
         form_content_head: [
@@ -55,7 +84,36 @@ export default {
   mounted() {
 
   },
+   mounted () {
+      this.inputs()
+    },
    methods:{
+
+     inputs: function(){
+        const setActive = (el, active) => {
+          const formField = el.parentNode.parentNode
+          if (active) {
+            formField.classList.add('form-field--is-active')
+          } else {
+            formField.classList.remove('form-field--is-active')
+            el.value === '' ? 
+              formField.classList.remove('form-field--is-filled') : 
+              formField.classList.add('form-field--is-filled')
+          }
+        }
+
+        [].forEach.call(
+          document.querySelectorAll('.form-field__input, .form-field__textarea'),
+          (el) => {
+            el.onblur = () => {
+              setActive(el, false)
+            }
+            el.onfocus = () => {
+              setActive(el, true)
+            }
+          }
+        )
+     },
 
       sendEmail(e) {
       // emailjs.sendForm('service_665awxi', 'template_1dr6aao', this.$refs.form, 'ezYr1BVTx2-Kwu8on')
@@ -85,69 +143,40 @@ export default {
       return re.test(email_login);
     },
      async consultation () {
-       
-         this.errors = [];
-         let flag = true;
+      this.email_error = false;
+      this.check_error = false;
+      this.name_error = false;
+      this.phone_error = false;
+      this. message_error = false;
+      this.email_invalid_error = false;
+      this.errors = [];
+      let flag = true;
       
       if (!this.email) {
         this.email_error = true;
         flag = false;
-        
-        if (this.$i18n.locale == 'en') {
-          this.errors.push('Email is required.');
-        }else if(this.$i18n.locale == 'ru'){
-          this.errors.push('Требуется указать Email.');
-        }else{
-          this.errors.push('Պահանջվում է էլ. հասցեն');
-        }
       } else if (!this.validEmail(this.email)) {
-        this.email_error = true;
+        this.email_invalid_error = true;
         flag = false;
-        if (this.$i18n.locale == 'en') {
-          this.errors.push('Please enter a valid email address.');
-        }else if(this.$i18n.locale == 'ru'){
-          this.errors.push('Укажите корректный адрес электронной почты.');
-        }else{
-          this.errors.push('Խնդրում ենք մուտքագրել գործող էլեկտրոնային հասցե.');
-        }
         
         
+      }
+      if(this.check == false){
+         this.check_error = true;
+         flag = false;
       }
       if (!this.name) {
         this.name_error = true;
         flag = false;
-        if (this.$i18n.locale == 'en') {
-          this.errors.push('Name is required.');
-        }else if(this.$i18n.locale == 'ru'){
-          this.errors.push('Требуется указать ФИО');
-        }else{
-          this.errors.push('Անունը պարտադիր է');
-        }
-        
       }
+      
       if (!this.phone) {
-         this.phone_error = true;
-        flag = false;
-          if (this.$i18n.locale == 'en') {
-          this.errors.push('Required to specify a  Phone.');
-        }else if(this.$i18n.locale == 'ru'){
-          this.errors.push('Требуется указать  Телефон.');
-        }else{
-           this.errors.push('Հեռախոսահամարը պարտադիր է։');
-        }
-       
+        this.phone_error = true;
+        flag = false; 
       }
       if (!this.message) {
-          this. message_error = true;
+        this. message_error = true;
         flag = false;
-          if (this.$i18n.locale == 'en') {
-          this.errors.push('A message is required.');
-        }else if(this.$i18n.locale == 'ru'){
-          this.errors.push('Требуется указать  Сообщение');
-        }else{
-          this.errors.push('Պահանջվում է հաղորդագրություն');
-        }
-        
       }
       if(flag === false){
         return this.errors;
@@ -169,6 +198,109 @@ export default {
 </script>
 
 <style scoped>
+
+.form-field {
+  display: block;
+  margin-bottom: 16px;
+   padding: 10px;
+    max-width: 600px;
+    width: 100%!important;
+}
+.form-field--is-active .form-field__control::after {
+  border-bottom: 2px solid var( --color4);
+  transform: scaleX(150);
+}
+.form-field--is-active .form-field__label {
+  color: var( --color-head_r1);
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+.form-field--is-filled .form-field__label {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+
+.form-field__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  font-family: 'Overpass';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: var( --texts_color);
+}
+.form-field__control {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var( --color-head_r1);
+  max-width: 600px;
+  width: 100%!important;
+  resize: none;
+}
+
+.form-field__input,
+.form-field__textarea {
+font-family: 'Overpass';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: var( --texts_color);
+}
+
+.form-field__control::after {
+  border-bottom: 2px solid var( --color-head_r1);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+
+.form-field__control:hover {
+   border: 2px solid var( --color4);
+    box-shadow: 0px 0px 4px var( --color3);
+    margin-bottom: -2px;
+}
+
+.form-field__input,
+.form-field__textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 0;
+  color: #333;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 100%;
+}
+
+.form-field__textarea {
+  height: 150px;
+}
+
 .form_content{
     background-color: var( --bg);
     max-width: 1920px;
@@ -218,35 +350,7 @@ export default {
     align-items: center;
     margin-top: 50px;
 }
-.form_form input, textarea{
-    border-radius: 5px;
-    border: 1px solid var( --color-head_r1);
-    font-family: 'Overpass';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.1em;
-    color: var( --texts_color);
-    padding: 10px;
-    max-width: 600px;
-    width: 100%!important;
-    resize: none;
-    margin-top: 30px;
-}
-.form_form input:hover{
-    border: 2px solid var( --color4);
-    box-shadow: 0px 0px 4px var( --color3);
-    margin-bottom: -2px;
-}
-.form_form textarea:hover{
-    border: 2px solid var( --color4);
-    box-shadow: 0px 0px 4px var( --color3);
-    margin-bottom: -2px;
-}
-.form_form input {
-    height: 25px;
-}
+
 .form_check{
     display: flex;
     justify-content: flex-start;
@@ -289,12 +393,13 @@ export default {
   text-align: center;
   letter-spacing: 0.1em;
   color: var( --texts_color);
+  cursor: pointer;
 }
 .erorrs{
   list-style: none;
   color:red;
   background: #ff000021;
-   font-family: var( --font_texts);
+  font-family: var( --font_texts);
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -305,9 +410,17 @@ export default {
   border-radius: 5px;
   margin-top: 10px;
   padding: 8px 6px;
+  display: none;
+  max-width: 586px;
+  width: 100%;
+}
+.empty_fild{
+  display: block;
 }
 .empty_error{
   border: 1px solid red !important;
+  box-sizing: border-box;
+  margin-bottom: 0px!important;
 }
 .name_error{
   border: 1px solid red !important;

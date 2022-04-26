@@ -5,7 +5,7 @@
               <div class="content_left_left">
                 <div class="logo">
                   <router-link to="/">
-                    <img src="../assets/logo.png" alt="">
+                    <img src="../assets/logo-transparent.png" alt="">
                  </router-link>
                 </div>
                 <div class="content_left_left_texts">
@@ -252,8 +252,8 @@ legend{
   margin-left: 30px;
 }
 .logo img {
-  width: 82px;
-  height: 72px;
+    width: 116px;
+    height: 111px;
 }
 .logo {
   padding-top:36px;
