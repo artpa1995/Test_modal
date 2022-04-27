@@ -372,7 +372,6 @@ font-family: 'Overpass';
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color4) 97.28%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    
 }
 
 :focus {

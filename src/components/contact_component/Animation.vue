@@ -87,7 +87,7 @@
     right: 0;
     max-width: 500px;
     margin: 0 auto;
-    background-image: url(../../assets/namak/bg.svg);
+    /* background-image: url(../../assets/namak/bg.svg); */
      background-position: center center;
      background-repeat: no-repeat;
     background-size: contain;
