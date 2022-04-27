@@ -117,7 +117,7 @@ const messages = {
         contacts_content_bloc_items: [
             {icon:require('./assets/svg/ph.svg'), title :'Phone', value: '+37496433673'},
             {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
-            {icon:require('./assets/svg/ad.svg'), title :'Addres', value: 'Azatutyan 24/17, E Plaza'},
+            {icon:require('./assets/svg/ad.svg'), title :'Address', value: 'Azatutyan 24/17, E Plaza'},
         ],
         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Azatutyan 24/17, E Plaza'},
         form_content_head:{ title: 'Write your messag', description: 'Our project manager will contact you after filling out this form'},

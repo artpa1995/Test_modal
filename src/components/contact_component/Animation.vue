@@ -55,7 +55,8 @@
 	width: 240px;
 	height: 200px;
 	position: relative;
-  animation: rotate infinite 9s ;
+  animation: rotate infinite 9s;
+  transform:rotateX(50deg);
 }
 
 .front, .back {
@@ -68,16 +69,16 @@
 .front {
 	z-index: 2;
 	transform: rotateY(0deg);
-   background-image: url(../../assets/namak/crar.svg);
-   background-repeat: no-repeat;
-   background-size: contain;
+  background-image: url(../../assets/namak/frontside.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .back {
 	transform: rotateY(180deg);
-   background-image: url(../../assets/namak/heth.svg);
-   background-repeat: no-repeat;
-   background-size: contain;
+  background-image: url(../../assets/namak/backside.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #container{
@@ -88,8 +89,8 @@
     max-width: 500px;
     margin: 0 auto;
     /* background-image: url(../../assets/namak/bg.svg); */
-     background-position: center center;
-     background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: contain;
     height: 600px;
     width: 100%;
@@ -101,8 +102,8 @@
 .ramka{
     max-width: 150px;
     background-image: url(../../assets/namak/ramka.svg);
-     background-position: center center;
-     background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: contain;
     height: 100px;
     width: 100%;
@@ -113,8 +114,8 @@
     z-index: 2;
     max-width: 190px;
     background-image: url(../../assets/namak/mramka.svg);
-     background-position: center center;
-     background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: contain;
     height: 170px;
     width: 100%;
@@ -158,15 +159,16 @@
     position: relative;
     left: -33px;
     top: -73px;
-     animation: namak infinite 5s ;
+    animation: namak infinite 5s ;
 }
 .move_bloc{
     position: relative;
     width: 150px;
-    top: 8px;
-    left: 9px;
+    top: 3px;
+    left: 3px;
     z-index: 3;
     animation: crar infinite 9s ;
+    transform: rotateX(0deg) rotateY(5deg);
 }
 
 
@@ -600,35 +602,35 @@
     */
     10% {
     transform: rotateX(45deg) rotateY(-12deg);
-    top: 4px;
+    top: -1px;
   }
      35% {
     transform: rotateX(60deg) rotateY(-18deg);
-    top: 0px;
+    top: -5px;
   }
   38% {
     transform: rotateX(85deg) rotateY(-27deg);
-    top: -8px;
+    top: -12px;
   } 
   40% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -16px;
+    top: -19px;
   }
   50% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -16px;
+    top: -19px;
   }
   54% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -16px;
+    top: -19px;
   }
    55% {
      transform: rotateX(80deg) rotateY(-25deg);
-    top: -6px;
+    top: -10px;
   }
   63% {
     transform: rotateX(30deg) rotateY(-8deg);
-    top: 7px;
+    top: -1px;
     }
   /*90% {
    transform: rotateX(105deg) rotateY(-38deg);
@@ -649,7 +651,7 @@
   
   100% {
     transform: rotateX(30deg) rotateY(-8deg);
-    top: 7px;
+    top: 3px;
   }
 }
 @keyframes crar2 {
