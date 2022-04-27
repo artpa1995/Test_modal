@@ -412,6 +412,7 @@ font-family: 'Overpass';
   display: none;
   max-width: 586px;
   width: 100%;
+  box-sizing: border-box;
 }
 .empty_fild{
   display: block;
