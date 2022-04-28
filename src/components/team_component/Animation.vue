@@ -39,7 +39,7 @@ export default {
     width: 100%;
 }
 .con{
-    background-image: url(../../assets/team/bg.svg);
+    background-image: url(../../assets/team/shenq.svg);
     background-position: 65px 65px;
     background-repeat: no-repeat;
     background-size: 300px 300px;

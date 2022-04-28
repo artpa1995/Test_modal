@@ -256,15 +256,17 @@ label:before {
   .footer {
      height: 580px;
   }
-}
-@media screen and (max-width: 380px) {
-  .subscription_input{
-      padding-right: 0px;
-  }
   .contents_footer_bloc{
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 360px;
+      width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .subscription_input{
+      padding-right: 0px;
   }
 }
 </style>

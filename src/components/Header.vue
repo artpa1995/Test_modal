@@ -406,6 +406,9 @@ legend{
   .content_left_left_texts{
     padding-left: 0px;
   }
+  .logo{
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 332px) {
   #sidemenu nav {
