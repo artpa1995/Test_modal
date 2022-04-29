@@ -25,6 +25,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: end;
+    max-width: 107px;
 }
 .menus ul li {
     margin-top: 45px;

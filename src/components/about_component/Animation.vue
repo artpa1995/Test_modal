@@ -11,7 +11,7 @@
               </div>
               <span>MacBook Pro</span>
             </div>
-            <!-- <img src="../../assets/logo.png" alt="" class="logo"> -->
+            <img src="../../assets/Apple_logo.png" alt="" class="logo">
           </div>
           <div class="body">
             <div class="face-one">

@@ -254,11 +254,12 @@ label:before {
     margin: 40px 0px;
 }
 @media screen and (max-width: 600px) {
-  .footer {
-    
-  }
+  
   .contents_footer_blocs_mision{
         display: none;
+    }
+    .contents_footer_bloc>ul>li{
+        text-align: center;
     }
   .contents_footer_bloc{
       /* display: flex;

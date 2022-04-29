@@ -249,7 +249,7 @@ legend{
   width: 76px;
 }
 .content_left_left{
-  margin-left: 30px;
+  margin-left: 25px;
 }
 .logo img {
     width: 116px;

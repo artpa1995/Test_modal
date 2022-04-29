@@ -90,30 +90,55 @@ export default {
    methods:{
 
      inputs: function(){
-        const setActive = (el, active) => {
-          const formField = el.parentNode.parentNode
-          if (active) {
-            formField.classList.add('form-field--is-active')
-          } else {
-            formField.classList.remove('form-field--is-active')
-            el.value === '' ? 
-              formField.classList.remove('form-field--is-filled') : 
-              formField.classList.add('form-field--is-filled')
+      let elem =  document.querySelectorAll('.form-field__control');
+
+      window.addEventListener("click", function(event) {
+        if(event.target.className != 'form-field__label'){
+          for(let j=0;j<elem.length;j++){
+            elem[j].classList.remove("form-field__control_click");
           }
         }
+      });
+      for(let j=0;j<elem.length;j++){
+        elem[j].addEventListener('mouseover',sethover);
+        elem[j].addEventListener('mouseout',removehover);
+        elem[j].addEventListener('click',setclick);
+      }
+      function removehover(){
+        this.classList.remove("form-field__control_hover");
+      }     
+      function sethover(){
+        this.classList.add("form-field__control_hover");
+      }
+      function setclick (){
+        this.classList.remove("form-field__control_hover");
+        this.classList.add("form-field__control_click");
+      }
+  
+      const setActive = (el, active) => {
+        const formField = el.parentNode.parentNode
+        if (active) {
+          formField.classList.add('form-field--is-active')
+        } else {
+          formField.classList.remove('form-field--is-active')
+          el.value === '' ? 
+          formField.classList.remove('form-field--is-filled') : 
+          formField.classList.add('form-field--is-filled')
+        }
+      }
 
-        [].forEach.call(
-          document.querySelectorAll('.form-field__input, .form-field__textarea'),
-          (el) => {
-            el.onblur = () => {
-              setActive(el, false)
-            }
-            el.onfocus = () => {
-              setActive(el, true)
-            }
+      [].forEach.call(
+        document.querySelectorAll('.form-field__input, .form-field__textarea'),
+        (el) => {
+          el.onblur = () => {
+            setActive(el, false)
           }
-        )
-     },
+          el.onfocus = () => {
+            setActive(el, true)
+          }
+        }
+      )
+    },
 
       sendEmail(e) {
       // emailjs.sendForm('service_665awxi', 'template_1dr6aao', this.$refs.form, 'ezYr1BVTx2-Kwu8on')
@@ -211,7 +236,7 @@ export default {
   transform: scaleX(150);
 }
 .form-field--is-active .form-field__label {
-  color: var( --color-head_r1);
+  /* color: var( --color-head_r1); */
   font-size: 0.75rem;
   transform: translateY(-14px);
 }
@@ -262,7 +287,7 @@ font-family: 'Overpass';
 }
 
 .form-field__control::after {
-  /* border-bottom: 2px solid var( --color-head_r1); */
+  border-bottom: 2px solid var( --color4);
   bottom: 0;
   content: "";
   display: block;
@@ -276,7 +301,18 @@ font-family: 'Overpass';
 }
 
 .form-field__control:hover {
+   /* border: 2px solid var( --color4);
+    box-shadow: 0px 0px 4px var( --color3);
+    margin-bottom: -2px; */
+}
+.form-field__control_hover {
    border: 2px solid var( --color4);
+    box-shadow: 0px 0px 4px var( --color3);
+    margin-bottom: -2px;
+}
+.form-field__control_click{
+   border: 2px solid var( --color4);
+   border-bottom: unset;
     box-shadow: 0px 0px 4px var( --color3);
     margin-bottom: -2px;
 }
