@@ -54,7 +54,7 @@ export default {
     position: absolute;
     width: 45px;
     height: 4px;
-    background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
+    background: linear-gradient(265.11deg, var( --color1) -0.1%, var( --color2) 97.28%);
     margin-top: 25px; 
 }
 .mission_content_head>p{

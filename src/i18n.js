@@ -52,7 +52,7 @@ const messages = {
             title: 'Team',
             description: 'Meet the L-IT Armenia Family! Our dynamic team of creatives and innovators love working collaboratively to turn your visions into a reality.'
         },
-        more_info: "More Info",
+        more_info: "More",
         footer_contacts: {title:'contacts', tel: '+37455555555', email:'L-it@mail.com', addres:'Erevani komery eli'},
         info: "Info",
         info_menu: [
@@ -191,7 +191,7 @@ const messages = {
             title: 'Команда',
             description: 'Знакомьтесь с семьей Л-ИТ Армения! Наша динамичная команда креативщиков и новаторов любит работать вместе, чтобы воплотить ваши идеи в реальность.'
         },
-        more_info: "Больше информации",
+        more_info: "Больше",
         footer_contacts: {
             title:'контакты',
             tel: '+37455555555',
@@ -399,7 +399,7 @@ const messages = {
         contacts_content_head: { title: 'Կապվեք մեզ հետ', description: 'Եթե ​​ունեք լրացուցիչ հարցեր, խնդրում ենք ազատ զգալ կապվել մեզ հե'},
         contacts_content_bloc_items: [
             {icon:require('./assets/svg/ph.svg'), title :'Հեռախոս', value: '+37496433673'},
-            {icon:require('./assets/svg/em.svg'), title :'Էլ.ՀԱՍՑԵՆ', value: 'info@l-it.am'},
+            {icon:require('./assets/svg/em.svg'), title :'Էլ. ՀԱՍՑԵՆ', value: 'info@l-it.am'},
             {icon:require('./assets/svg/ad.svg'), title :'ՀԱՍՑԵՆ', value: 'Ազատության 24/17, E Plaza'},
          ],
          contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Ազատության 24/17, E Plaza'},

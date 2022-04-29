@@ -207,7 +207,7 @@ export default {
     width: 100%!important;
 }
 .form-field--is-active .form-field__control::after {
-  border-bottom: 2px solid var( --color4);
+  /* border-bottom: 2px solid var( --color4); */
   transform: scaleX(150);
 }
 .form-field--is-active .form-field__label {
@@ -262,7 +262,7 @@ font-family: 'Overpass';
 }
 
 .form-field__control::after {
-  border-bottom: 2px solid var( --color-head_r1);
+  /* border-bottom: 2px solid var( --color-head_r1); */
   bottom: 0;
   content: "";
   display: block;

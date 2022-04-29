@@ -208,7 +208,7 @@ export default {
 ._team{
     text-decoration: none;
     padding: 0.9em 2.6em;
-    max-width: 171px;
+    max-width: 71px;
     margin-top: 30px;
 }
 @media screen and (max-width: 1070px) {

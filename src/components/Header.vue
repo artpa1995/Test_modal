@@ -95,7 +95,7 @@ export default {
   },
   data() {
     return {
-      lang: ['РУ', 'EN','Հայ'],
+      lang: ['EN','РУ', 'Հայ'],
       open: false,
       modal: false,
       navOpen:false,
@@ -108,11 +108,11 @@ export default {
   methods:{
     select_lang: function (){
         if(localStorage.getItem('lang') == "ru"){
-          this.lokallang = this.lang[0];
+          this.lokallang = this.lang[1];
           return this.lokallang;
         }
         if(localStorage.getItem('lang') == "en"){
-          this.lokallang = this.lang[1];
+          this.lokallang = this.lang[0];
           return this.lokallang;
         }
          if(localStorage.getItem('lang') == "arm"){
