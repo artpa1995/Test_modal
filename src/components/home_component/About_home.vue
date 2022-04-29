@@ -149,7 +149,7 @@ export default {
 }
 @media screen and (max-width: 430px) {
   .about_content_bloc_item_line{
-      margin: 20px auto;
+      margin: 10px auto;
   }
   .about_content_bloc_item_title{
       justify-content: center;

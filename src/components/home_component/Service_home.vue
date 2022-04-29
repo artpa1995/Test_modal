@@ -117,7 +117,7 @@ export default {
     width: 45px;
     height: 4px;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 20px; 
+    margin-top: 10px; 
     text-align: center;
 }
 </style>

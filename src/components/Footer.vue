@@ -5,7 +5,7 @@
      </a>
       <div class="contents_footer">
           <div class="contents_footer_blocs">
-               <div class="contents_footer_bloc">
+               <div class="contents_footer_bloc contents_footer_blocs_mision">
                    <h3>{{ $t('contents_footer_mission.title')}}</h3>
                    <p>
                        {{ $t('contents_footer_mission.description')}} 
@@ -169,7 +169,7 @@ label:before {
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100%;
-    align-items: center;
+    /* align-items: center; */
 }
 .contents_footer_bloc>h3{
     font-family: var( --font_texts);
@@ -251,24 +251,30 @@ label:before {
     width: 100%;
 }
 .contents_footer_bloc{
-        max-width: 360px;
+    margin-top: 200px;
 }
 @media screen and (max-width: 600px) {
   .footer {
      height: 580px;
   }
+  .contents_footer_blocs_mision{
+        display: none;
+    }
   .contents_footer_bloc{
-      display: flex;
+      /* display: flex;
       flex-direction: column;
       align-items: center;
       max-width: 360px;
-      width: 100%;
+      width: 100%; */
   }
   .contents_footer_bloc>p{
-      text-align: center;
+      /* text-align: center; */
   }
 }
 @media screen and (max-width: 380px) {
+    .contents_footer_bloc>p{
+        font-size: 11px;
+    }
   .subscription_input{
       padding-right: 0px;
   }

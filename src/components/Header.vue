@@ -314,7 +314,7 @@ legend{
   left: 0;
   z-index: 99;
   height: 92%;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 #sidemenu .sidemenu__btn {
   display: block;
@@ -400,7 +400,9 @@ legend{
   }
 }
 @media screen and (max-width: 450px) {
-  
+  #sidemenu nav {
+   margin-top: 20px;
+}
   .modal_content{
     width: 80%;
   }
@@ -414,7 +416,7 @@ legend{
     
   }
   .logo{
-    padding-left: 0px;
+    padding-left: 15px;
   }
   .logo img {
     width: 95px;
@@ -424,6 +426,9 @@ legend{
 @media screen and (max-width: 340px) {
   .content_left_left_texts{ 
       left: 30px;
+  }
+  .logo{
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 332px) {
