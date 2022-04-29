@@ -400,14 +400,30 @@ legend{
   }
 }
 @media screen and (max-width: 450px) {
+  
   .modal_content{
     width: 80%;
   }
   .content_left_left_texts{
+    position: relative;
     padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 40px;
+    
   }
   .logo{
     padding-left: 0px;
+  }
+  .logo img {
+    width: 95px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .content_left_left_texts{ 
+      left: 30px;
   }
 }
 @media screen and (max-width: 332px) {

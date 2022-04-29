@@ -6,12 +6,12 @@
             <div class="face-one">
               <div class="camera"></div>
               <div class="display">
-                <iframe  type="text/html"  src="https://www.youtube.com/embed/rqaVh4FDZDE?&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=rqaVh4FDZDE" frameborder="0" allowfullscreen></iframe>
+                <iframe  type="text/html"  src="https://www.youtube.com/embed/0lbzmZeS-BY?&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=0lbzmZeS-BY" frameborder="0" allowfullscreen></iframe>
                 <div class="shade"></div>
               </div>
               <span>MacBook Pro</span>
             </div>
-            <img src="../../assets/logo.png" alt="" class="logo">
+            <!-- <img src="../../assets/logo.png" alt="" class="logo"> -->
           </div>
           <div class="body">
             <div class="face-one">

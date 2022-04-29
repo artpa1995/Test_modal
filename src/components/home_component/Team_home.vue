@@ -223,5 +223,9 @@ export default {
     .team_content_part_left{
       display: none;
     }
+    .team_content_part_right{
+        height: unset;
+        padding-top: 30px;
+    }
 }
 </style>

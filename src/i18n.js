@@ -33,7 +33,7 @@ const messages = {
         ],
         about_content_head: {
             title: "ABOUT COMPANY",
-            description: "L-IT Armenia formed in 2020 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team.",
+            description: "L-IT Armenia formed in 2021 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team.",
         },
         home_service_content_heads: {
             title: 'Our services',
@@ -84,7 +84,7 @@ const messages = {
         },
         page_content_head:{
             title: 'ABOUT COMPANY',
-            description: 'L-IT Armenia formed in 2020 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. ',
+            description: 'L-IT Armenia formed in 2021 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. ',
             description2: 'Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team.'
         },
         advertising_title: { title: 'Our Services'},
@@ -120,7 +120,7 @@ const messages = {
             {icon:require('./assets/svg/ad.svg'), title :'Address', value: 'Azatutyan 24/17, E Plaza'},
         ],
         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Azatutyan 24/17, E Plaza'},
-        form_content_head:{ title: 'Write your messag', description: 'Our project manager will contact you after filling out this form'},
+        form_content_head:{ title: 'Write your message', description: 'Our project manager will contact you after filling out this form'},
         form_inputs:{
             form_check_text:'By submitting the form, I consent to the processing of personal data',
             submit:'Order a Consultation',
@@ -172,7 +172,7 @@ const messages = {
         ],
         about_content_head:{ 
             title: 'О КОМПАНИИ',
-            description: 'L-IT Armenia была создана в 2020 году с целью предоставления услуг аутстаффинга и аутсорсинга, начиная от стратегического консультирования в области ИТ и заканчивая внедрением решений. Мы состоим из смелых и творческих мыслителей из разных слоев общества. Наша открытая культура способствует успеху наших клиентов, а наша ориентация на вовлечение всей компании открывает большие возможности для нашей команды.',
+            description: 'L-IT Armenia была создана в 2021 году с целью предоставления услуг аутстаффинга и аутсорсинга, начиная от стратегического консультирования в области ИТ и заканчивая внедрением решений. Мы состоим из смелых и творческих мыслителей из разных слоев общества. Наша открытая культура способствует успеху наших клиентов, а наша ориентация на вовлечение всей компании открывает большие возможности для нашей команды.',
         },
         home_service_content_heads: {
             title: 'Наши услуги',
@@ -228,7 +228,7 @@ const messages = {
         },
         page_content_head: {
                 title: 'О КОМПАНИИ',
-                description: 'L-IT Armenia была создана в 2020 году с целью предоставления услуг аутстаффинга и аутсорсинга, начиная от стратегического консультирования в области ИТ и заканчивая внедрением решений. Мы состоим из смелых и творческих мыслителей из разных слоев общества.',
+                description: 'L-IT Armenia была создана в 2021 году с целью предоставления услуг аутстаффинга и аутсорсинга, начиная от стратегического консультирования в области ИТ и заканчивая внедрением решений. Мы состоим из смелых и творческих мыслителей из разных слоев общества.',
                 description2: 'Наша открытая культура способствует успеху наших клиентов, а наша ориентация на вовлечение всей компании открывает большие возможности для нашей команды.'
         },
         advertising_title: { title: 'Наши услуги'},
@@ -315,7 +315,7 @@ const messages = {
         ],
         about_content_head:{ 
             title: 'Մեր մասին',
-            description: 'L-IT Armenia-ն հիմնադրվել է 2020 թվականին՝ նպատակ ունենալով տրամադրել աութսթաֆինգ և աութսորսինգ ծառայություններ՝ սկսած ՏՏ ռազմավարական խորհրդատվությունից մինչև լուծումների ներդրում: Մենք կազմված ենք բոլոր խավերի համարձակ և ստեղծագործ մտածողներից: Մեր բաց մշակույթը նպաստում է մեր հաճախորդների հաջողությանը, և մեր նվիրվածությունը ընկերության ամբողջ ներգրավվածությանը մեծ հնարավորություններ է ստեղծում մեր թիմի համար:',
+            description: 'L-IT Armenia-ն հիմնադրվել է 2021 թվականին՝ նպատակ ունենալով տրամադրել աութսթաֆինգ և աութսորսինգ ծառայություններ՝ սկսած ՏՏ ռազմավարական խորհրդատվությունից մինչև լուծումների ներդրում: Մենք կազմված ենք բոլոր խավերի համարձակ և ստեղծագործ մտածողներից: Մեր բաց մշակույթը նպաստում է մեր հաճախորդների հաջողությանը, և մեր նվիրվածությունը ընկերության ամբողջ ներգրավվածությանը մեծ հնարավորություններ է ստեղծում մեր թիմի համար:',
         },
         home_service_content_heads: {
             title: 'Մեր ծառայությունները',
@@ -367,7 +367,7 @@ const messages = {
         },
         page_content_head: {
             title: 'Մեր մասին',
-            description: 'L-IT Armenia-ն ձևավորվել է 2020թ.-ին արտաքին անձնակազմի և աութսորսինգի ծառայություններ մատուցելու շարժիչ ուժով՝ սկսած ՏՏ ռազմավարական խորհրդատվությունից մինչև լուծումների ներդրում: Մենք կազմված ենք համարձակ և ստեղծագործ մտածողներից, որոնք գալիս են կյանքի բոլոր ոլորտներից:',
+            description: 'L-IT Armenia-ն ձևավորվել է 2021թ.-ին արտաքին անձնակազմի և աութսորսինգի ծառայություններ մատուցելու շարժիչ ուժով՝ սկսած ՏՏ ռազմավարական խորհրդատվությունից մինչև լուծումների ներդրում: Մենք կազմված ենք համարձակ և ստեղծագործ մտածողներից, որոնք գալիս են կյանքի բոլոր ոլորտներից:',
             description2: 'Մեր բաց մշակույթը հաջողություն է բերում մեր հաճախորդներին և մեր կենտրոնացումը ընկերության ամբողջ ընդգրկման վրա, ինչը հիանալի հնարավորություն է ստեղծում մեր թիմի համար:'
         },
         advertising_title: { title: 'Համատեքստային գովազդ'},
@@ -406,7 +406,7 @@ const messages = {
          form_content_head:{ title: 'Գրեք ձեր հաղորդագրությունը', description: 'Մեր ծրագրի ղեկավարը կկապվի ձեզ հետ այս ձևը լրացնելուց հետո'},
          form_inputs:{
             form_check_text:'Ձևաթուղթը ներկայացնելով՝ ես համաձայնում եմ անձնական տվյալների մշակմանը',
-            submit:'Պատվիրեք խորհրդատվություն',
+            submit:'Պատվիրել խորհրդատվություն',
             message:'Հաղորդագրություն',
             phone:'Հեռախոս',
             name:'Ամբողջական անուն',

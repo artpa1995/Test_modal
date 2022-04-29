@@ -116,6 +116,10 @@ export default {
     display: flex;
     align-items: center;
 }
+.about_content_bloc_item_title img {
+    width: 30px;
+    height: 30px;
+}
 .about_content_bloc_item_title>span{
     font-family: var( --font_head);
     font-style: normal;
@@ -142,5 +146,20 @@ export default {
     color: var( --texts_color);
     margin-top: 15px;
     max-width: 370px;
+}
+@media screen and (max-width: 430px) {
+  .about_content_bloc_item_line{
+      margin: 20px auto;
+  }
+  .about_content_bloc_item_title{
+      justify-content: center;
+  }
+  .about_content_bloc_item_text{
+      text-align: center;
+  }
+  .about_content_bloc_item_title>span{
+      max-width: 180px;
+  }
+
 }
 </style>

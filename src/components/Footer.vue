@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div class="contents_footer_bloc">
-               <h3 style="margin-top:36px;">{{ $t('info')}}</h3>
+               <h3 style="">{{ $t('info')}}</h3>
                     <ul>
                         <li v-for="info in this.$i18n.messages[this.$i18n.locale].info_menu" :key="info">
                             <router-link :to="info.url">{{info.name}}</router-link>
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
                 <div class="contents_footer_bloc" >
-               <h3 style="margin-top:33px;">{{ $t('menu.contact')}} </h3>
+               <h3 style="">{{ $t('menu.contact')}} </h3>
                    <p><a :href="'tel:'+$t('contact_for_footer.tel') ">{{$t('contact_for_footer.tel')}}</a></p>
                    <p> <a :href="'mailto:'+$t('contact_for_footer.email')">{{$t('contact_for_footer.email')}}</a></p>
                    <p>{{$t('contact_for_footer.addres')}}</p>
@@ -204,6 +204,7 @@ label:before {
 .contents_footer_bloc>ul{
     list-style: none;
     margin-top: 10px;
+    margin-bottom: 7px;
 }
 .contents_footer_bloc>ul>li>a{
     text-decoration: none;
@@ -262,6 +263,9 @@ label:before {
       align-items: center;
       max-width: 360px;
       width: 100%;
+  }
+  .contents_footer_bloc>p{
+      text-align: center;
   }
 }
 @media screen and (max-width: 380px) {

@@ -2,6 +2,7 @@
   <div class="mission_content">
       <div class="mission_content_head"  >
         <h1>{{ $t('mission_content_heads.title')}}</h1>
+        <div class="mission_content_head_line"></div>
         <p>
            {{ $t('mission_content_heads.description')}}
         </p>
@@ -68,5 +69,21 @@ export default {
     margin-top: 20px;
     max-width: 400px;
     text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .mission_content_head>h1{
+    font-size: 17px;
+  }
+  .mission_content_head{
+    padding-top: 0px;
+  }
+    .mission_content{
+      padding-bottom: 0px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .mission_content{
+      padding-bottom: 0px;
+    }
 }
 </style>

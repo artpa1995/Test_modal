@@ -12,6 +12,7 @@
                             <img v-bind:src="our_team_content_bloc_item.icon" alt="">
                        </div>
                        <h3>{{our_team_content_bloc_item.title}}</h3>
+                        <div class="our_team_content_bloc_item_line"></div>
                         <p>{{our_team_content_bloc_item.description}} </p>
                    </div>
                </div>
@@ -138,13 +139,12 @@ export default {
     opacity: 0.98;
     margin-top: 20px;
 }
-.our_team_content_bloc_item_title>h3::before {
-    content: " ";
-    position: absolute;
+.our_team_content_bloc_item_line {
+   
     width: 45px;
     height: 4px;
     background: linear-gradient(265.11deg, var( --color-head_r1)-0.1%, var( --color-head_r2) 97.28%);
-    margin-top: 25px; 
+    margin-top: 15px; 
 }
 .our_team_content_bloc_item_title>p{
     font-family: var( --font_texts);
@@ -175,5 +175,13 @@ export default {
    .our_team_content_bloc_item{
        border-right: unset !important;;
    }
+}
+@media screen and (max-width: 450px) {
+   /* .our_team_content_bloc_item_title>p{
+       text-align: center;
+   }
+   .our_team_content_bloc_item_title>h3 {
+       text-align: center;
+   } */
 }
 </style>

@@ -426,13 +426,22 @@ font-family: 'Overpass';
   border: 1px solid red !important;
 }
 @media screen and (max-width: 700px) {
-   .form_form input, textarea{
-        max-width: 240px;
-    }
-    .form_check{
-         justify-content: center;
-         flex-wrap: wrap;
-    }
+  .submit{
+    justify-content: center;
+  }
+  .form_form input, textarea{
+    max-width: 240px;
+  }
+  .form_check{
+    max-width: 400px;
+  }
+  .form-field{
+    max-width: 400px;
+  }
+  .form_check{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 530px) {
    .checkbox{
@@ -444,10 +453,17 @@ font-family: 'Overpass';
         padding: 15px;
     }
 }
-
+@media screen and (max-width: 450px) {
+    .form_check{
+      max-width: 280px;
+    }
+    .form-field{
+      max-width: 280px;
+    }
+}
 @media screen and (max-width: 342px) {
     .form_content_head>h1::before {
-        margin-top: 45px;
+        margin-top: 25px;
     }
 }
 </style>

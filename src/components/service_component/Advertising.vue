@@ -121,9 +121,15 @@ export default {
       display: none;
     }
 }
-@media screen and (max-width: 342px) {
-    .advertising_title>h1::before {
-        margin-top: 45px;
+@media screen and (max-width: 824px) {
+   .advertising_bloc{
+           padding: 30px 0px;
+   }
+}
+
+@media screen and (max-width: 360px) {
+    .advertising_title>h1 {
+      font-size: 16px;
     }
 }
 </style>

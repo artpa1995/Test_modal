@@ -2,7 +2,7 @@
   <div class="_content">
       <div class="_content_head"  >
           
-         	<div id="map" style="width: 80%; height: 608px"></div>
+         	<div id="map" style=""></div>
       </div>
   </div>
 
@@ -88,5 +88,16 @@ export default {
     text-transform: uppercase;
     color: var( --color5);
 }
-
+#map{
+    width: 80%;
+     height: 608px
+}
+@media screen and (max-width: 700px) {
+    ._content{
+        padding-bottom: 30px;
+    }
+    #map{
+        height: 300px;
+    }
+}
 </style>

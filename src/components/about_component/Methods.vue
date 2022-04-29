@@ -134,4 +134,30 @@ export default {
     margin-top: 15px;
     max-width: 370px;
 }
+
+@media screen and (max-width: 400px) {
+  .methods_content_head>h1 { 
+      font-size: 17px;
+    }
+}
+@media screen and (max-width: 357px) {
+    
+  .methods_content_head>h1 {
+    text-align: center;
+     font-size: 16px;
+    }
+    .methods_content_bloc_item_line{
+        margin: 20px auto;
+    }
+    .methods_content_bloc_item_title{
+        justify-content: center;
+    }
+    .methods_content_bloc_item_text{
+        text-align: center;
+    }
+    .methods_content_bloc_item_title>span{
+        max-width: 180px;
+    }
+   
+}
 </style>
