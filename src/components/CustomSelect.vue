@@ -114,7 +114,6 @@ export default {
 }
 .custom-select .items div {
   color: #1D4685;
-  padding-left: 1em;
   cursor: pointer;
   user-select: none;
   font-family: var( --font_head);
@@ -122,6 +121,7 @@ export default {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
 }
 .custom-select .items div:hover {
   background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);

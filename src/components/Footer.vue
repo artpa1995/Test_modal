@@ -141,7 +141,7 @@ label:before {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    height: 480px;
+    
 }
 .contents_footer{
     background-image: url(../assets/svg/footer.svg);
@@ -251,11 +251,11 @@ label:before {
     width: 100%;
 }
 .contents_footer_bloc{
-    margin-top: 200px;
+    margin: 40px 0px;
 }
 @media screen and (max-width: 600px) {
   .footer {
-     height: 580px;
+    
   }
   .contents_footer_blocs_mision{
         display: none;

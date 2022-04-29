@@ -360,7 +360,7 @@ font-family: 'Overpass';
     margin-top: 20px;
 }
 .checkbox{
-    width: 10px;
+    min-width: 10px;
     height: 10px;
     border: 1px solid grey;
     cursor: pointer;
@@ -440,7 +440,6 @@ font-family: 'Overpass';
   }
   .form_check{
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 530px) {

@@ -391,6 +391,7 @@ legend{
   .content_left{
     width: 100%;
     padding-bottom: 30px;
+    justify-content: space-evenly;
   }
   #sidemenu{
     display: block;
