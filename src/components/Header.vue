@@ -252,7 +252,7 @@ legend{
 .contents{
   max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   display: flex;
   box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
   position: relative;
