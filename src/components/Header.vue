@@ -64,12 +64,13 @@
               </div>
             </div>
             <div class="content_right_line">
-            <div class="border_line">
-              <fieldset><legend>IT DEVELOPMENT</legend></fieldset>
-            </div>
+              <div class="line"></div>
+              <div class="line-content">
+                IT DEVELOPMENT
+              </div>
             </div>
           </div>
-      </div>  
+      </div>
   </div>
   <div class="modal" :class="iconClass"  @click=" close_modal" v-if="page === 'home_page'">
       <div class="modal_content">
@@ -114,7 +115,7 @@ export default {
     }
   },
   mounted() {
- 
+
   },
   methods:{
     select_lang: function (){
@@ -170,15 +171,15 @@ export default {
   display: none !important;;
 }
 .modal {
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
 .modal_content {
@@ -204,7 +205,26 @@ export default {
 .content_right_line{
   position: relative;
   z-index: -10;
+  width: 100px;
 }
+.content_right_line .line{
+  border: 0.5px solid transparent;
+  border-left-color: #000000;
+  height: 95%;
+  width: 1px;
+  margin: 10% auto;
+}
+.content_right_line .line-content{
+  position: absolute;
+  top: 45%;
+  right: -50%;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  background-color: white;
+  padding: 1rem;
+  font: 15pt/0 'Averia Serif Libre';
+}
+
 .border_line{
   margin-inline-start: auto;
   margin-top: calc(-16vh - 138px);
@@ -212,14 +232,14 @@ export default {
 }
 .border_line fieldset{
   transform: rotate(90deg);
-  border: 0.5px solid transparent; 
-  border-top-color: #000000; 
-  box-sizing: border-box; 
+  border: 0.5px solid transparent;
+  border-top-color: #000000;
+  box-sizing: border-box;
 }
 legend{
-  font: 15pt/0 'Averia Serif Libre'; 
-  margin: auto; 
-  padding: 100px 20px; 
+  font: 15pt/0 'Averia Serif Libre';
+  margin: auto;
+  padding: 100px 20px;
 }
 .menu{
   display: flex;
@@ -227,6 +247,8 @@ legend{
   margin-top: 50px;
 }
 .content_right{
+  display: flex;
+  justify-content: end;
   width: 45%;
 }
 .content_right_head{
@@ -241,7 +263,7 @@ legend{
 .contents{
   max-width:120rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   display: flex;
   box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
   position: relative;
@@ -295,13 +317,13 @@ legend{
   letter-spacing: 0.1em;
   text-transform: capitalize;
   }
-.content_left_left_texts h1::before { 
+.content_left_left_texts h1::before {
     content: " ";
     position: absolute;
     width: 45px;
     height: 4px;
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 .content_left_left_texts h4 {
   font-family: var( --font_head);
@@ -460,8 +482,6 @@ legend{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* left: 40px; */
-    
   }
   .logo{
     padding-left: 15px;
@@ -472,9 +492,6 @@ legend{
   }
 }
 @media screen and (max-width: 340px) {
-  .content_left_left_texts{ 
-      /* left: 30px; */
-  }
   .logo{
     padding-left: 0px;
   }
