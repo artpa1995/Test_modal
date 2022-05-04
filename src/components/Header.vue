@@ -1,21 +1,12 @@
 <template>
   <div class="header">
-      <div class="contents">
-          <div class="content_left">
-              <div class="content_left_left">
-                <div class="logo">
-                  <router-link to="/">
-                    <img src="../assets/logo-transparent.png" alt="">
-                 </router-link>
-                </div>
-                <div class="content_left_left_texts">
-                  
-                    <h1>{{ $t(head_text) }}</h1>
-                    <h4>{{ $t(content_text) }}</h4>
-                    <Buttons v-if="page === 'home_page'" @click=" modal = !modal; /* $event.target.classList.toggle('active')*/" :value=" $t('head_button') " />
-                </div>
-              </div>
-               <div id="sidemenu">
+    <div class="mobile_content">
+           <div class="logo_mobile">
+              <router-link to="/">
+                <img src="../assets/logo-transparent.png" alt="">
+              </router-link>
+            </div>
+            <div id="sidemenu">
                 <button class="sidemenu__btn" v-on:click="navOpen=!navOpen" :class="{active:navOpen}">
                     <span class="top"></span>
                     <span class="mid"></span>
@@ -29,7 +20,27 @@
                     </div>
                   </nav>
                 </transition>
+            </div>
+        </div>
+      <div class="contents">
+          <div class="content_left">
+              <div class="content_left_left">
+                <div class="logo">
+                  <router-link to="/">
+                    <img src="../assets/logo-transparent.png" alt="">
+                 </router-link>
+                </div>
+                <div class="content_left_left_texts">
+                  
+                    <h1>{{ $t(head_text) }}</h1>
+                    <h4>{{ $t(content_text) }}</h4>
+                    <router-link to="/about">
+                    <Buttons v-if="page === 'home_page'"   :value=" $t('head_button') " />
+                    <!-- <Buttons v-if="page === 'home_page'" @click=" modal = !modal; /* $event.target.classList.toggle('active')*/" :value=" $t('head_button') " />-->
+                    </router-link> 
+                </div>
               </div>
+               
                <div class="content_left_right"></div>
           </div>
           <div class="content_right">
@@ -228,11 +239,11 @@ legend{
   padding-top: 40px;
 }
 .contents{
-  max-width: 1920px;
+  max-width:120rem;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
   position: relative;
 }
 .content_left{
@@ -251,6 +262,7 @@ legend{
 .content_left_left{
   margin-left: 25px;
 }
+
 .logo img {
     width: 116px;
     height: 111px;
@@ -258,6 +270,14 @@ legend{
 .logo {
   padding-top:36px;
   padding-left: 60px;
+}
+.mobile_content{
+  
+  display: none;
+}
+.logo_mobile img {
+    width: 116px;
+    height: 111px;
 }
 .content_left_left_texts{
   color: white;
@@ -304,8 +324,8 @@ legend{
   }
 #sidemenu{
   display: none;
-  padding-top: 50px;
-  padding-right: 30px;
+  /* padding-top: 50px; */
+  /* padding-right: 30px; */
 }
 #sidemenu nav {
   width: 100%;
@@ -382,11 +402,34 @@ legend{
 }
 
 @media screen and (max-width: 1024px) {
+  .header{
+    background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
+    box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+  .logo{
+    display: none;
+  }
+  .mobile_content{
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contents{
+    -webkit-box-shadow: none !important;;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+  }
   .content_right{
     display: none;
   }
   .content_left_right{
     display: none;
+    
+  }
+   .content_left{
+    background: unset !important;;
+    
   }
   .content_left{
     width: 100%;
@@ -398,6 +441,10 @@ legend{
   }
   .modal_content{
     width: 45%;
+  }
+  .content_left_left_texts{
+    padding-left: 0px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 450px) {
@@ -413,7 +460,7 @@ legend{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    left: 40px;
+    /* left: 40px; */
     
   }
   .logo{
@@ -426,7 +473,7 @@ legend{
 }
 @media screen and (max-width: 340px) {
   .content_left_left_texts{ 
-      left: 30px;
+      /* left: 30px; */
   }
   .logo{
     padding-left: 0px;

@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .methods_content{
     background-color: var( --bg);
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
@@ -111,7 +111,7 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     text-transform: uppercase;
     color: var( --color5);
@@ -154,7 +154,7 @@ export default {
     
   .methods_content_head>h1 {
     text-align: center;
-     font-size: 16px;
+     font-size: 1rem;
     }
     .methods_content_bloc_item_line{
         margin: 20px auto;

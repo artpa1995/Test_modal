@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .advertising_content{
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     text-transform: uppercase;
     color: var( --color5);
@@ -111,6 +111,7 @@ export default {
 @media screen and (max-width: 800px) {
     .advertising_blocs{
         width: unset;
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -129,7 +130,7 @@ export default {
 
 @media screen and (max-width: 360px) {
     .advertising_title>h1 {
-      font-size: 16px;
+      font-size: 1rem;
     }
 }
 </style>

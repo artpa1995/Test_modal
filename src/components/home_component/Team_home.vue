@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .team_content{
     background-color: var( --bg);
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -202,7 +202,7 @@ export default {
 }
 .team_content_part_right>button{
     max-width: 230px;
-    padding: 16px 9px;
+    padding: 1rem 9px;
     margin-top: 30px;
 }
 ._team{

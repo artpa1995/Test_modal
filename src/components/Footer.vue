@@ -138,7 +138,7 @@ label:before {
     outline: none;
 }
 .footer{
-    max-width: 1920px;
+    max-width: 120rem;
     width: 100%;
     margin: 0 auto;
     
@@ -175,7 +175,7 @@ label:before {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     color: var( --texts_color);
 }
@@ -233,11 +233,11 @@ label:before {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
-    padding: 16px 8px;
+    padding: 1rem 8px;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     border-radius: 5px;
     border: unset;
@@ -269,7 +269,10 @@ label:before {
       width: 100%; */
   }
   .contents_footer_bloc>p{
-      /* text-align: center; */
+      text-align: center;
+  }
+  .contents_footer_bloc>h3{
+      text-align: center;
   }
 }
 @media screen and (max-width: 380px) {

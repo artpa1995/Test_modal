@@ -226,7 +226,7 @@ export default {
 
 .form-field {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
    padding: 10px;
     max-width: 600px;
     width: 100%!important;
@@ -339,7 +339,7 @@ font-family: 'Overpass';
 
 .form_content{
     background-color: var( --bg);
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
@@ -423,8 +423,8 @@ font-family: 'Overpass';
   font-family: var( --font_texts);
   font-style: italic;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
   text-align: center;
   letter-spacing: 0.1em;
   color: var( --texts_color);
@@ -437,8 +437,8 @@ font-family: 'Overpass';
   font-family: var( --font_texts);
   font-style: italic;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
   text-align: center;
   letter-spacing: 0.1em;
   border: 1px solid red;

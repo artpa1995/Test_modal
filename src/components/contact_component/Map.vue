@@ -68,7 +68,7 @@ export default {
 <style scoped>
 ._content{
     background-color: var( --bg);
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;

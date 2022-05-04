@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .createds_content{
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -114,7 +114,7 @@ export default {
     letter-spacing: 0.1em;
     color: var( --texts_color);
     /* margin-top: 20px; */
-    text-align: center;
+    text-align: left;
     margin-left: 10px;
 }
 .createds_blocs>p>span{

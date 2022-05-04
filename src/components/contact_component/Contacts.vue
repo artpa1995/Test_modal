@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .contacts_content{
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
@@ -85,8 +85,8 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
     text-transform: uppercase;
     color: var( --color5);
     text-align: center;

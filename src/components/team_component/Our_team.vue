@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .our_team_content{
     background-color: var( --bg);
-    max-width: 1920px;
+    max-width:120rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
@@ -83,13 +83,24 @@ export default {
 .our_team_content_bloc_item{
     margin-top: 50px;
     position: relative;
-    max-width: 645px;
+    max-width: 50%;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border-bottom: 1px dashed grey;
+    /* border-bottom: 1px dashed grey; */
     padding-top: 45px;
     padding-left: 40px;
+}
+.our_team_content_bloc_item::after{
+    content: " ";
+    position: absolute;
+    border-bottom: 1px dashed grey;
+    max-width: 88%;
+    width: 100%;
+    top: -21px;
+}
+.our_team_content_bloc:nth-child(2n + 1)::before{
+    border-right: 1px dashed rgb(175, 31, 31);
 }
 .our_team_content_bloc_item:nth-child(2n + 1) {
     border-right: 1px dashed grey;
@@ -132,7 +143,7 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     text-transform: uppercase;
     color: var( --color5);
@@ -150,7 +161,7 @@ export default {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 30px;
     color: var( --texts_color);
     margin-top: 15px;
@@ -158,18 +169,27 @@ export default {
 }
 @media screen and (max-width: 1349px) {
    .our_team_content_bloc_item{
-       max-width: 545px;
+       /* max-width: 545px; */
    }
+   .our_team_content_bloc_item::after{
+        /* max-width: 29rem; */
+    }
 }
 @media screen and (max-width: 1149px) {
    .our_team_content_bloc_item{
-       max-width: 445px;
+       /* max-width: 445px; */
    }
+   .our_team_content_bloc_item::after{
+        /* max-width: 23rem; */
+    }
 }
 @media screen and (max-width: 949px) {
    .our_team_content_bloc_item{
-       max-width: 345px;
+       /* max-width: 345px; */
    }
+   .our_team_content_bloc_item::after{
+        /* max-width: 17rem; */
+    }
 }
 @media screen and (max-width: 749px) {
    .our_team_content_bloc_item{
@@ -183,5 +203,8 @@ export default {
    .our_team_content_bloc_item_title>h3 {
        text-align: center;
    } */
+   .our_team_content_bloc_item::after{
+        /* max-width: 14rem; */
+    }
 }
 </style>

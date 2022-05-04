@@ -737,7 +737,7 @@
   
   40% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -16px;
+    top: -1rem;
   }
   90% {
    transform: rotateX(105deg) rotateY(-38deg);

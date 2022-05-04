@@ -53,7 +53,7 @@ export default {
 .isset_page::after { 
     content: " ";
     position: absolute;
-    width: 16px;
+    width: 1rem;
     height: 2px;
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
     margin-top: 25px; 
