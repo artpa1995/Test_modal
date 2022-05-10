@@ -89,7 +89,7 @@ export default {
   font-family: var( --font_head);
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .custom-select .selected:after {
   position: absolute;
@@ -119,8 +119,8 @@ export default {
   font-family: var( --font_head);
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
   text-align: center;
 }
 .custom-select .items div:hover {
@@ -133,7 +133,7 @@ export default {
 @media screen and (max-width: 1024px) {
   .custom-select .selected {
     color: white;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .custom-select .selected:after {
     border-color: white transparent transparent transparent;

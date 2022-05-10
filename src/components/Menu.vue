@@ -28,12 +28,12 @@ export default {
     max-width: 107px;
 }
 .menus ul li {
-    margin-top: 45px;
+    margin-top: 3rem;
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     color: var( --color5);
     opacity: 0.98;
     cursor: pointer;
@@ -42,8 +42,8 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     color: var( --color5);
     opacity: 0.98;
     cursor: pointer;
@@ -69,8 +69,8 @@ export default {
         font-family: var( --font_head);
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
         color: var( --color5);
     }
     .menus ul {

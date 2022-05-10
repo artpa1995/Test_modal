@@ -1,7 +1,10 @@
 <template>
-  <div class="about_content">
+  <div class="about_content container">
       <div class="about_content_head"  >
-         <h1>{{ $t('about_content_head.title') }} </h1>
+         <h1>{{ $t('about_content_head.title') }} 
+             <div class="about_content_head_line"></div>
+         </h1>
+        
         <p>{{ $t('about_content_head.description') }}</p>
       </div>
       <div class="about_content_blocs">
@@ -59,11 +62,6 @@ export default {
 <style scoped>
 .about_content{
     background-color: var( --bg);
-    max-width:120rem;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
 }
 .about_content_head{
     display: flex;
@@ -74,75 +72,82 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
-.about_content_head>h1::before { 
+/* .about_content_head>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
+} */
+.about_content_head_line{
+ 
+    width: 3rem;
+    height: 0.25rem;
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
+    margin-top: 0.5rem; 
 }
 .about_content_head>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
-    max-width: 400px;
+    margin-top: 1.25rem;
+    max-width: 25rem;
     text-align: center;
 }
 .about_content_blocs{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 3.125rem;
 }
 .about_content_bloc>img {
     width: 100%;
 }
 .about_content_bloc_item{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .about_content_bloc_item_title{
     display: flex;
     align-items: center;
 }
 .about_content_bloc_item_title img {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 .about_content_bloc_item_title>span{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: var( --color5);
     opacity: 0.98;
     margin-left: 10px;
 }
 .about_content_bloc_item_line{
-    width: 55px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 20px; 
+    margin-top: 1.25rem; 
 }
 .about_content_bloc_item_text{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     color: var( --texts_color);
     margin-top: 15px;
     max-width: 370px;

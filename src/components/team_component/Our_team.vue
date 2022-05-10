@@ -1,5 +1,5 @@
 <template>
-  <div class="our_team_content">
+  <div class="our_team_content container">
       <div class="our_team_content_head" >
          <h1>{{ $t('our_team_content_head.title')}}</h1>
         <p>{{ $t('our_team_content_head.description')}}</p>
@@ -36,8 +36,8 @@ export default {
     max-width:120rem;
     width: 100%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
 }
 .our_team_content_head{
     display: flex;
@@ -48,16 +48,16 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
 .our_team_content_head>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2)46.11%);
     margin-top: 25px; 
 }
@@ -65,31 +65,31 @@ export default {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
-    max-width: 400px;
+    margin-top: 1.25rem;
+    max-width: 25rem;
     text-align: center;
 }
 .our_team_content_bloc{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 1.875rem;
 }
 .our_team_content_bloc_item{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     position: relative;
     max-width: 50%;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     /* border-bottom: 1px dashed grey; */
-    padding-top: 45px;
-    padding-left: 40px;
+    padding-top: 3.125rem;
+    padding-left: 3.125rem;
 }
 .our_team_content_bloc_item::after{
     content: " ";
@@ -144,16 +144,16 @@ export default {
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: var( --color5);
     opacity: 0.98;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .our_team_content_bloc_item_line {
    
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(265.11deg, var( --color-head_r1)-0.1%, var( --color-head_r2) 97.28%);
     margin-top: 15px; 
 }
@@ -162,7 +162,7 @@ export default {
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
-    line-height: 30px;
+    line-height: 1.875rem;
     color: var( --texts_color);
     margin-top: 15px;
     max-width: 370px;

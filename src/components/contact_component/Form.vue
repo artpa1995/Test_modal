@@ -1,5 +1,5 @@
 <template>
-  <div class="form_content">
+  <div class="form_content container">
     <div class="form_content_head" >
         <h1>{{ $t('form_content_head.title')}}</h1>
         <p>{{ $t('form_content_head.description')}}</p>
@@ -251,7 +251,7 @@ export default {
   font-weight: normal;
   left: 0;
   margin: 0;
-  padding: 18px 12px 0;
+  padding: 1.125rem 0.75rem 0;
   position: absolute;
   top: 0;
   transition: all 0.4s;
@@ -259,8 +259,8 @@ export default {
   font-family: 'Overpass';
   font-style: italic;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
   letter-spacing: 0.1em;
   color: var( --texts_color);
 }
@@ -280,8 +280,8 @@ export default {
 font-family: 'Overpass';
     font-style: italic;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     letter-spacing: 0.1em;
     color: var( --texts_color);
 }
@@ -307,13 +307,13 @@ font-family: 'Overpass';
 }
 .form-field__control_hover {
    border: 2px solid var( --color4);
-    box-shadow: 0px 0px 4px var( --color3);
+    box-shadow: 0px 0px 0.25rem var( --color3);
     margin-bottom: -2px;
 }
 .form-field__control_click{
    border: 2px solid var( --color4);
    border-bottom: unset;
-    box-shadow: 0px 0px 4px var( --color3);
+    box-shadow: 0px 0px 0.25rem var( --color3);
     margin-bottom: -2px;
 }
 
@@ -329,7 +329,7 @@ font-family: 'Overpass';
   font-size: 1.2rem;
   margin-top: 24px;
   outline: 0;
-  padding: 0 12px 10px 12px;
+  padding: 0 0.75rem 10px 0.75rem;
   width: 100%;
 }
 
@@ -342,8 +342,8 @@ font-family: 'Overpass';
     max-width:120rem;
     width: 100%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
 }
 .form_content_head{
     display: flex;
@@ -354,15 +354,15 @@ font-family: 'Overpass';
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     color:var( --color5);
 }
 .form_content_head>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
@@ -370,13 +370,13 @@ font-family: 'Overpass';
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
-    max-width: 400px;
+    margin-top: 1.25rem;
+    max-width: 25rem;
     text-align: center;
 }
 .form_form{
@@ -384,16 +384,16 @@ font-family: 'Overpass';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .form_check{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 620px;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .checkbox{
     min-width: 10px;
@@ -406,7 +406,7 @@ font-family: 'Overpass';
 .check{
     border: 1px solid var( --bg);
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color4) 97.28%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
 
@@ -469,10 +469,10 @@ font-family: 'Overpass';
     max-width: 240px;
   }
   .form_check{
-    max-width: 400px;
+    max-width: 25rem;
   }
   .form-field{
-    max-width: 400px;
+    max-width: 25rem;
   }
   .form_check{
     justify-content: center;
@@ -480,20 +480,20 @@ font-family: 'Overpass';
 }
 @media screen and (max-width: 530px) {
    .checkbox{
-         margin-left: 20px;
+         margin-left: 1.25rem;
     }
     .form_check_text{
       
         text-align: center;
-        padding: 15px;
+        padding: 1rem;
     }
 }
 @media screen and (max-width: 450px) {
     .form_check{
-      max-width: 280px;
+      max-width: 17.5rem;
     }
     .form-field{
-      max-width: 280px;
+      max-width: 17.5rem;
     }
 }
 @media screen and (max-width: 342px) {

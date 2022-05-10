@@ -1,7 +1,9 @@
 <template>
-  <div class="service_content">
+  <div class="service_content container">
       <div class="service_content_head" >
-        <h1>{{ $t('home_service_content_heads.title') }}</h1>
+        <h1>{{ $t('home_service_content_heads.title') }}
+            <div class="service_content_head_line"></div>
+        </h1>
         
         <p> {{ $t('home_service_content_heads.description') }}</p>
       </div>
@@ -39,11 +41,7 @@ export default {
 
 <style scoped>
 .service_content{
-  max-width:120rem;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 60px;
+ 
 }
 .service_content_head{
     display: flex;
@@ -54,29 +52,35 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
-.service_content_head>h1::before { 
+/* .service_content_head>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
+} */
+.service_content_head_line { 
+    width: 3rem;
+    height: 0.25rem;
+    background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
+    margin-top: 0.5rem; 
 }
 .service_content_head>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     max-width: 370px;
 }
 .service_content_blocs{
@@ -88,34 +92,34 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 3.125rem;
 }
 .service_content_bloc>p{
     max-width: 347px;
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
     margin-top: 10px;
 }
 .service_content_bloc>h2{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: var( --color5);
     opacity: 0.98;
 }
 .service_content_bloc>span {
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 10px; 
     text-align: center;

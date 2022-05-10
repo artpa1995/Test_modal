@@ -1,5 +1,5 @@
 <template>
-  <div class="advertising_content">
+  <div class="advertising_content container">
       <div class="advertising_title">
             <h1>{{ $t('advertising_title.title')}}</h1>
         </div>
@@ -49,22 +49,22 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 40px;
+    padding: 3.125rem;
 }
 .advertising_title>h1{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
 .advertising_title>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
@@ -73,7 +73,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px 0px;
+    padding: 3.125rem 0px;
 }
 .advertising_blocs{
     display: flex;
@@ -90,7 +90,7 @@ export default {
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 19px;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
     text-align: center;
@@ -99,19 +99,19 @@ export default {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 350;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     max-width: 320px;
     text-align: center;
 }
 @media screen and (max-width: 800px) {
     .advertising_blocs{
         width: unset;
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -124,7 +124,7 @@ export default {
 }
 @media screen and (max-width: 824px) {
    .advertising_bloc{
-           padding: 30px 0px;
+           padding: 1.875rem 0px;
    }
 }
 

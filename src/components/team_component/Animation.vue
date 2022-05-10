@@ -26,10 +26,10 @@ export default {
 
 #container{
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
     right: 0;
-    max-width: 400px;
+    max-width: 25rem;
     margin: 0 auto;
     background-image: url(../../assets/team/eli.svg);
     background-position: center center;
@@ -43,7 +43,7 @@ export default {
     background-position: 65px 65px;
     background-repeat: no-repeat;
     background-size: 300px 300px;
-    height: 400px;
+    height: 25rem;
     width: 100%;
 }
 .blocs{
@@ -54,7 +54,7 @@ export default {
     cursor: pointer;
 }
 .bloc1{
-    max-width: 400px;
+    max-width: 25rem;
     background-image: url(../../assets/team/shoxq.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ export default {
     
 }
 .bloc{
-    max-width: 400px;
+    max-width: 25rem;
     margin: 0 auto;
     background-image: url(../../assets/team/shoxq.svg);
     background-position: center center;

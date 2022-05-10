@@ -81,12 +81,12 @@ export default {
 .back_to_top {
   position: fixed;
   bottom: 80px;
-  right: 40px;
+  right: 2.5rem;
   z-index: 9999;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
-  line-height: 30px;
+  line-height: 1.875rem;
   background: linear-gradient(90deg, rgba(146,64,252,1) 0%, rgba(225,153,252,1) 100%);
   color: #FFFFFF;
   cursor: pointer;
@@ -121,18 +121,18 @@ label:before {
   left: 10px;
   top: 0;
   bottom: 0;
-  width: 20px;
+  width:1.25rem;
   background: url(../assets/svg/crar.svg) center / contain no-repeat;
 }
 .subscription_input {
     max-width: 278px;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 2.5rem;
     background: #FFFFFF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     border:1px solid #D8D6E4FF;
-    margin-top: 18px;
+    margin-top: 1.125rem;
 }
 .subscription_input:focus {
     outline: none;
@@ -160,7 +160,7 @@ label:before {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 14px;
     color: #FFFFFF;
 }
@@ -183,7 +183,7 @@ label:before {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 160%;  
     text-transform: capitalize;
     color: var( --texts_color);
@@ -191,11 +191,11 @@ label:before {
 }
 .contents_footer_bloc>p, .contents_footer_bloc>p>a{
     text-decoration: none;
-    margin-top: 20px;
+    margin-top:1.25rem;
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 22px;
     letter-spacing: 0.1em;
     color: var( --texts_color);
@@ -211,7 +211,7 @@ label:before {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 22px;
     letter-spacing: 0.1em;
     color: var( --texts_color);
@@ -226,7 +226,7 @@ label:before {
     background-color: white;
     padding: 6px;
     margin: 13px 0px;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 .subscription_button{
     cursor: pointer;
@@ -234,7 +234,7 @@ label:before {
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 20px;
+    line-height:1.25rem;
     letter-spacing: 0.1em;
     color: #FFFFFF;
     padding: 1rem 8px;
@@ -251,7 +251,7 @@ label:before {
     width: 100%;
 }
 .contents_footer_bloc{
-    margin: 40px 0px;
+    margin: 3.125rem 0px;
 }
 @media screen and (max-width: 600px) {
   

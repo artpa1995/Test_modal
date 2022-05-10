@@ -154,8 +154,8 @@ export default {
   font-family: var( --font_head);
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   letter-spacing: 0.1em;
   opacity: 0.8;
   margin-top: 25px;
@@ -173,7 +173,7 @@ export default {
 .modal {
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 6.25rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -185,7 +185,7 @@ export default {
 .modal_content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 5px;
   width: 25%;
 }
@@ -205,7 +205,7 @@ export default {
 .content_right_line{
   position: relative;
   z-index: -10;
-  width: 100px;
+  width: 6.25rem;
 }
 .content_right_line .line{
   border: 0.5px solid transparent;
@@ -239,12 +239,12 @@ export default {
 legend{
   font: 15pt/0 'Averia Serif Libre';
   margin: auto;
-  padding: 100px 20px;
+  padding: 6.25rem 1.25rem;
 }
 .menu{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .content_right{
   display: flex;
@@ -258,14 +258,14 @@ legend{
 .content_right_content{
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 3.15rem;
 }
 .contents{
   max-width:120rem;
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto 1.875rem;
   display: flex;
-  box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 1.25rem 0 rgb(0 0 0 / 19%) !important;
   position: relative;
 }
 .content_left{
@@ -291,7 +291,7 @@ legend{
 }
 .logo {
   padding-top:36px;
-  padding-left: 60px;
+  padding-left: 3.125rem;
 }
 .mobile_content{
   
@@ -303,41 +303,41 @@ legend{
 }
 .content_left_left_texts{
   color: white;
-  max-width: 280px;
+  max-width: 17.5rem;
   width: 100%;
   padding-top:72px;
-  padding-left: 60px;
+  padding-left: 3.125rem;
   }
 .content_left_left_texts h1 {
   font-family: var(--font_head);
   font-style: normal;
   font-weight: 700;
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   letter-spacing: 0.1em;
   text-transform: capitalize;
   }
 .content_left_left_texts h1::before {
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height:0.25rem;
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .content_left_left_texts h4 {
   font-family: var( --font_head);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   letter-spacing: 0.1em;
   opacity: 0.8;
   margin-top: 25px;
   }
 .check_more{
   background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   width: 130px;
   height: 39px;
   border: unset;
@@ -346,8 +346,6 @@ legend{
   }
 #sidemenu{
   display: none;
-  /* padding-top: 50px; */
-  /* padding-right: 30px; */
 }
 #sidemenu nav {
   width: 100%;
@@ -355,13 +353,12 @@ legend{
   position: absolute;
   left: 0;
   z-index: 99;
-  height: 92%;
-  margin-top: 40px;
+  padding-bottom: 1.875rem;
 }
 #sidemenu .sidemenu__btn {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background: unset;
   border: none;
   position: relative;
@@ -374,7 +371,7 @@ legend{
 }
 #sidemenu .sidemenu__btn span {
   display: block;
-  width: 20px;
+  width: 1.25rem;
   height: 2px;
   margin: auto;
   background: white;
@@ -395,7 +392,7 @@ legend{
   transform: rotate(-45deg);
 }
 #sidemenu .sidemenu__btn.active .mid {
-  transform: translateX(-20px);
+  transform: translateX(-1.25rem);
   opacity: 0;
 }
 #sidemenu .sidemenu__btn.active .bottom {
@@ -426,7 +423,7 @@ legend{
 @media screen and (max-width: 1024px) {
   .header{
     background: radial-gradient(55.71% 79.06% at 70.48% 50%, #0061B1 12%, #005198 29%, #003871 60%, #002959 85%, #002350 100%);
-    box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-shadow: 0 10px 1rem 0 rgb(0 0 0 / 20%), 0 6px 1.25rem 0 rgb(0 0 0 / 19%);
   }
   .logo{
     display: none;
@@ -439,8 +436,8 @@ legend{
   }
   .contents{
     -webkit-box-shadow: none !important;;
-	-moz-box-shadow: none!important;
-	box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
   }
   .content_right{
     display: none;
@@ -455,7 +452,7 @@ legend{
   }
   .content_left{
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     justify-content: space-evenly;
   }
   #sidemenu{
@@ -469,9 +466,9 @@ legend{
     text-align: center;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 43.125rem) {
   #sidemenu nav {
-   margin-top: 20px;
+   margin-top: 1.25rem;
 }
   .modal_content{
     width: 80%;
@@ -484,7 +481,7 @@ legend{
     flex-wrap: wrap;
   }
   .logo{
-    padding-left: 15px;
+    padding-left: 1rem;
   }
   .logo img {
     width: 95px;
@@ -497,8 +494,8 @@ legend{
   }
 }
 @media screen and (max-width: 332px) {
-  #sidemenu nav {
+  /* #sidemenu nav {
       height: 80%;
-  }
+  } */
 }
 </style>

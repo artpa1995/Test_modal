@@ -220,20 +220,20 @@
 
 #container{
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
     right: 0;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
     cursor: pointer;
     border-radius: 50%;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 #target {
     position: relative;
-    width: 800px;
-    height: 400px;
+    width: 50rem;
+    height: 25rem;
     margin: auto;
     border-radius: 50%;
 }

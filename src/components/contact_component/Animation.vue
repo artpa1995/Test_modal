@@ -83,7 +83,7 @@
 
 #container{
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
     right: 0;
     max-width: 500px;
@@ -105,7 +105,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100px;
+    height: 6.25rem;
     width: 100%;
 }
 .mramka{
@@ -126,7 +126,7 @@
      background-position: center center;
      background-repeat: no-repeat;
     background-size: contain;
-    height: 100px;
+    height: 6.25rem;
     width: 100%;
 }
 .crar{
@@ -154,7 +154,7 @@
 .nabg{
     background-color: white;
     transform: rotateX(-18deg) rotateY(61deg);
-    height: 30px;
+    height: 1.875rem;
     width: 315px;
     position: relative;
     left: -33px;
@@ -187,7 +187,7 @@
   }
    4% {
     transform:rotateY(200deg);
-    top: -12px;
+    top: -0.75rem;
   }
    5% {
     transform:rotateY(250deg);
@@ -195,7 +195,7 @@
   }
    6% {
     transform:rotateY(300deg);
-    top: -18px;
+    top: -1.125rem;
   }
    7% {
     transform:rotateY(350deg);
@@ -211,7 +211,7 @@
   }
    10% {
     transform:rotateY(500deg);
-    top: -30px;
+    top: -1.875rem;
   }
   11% {
     transform:rotateY(550deg);
@@ -251,7 +251,7 @@
   }
    20% {
     transform:rotateY(1050deg);
-    top: -60px;
+    top: -3.125rem;
   }
    21% {
     transform:rotateY(1100deg);
@@ -425,7 +425,7 @@
   }
    81% {
     transform:rotateY(1050deg);
-    top: -60px;
+    top: -3.125rem;
   }
   82% {
     transform:rotateY(1000deg);
@@ -465,7 +465,7 @@
   }
    91% {
     transform:rotateY(550deg);
-    top: -30px;
+    top: -1.875rem;
   }
   92% {
     transform:rotateY(500deg);
@@ -481,7 +481,7 @@
   }
   95% {
     transform:rotateY(350deg);
-    top: -18px;
+    top: -1.125rem;
   }
   96% {
     transform:rotateY(300deg);
@@ -489,7 +489,7 @@
   }
   97% {
     transform:rotateY(250deg);
-    top: -12px;
+    top: -0.75rem;
   }
   98% {
     transform:rotateY(200deg);
@@ -508,7 +508,7 @@
 @keyframes namak {
     0%{
         height: 0px;
-        top: -50px;
+        top: -3.125rem;
     }
      20%{
         height: 0px;
@@ -533,11 +533,11 @@
   }
   8% {
     transform: rotateX(40deg) rotateY(-11deg);
-    top: 4px;
+    top:0.25rem;
   }
   10% {
     transform: rotateX(45deg) rotateY(-12deg);
-    top: 4px;
+    top:0.25rem;
   }
   12% {
     transform: rotateX(50deg) rotateY(-14deg);
@@ -610,19 +610,19 @@
   }
   38% {
     transform: rotateX(85deg) rotateY(-27deg);
-    top: -12px;
+    top: -0.75rem;
   } 
   40% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -19px;
+    top: -1.125rem;
   }
   50% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -19px;
+    top: -1.125rem;
   }
   54% {
     transform: rotateX(115deg) rotateY(-45deg);
-    top: -19px;
+    top: -1.125rem;
   }
    55% {
      transform: rotateX(80deg) rotateY(-25deg);
@@ -672,11 +672,11 @@
   }
   8% {
     transform: rotateX(40deg) rotateY(-11deg);
-    top: 4px;
+    top:0.25rem;
   }
   10% {
     transform: rotateX(45deg) rotateY(-12deg);
-    top: 4px;
+    top:0.25rem;
   }
   12% {
     transform: rotateX(50deg) rotateY(-14deg);

@@ -123,14 +123,14 @@
 <style scoped>
 #container{
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
     right: 0;
-    max-width: 400px;
-    width: 400px;
-    height: 400px;
+    max-width: 25rem;
+    width: 100%;
+    height: 25rem;
     margin: 0 auto;
-    padding: 30px;
+    padding: 1.875rem;
 }
 .macbook {
   width: 200px;
@@ -145,10 +145,10 @@
   position: absolute;
   width: 90px;
   height: 0px;
-  left: 40px;
+  left: 2.5rem;
   top: 190px;
   transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
-  box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 0 3.125rem 2.5rem rgba(0,0,0,0.3);
   animation: shadow infinite 7s ease;
 }
 .inner {
@@ -181,11 +181,11 @@
 }
 .screen .logo {
   position: absolute;
-  width: 40px;
+  width: 2.5rem;
   height: 24px;
   left: 50%;
   top: 50%;
-  margin: -12px 0 0 -10px;
+  margin: -0.75rem 0 0 -10px;
   transform: rotateY(180deg) translateZ(0.1px);
 }
 .screen .face-one {
@@ -206,7 +206,7 @@
   background: #000;
   position: absolute;
   left: 50%;
-  top: 4px;
+  top: 0.25rem;
   margin-left: -1.5px;
 }
 .screen .face-one .display {
@@ -270,8 +270,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  border-radius: 4px;
-  margin: -60px 0 0 -18px;
+  border-radius: 0.25rem;
+  margin: -3.125rem 0 0 -1.125rem;
   background: #cdcdcd;
   background-image: linear-gradient(30deg, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 100%);
   box-shadow: inset 0 0 3px #888;
@@ -281,8 +281,8 @@
     height: 69px;
     position: absolute;
     left: 7px;
-    top: 40px;
-    border-radius: 4px;
+    top: 2.5rem;
+    border-radius: 0.25rem;
     transform-style: preserve-3d;
     background: #cdcdcd;
     background-image: linear-gradient(30deg, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 100%);
@@ -314,20 +314,20 @@
   position: absolute;
 }
 .pad.one {
-  left: 20px;
-  top: 20px;
+  left: 1.25rem;
+  top: 1.25rem;
 }
 .pad.two {
-  right: 20px;
-  top: 20px;
+  right: 1.25rem;
+  top: 1.25rem;
 }
 .pad.three {
-  right: 20px;
-  bottom: 20px;
+  right: 1.25rem;
+  bottom: 1.25rem;
 }
 .pad.four {
-  left: 20px;
-  bottom: 20px;
+  left: 1.25rem;
+  bottom: 1.25rem;
 }
 .display iframe {
   width: 170px;
@@ -432,10 +432,10 @@
 }
 @keyframes screen-shade {
   0% {
-    background-position: -20px 0px;
+    background-position: - 1.25rem 0px;
   }
   5% {
-    background-position: -40px 0px;
+    background-position: -2.5rem 0px;
   }
   20% {
     background-position: 200px 0;
@@ -450,10 +450,10 @@
     background-position: -30px 0;
   }
   90% {
-    background-position: -20px 0;
+    background-position: - 1.25rem 0;
   }
   100% {
-    background-position: -20px 0px;
+    background-position: - 1.25rem 0px;
   }
 }
 @keyframes keys {
@@ -488,15 +488,15 @@
 @keyframes shadow {
   0% {
     transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
-    box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 0 60px 2.5rem rgba(0,0,0,0.3);
   }
   5% {
     transform: rotateX(80deg) rotateY(10deg) rotateZ(0deg);
-    box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 0 60px 2.5rem rgba(0,0,0,0.3);
   }
   20% {
     transform: rotateX(30deg) rotateY(-20deg) rotateZ(-20deg);
-    box-shadow: 0 0 50px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 0 3.125rem 30px rgba(0,0,0,0.3);
   }
   25% {
     transform: rotateX(80deg) rotateY(-20deg) rotateZ(50deg);
@@ -504,16 +504,16 @@
   }
   60% {
     transform: rotateX(80deg) rotateY(0deg) rotateZ(-50deg) translateX(30px);
-    box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 0 60px 2.5rem rgba(0,0,0,0.3);
   }
   100% {
-    box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 0 60px 2.5rem rgba(0,0,0,0.3);
   }
 }
 .links {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 1.25rem;
+  bottom: 1.25rem;
 }
 .links a {
   color : #555;

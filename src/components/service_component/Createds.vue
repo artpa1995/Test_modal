@@ -15,7 +15,7 @@
 </linearGradient>
 </defs>
 </svg> -->
-  <div class="createds_content">
+  <div class="createds_content container">
       <div class="createds_title"  >
             <h1>{{ $t('createds_title.title')}}</h1>
         </div>
@@ -67,21 +67,21 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 40px;
+    padding: 3.125rem;
 }
 .createds_title>h1{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     color: var( --color5);
 }
 .createds_title>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1)-47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
@@ -91,7 +91,7 @@ export default {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap; */
-    padding: 60px 0px;
+    padding: 3.125rem 0px;
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
@@ -102,18 +102,18 @@ export default {
     align-items: center;
 }
 .createds_blocs>img{
-    width: 20px;
+    width: 1.25rem;
 }
 .createds_blocs>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 350;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    /* margin-top: 20px; */
+    /* margin-top: 1.25rem; */
     text-align: left;
     margin-left: 10px;
 }
@@ -121,8 +121,8 @@ export default {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     color: var( --color5);
     margin-left: 10px;
 }
@@ -130,10 +130,10 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     color: var( --color5);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .createds_bloc_texts{
     display: flex;

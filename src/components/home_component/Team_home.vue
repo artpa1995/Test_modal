@@ -1,5 +1,5 @@
 <template>
-  <div class="team_content">
+  <div class="team_content container">
       <div class="team_content_part"  >
          <div class="team_content_part_left"  >
              <div class="team_profile" v-for="(team_profile_img, index) in team_profile" :key="team_profile_img" :class="'team_profile'+index">
@@ -43,11 +43,7 @@ export default {
 <style scoped>
 .team_content{
     background-color: var( --bg);
-    max-width:120rem;
-    width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
-    
 }
 .team_content_part{
     display: flex;
@@ -79,7 +75,7 @@ export default {
 }
 .team_profile3{
     margin-left: 5%;
-    margin-top: -100px;
+    margin-top: -6.25rem;
     margin-right: 5%;
     width: 200px;
     height:200px;
@@ -175,16 +171,16 @@ export default {
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
 .team_content_part_right>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
     margin-top: 25px; 
 }
@@ -192,24 +188,24 @@ export default {
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: left;
     letter-spacing: 0.1em;
     color:var( --texts_color);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     max-width: 600px;
 }
 .team_content_part_right>button{
     max-width: 230px;
     padding: 1rem 9px;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 ._team{
     text-decoration: none;
     padding: 0.9em 2.6em;
     max-width: 71px;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 @media screen and (max-width: 1070px) {
     .team_content_part_left{
@@ -217,6 +213,13 @@ export default {
     }
 }
 @media screen and (max-width: 1024px) {
+   
+     .team_content_part_right>h1, .team_content_part_right>p{
+        text-align: center;
+    }
+    ._team{
+        margin: 1.875rem auto;
+    }
     .team_content_part{
         justify-content: center;
     }
@@ -225,7 +228,7 @@ export default {
     }
     .team_content_part_right{
         height: unset;
-        padding-top: 30px;
+        padding-top: 1.875rem;
     }
 }
 </style>

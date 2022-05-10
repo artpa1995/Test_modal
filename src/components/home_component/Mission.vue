@@ -1,8 +1,10 @@
 <template>
-  <div class="mission_content">
+  <div class="mission_content container">
       <div class="mission_content_head"  >
-        <h1>{{ $t('mission_content_heads.title')}}</h1>
-        <div class="mission_content_head_line"></div>
+        <h1>{{ $t('mission_content_heads.title')}}
+          <div class="mission_content_head_line"></div>
+        </h1>
+        
         <p>
            {{ $t('mission_content_heads.description')}}
         </p>
@@ -27,47 +29,50 @@ export default {
 
 <style scoped>
 .mission_content{
-    max-width:120rem;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+   
 }
 .mission_content_head{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 40px;
+    padding-bottom: 3.125rem;
 }
 .mission_content_head>h1{
     font-family: var( --font_head);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
-.mission_content_head>h1::before { 
+/* .mission_content_head>h1::before { 
     content: " ";
     position: absolute;
-    width: 45px;
-    height: 4px;
+    width: 3rem;
+    height: 0.25rem;
     background: linear-gradient(265.11deg, var( --color1) -0.1%, var( --color2) 97.28%);
-    margin-top: 25px; 
+    margin-top: 0.5rem; 
+} */
+.mission_content_head_line { 
+   
+    width: 3rem;
+    height: 0.25rem;
+    background: linear-gradient(265.11deg, var( --color1) -0.1%, var( --color2) 97.28%);
+    margin-top: 0.5rem;
 }
 .mission_content_head>p{
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: var( --texts_color);
-    margin-top: 20px;
-    max-width: 400px;
+    margin-top: 1.25rem;
+    max-width: 25rem;
     text-align: center;
 }
 @media screen and (max-width: 800px) {

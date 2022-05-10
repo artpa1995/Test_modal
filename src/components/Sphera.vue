@@ -139,14 +139,14 @@
 
 #container{
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
     right: 0;
-    max-width: 400px;
+    max-width: 25rem;
     margin: 0 auto;
     border: 1px solid var( --color-head_r1);
     border-radius: 50%;
-    padding: 30px;
+    padding: 1.875rem;
     background-image: url(../assets/namak/bg.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -156,8 +156,8 @@
 #target {
     cursor: pointer;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     margin: auto;
     border: 1px solid var( --color-head_r1);
     border-radius: 50%;

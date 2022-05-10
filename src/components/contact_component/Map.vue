@@ -1,5 +1,5 @@
 <template>
-  <div class="_content">
+  <div class="_content container">
       <div class="_content_head"  >
           
          	<div id="map" style=""></div>
@@ -71,8 +71,8 @@ export default {
     max-width:120rem;
     width: 100%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
 }
 ._content_head{
     display: flex;
@@ -83,8 +83,8 @@ export default {
     font-family: var( --color-head_r1);
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     text-transform: uppercase;
     color: var( --color5);
 }
@@ -94,7 +94,7 @@ export default {
 }
 @media screen and (max-width: 700px) {
     ._content{
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
     }
     #map{
         height: 300px;
