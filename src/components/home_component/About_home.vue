@@ -140,7 +140,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 1.25rem; 
+    margin-top: 0.5rem; 
 }
 .about_content_bloc_item_text{
     font-family: var( --font_texts);
@@ -154,7 +154,7 @@ export default {
 }
 @media screen and (max-width: 430px) {
   .about_content_bloc_item_line{
-      margin: 10px auto;
+      margin: 0.5rem auto;
   }
   .about_content_bloc_item_title{
       justify-content: center;

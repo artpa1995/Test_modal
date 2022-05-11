@@ -49,7 +49,7 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 3.125rem;
+    padding: 1.125rem;
 }
 .advertising_title>h1{
     font-family: var( --font_head);
@@ -66,7 +66,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 25px; 
+    margin-top: 1.56rem; 
 }
 .advertising_bloc{
     display: flex;
@@ -94,6 +94,7 @@ export default {
     text-transform: uppercase;
     color: var( --color5);
     text-align: center;
+    margin-top: 1rem;
 }
 .advertising_blocs>p{
     font-family: var( --font_texts);

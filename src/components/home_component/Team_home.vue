@@ -51,7 +51,7 @@ export default {
 }
 .team_content_part_left{
    width: 910px;
-    padding: 25px;
+    padding: 1.56rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -182,7 +182,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 25px; 
+    margin-top: 1.56rem; 
 }
 .team_content_part_right>p{
     font-family: var( --font_texts);

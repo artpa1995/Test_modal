@@ -127,7 +127,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(265.11deg, var( --color-head_r1) -0.1%, var( --color-head_r2) 97.28%);
-    margin-top: 1.25rem; 
+    margin-top: 0.5rem; 
 }
 .methods_content_bloc_item_text{
     font-family: var( --font_texts);
@@ -168,7 +168,7 @@ export default {
      font-size: 1rem;
     } */
     .methods_content_bloc_item_line{
-        margin: 1.25rem auto;
+        margin: 0.5rem auto;
     }
     .methods_content_bloc_item_title{
         justify-content: center;

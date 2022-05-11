@@ -7,6 +7,7 @@
       <div class="our_team_content_blocs">
            <div class="our_team_content_bloc">
               <div class="our_team_content_bloc_item"  v-for="our_team_content_bloc_item in this.$i18n.messages[this.$i18n.locale].our_team_content_bloc_items" :key="our_team_content_bloc_item">
+                  <div class="bloks_line"></div>
                    <div class="our_team_content_bloc_item_title">
                        <div class="our_team_content_bloc_item_img">
                             <img v-bind:src="our_team_content_bloc_item.icon" alt="">
@@ -31,6 +32,14 @@ export default {
 </script>
 
 <style scoped>
+.bloks_line{
+     border: 1px dashed transparent;
+     
+    border-top-color: grey;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
 .our_team_content{
     background-color: var( --bg);
     max-width:120rem;
@@ -83,30 +92,42 @@ export default {
 .our_team_content_bloc_item{
     margin-top: 3.125rem;
     position: relative;
-    max-width: 50%;
-    width: 100%;
-    padding: 10px;
+    /* max-width: 50%; */
+    width: 50%;
+    /* padding: 10px; */
     box-sizing: border-box;
     /* border-bottom: 1px dashed grey; */
-    padding-top: 3.125rem;
-    padding-left: 3.125rem;
+    /* padding-top: 3.125rem;
+    padding-left: 3.125rem; */
 }
 .our_team_content_bloc_item::after{
-    content: " ";
+    /* content: " ";
     position: absolute;
     border-bottom: 1px dashed grey;
     max-width: 88%;
     width: 100%;
-    top: -21px;
+    top: -21px; */
 }
-.our_team_content_bloc:nth-child(2n + 1)::before{
+
+.our_team_content_bloc_item:first-child{
+width: 50.1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .our_team_content_bloc:nth-child(2n + 1)::before{
     border-right: 1px dashed rgb(175, 31, 31);
-}
-.our_team_content_bloc_item:nth-child(2n + 1) {
+} */
+.our_team_content_bloc_item:nth-child(2n - 2)>.our_team_content_bloc_item_title {
     border-right: 1px dashed grey;
 }
-.our_team_content_bloc_item:last-child{
+.our_team_content_bloc_item:first-child>.our_team_content_bloc_item_title{
     border-right:unset;
+}
+.our_team_content_bloc_item_title{
+    margin-top: 2rem;
+    padding-left: 3.125rem;
 }
 .our_team_content_bloc_item_img{
     display: flex;
@@ -117,8 +138,8 @@ export default {
     transition: 1s;
 }
 .our_team_content_bloc_item_img>img{
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     border-radius: 50%;
     z-index: 2 ;
     transition: 0.8s;
@@ -168,6 +189,7 @@ export default {
     max-width: 370px;
 }
 @media screen and (max-width: 1349px) {
+ 
    .our_team_content_bloc_item{
        /* max-width: 545px; */
    }
@@ -183,13 +205,28 @@ export default {
         /* max-width: 23rem; */
     }
 }
-@media screen and (max-width: 949px) {
-   .our_team_content_bloc_item{
-       /* max-width: 345px; */
-   }
-   .our_team_content_bloc_item::after{
-        /* max-width: 17rem; */
+@media screen and (max-width: 992px) {
+    .our_team_content_bloc_item:nth-child(2n - 2)>.our_team_content_bloc_item_title {
+     border-right: unset;
     }
+
+    .our_team_content_bloc_item_title{
+        padding-left: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .our_team_content_bloc_item{
+       width: 85%!important;
+   }
+
+   .our_team_content_bloc_item:first-child{
+        width: 85%;
+    }
+    .our_team_content_bloc_item_title>p{
+        text-align: center;
+    }
+  
 }
 @media screen and (max-width: 749px) {
    .our_team_content_bloc_item{

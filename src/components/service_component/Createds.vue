@@ -83,7 +83,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1)-47.45%, var( --color2) 146.11%);
-    margin-top: 25px; 
+    margin-top: 1.56rem; 
 }
 .createds_bloc{
     /* display: flex;
@@ -166,9 +166,5 @@ export default {
       display: none;
     }
 }
-@media screen and (max-width: 342px) {
-    .createds_title>h1::before {
-        margin-top: 45px;
-    }
-}
+
 </style>
