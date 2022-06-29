@@ -364,7 +364,7 @@ font-family: 'Overpass';
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2) 146.11%);
-    margin-top: 25px; 
+    margin-top: 1.56rem; 
 }
 .form_content_head>p{
     font-family: 'Overpass';
@@ -497,8 +497,6 @@ font-family: 'Overpass';
     }
 }
 @media screen and (max-width: 342px) {
-    .form_content_head>h1::before {
-        margin-top: 25px;
-    }
+    
 }
 </style>

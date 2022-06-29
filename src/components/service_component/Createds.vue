@@ -67,7 +67,7 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 3.125rem;
+    /* padding: 3.125rem; */
 }
 .createds_title>h1{
     font-family: var( --font_head);

@@ -20,10 +20,12 @@
                     </ul>
                 </div>
                 <div class="contents_footer_bloc" >
-               <h3 style="">{{ $t('menu.contact')}} </h3>
-                   <p><a :href="'tel:'+$t('contact_for_footer.tel') ">{{$t('contact_for_footer.tel')}}</a></p>
-                   <p> <a :href="'mailto:'+$t('contact_for_footer.email')">{{$t('contact_for_footer.email')}}</a></p>
-                   <p>{{$t('contact_for_footer.addres')}}</p>
+                    <h3 style="">{{ $t('menu.contact')}} </h3>
+                    <div>
+                        <p><a :href="'tel:'+$t('contact_for_footer.tel') ">{{$t('contact_for_footer.tel')}}</a></p>
+                        <p> <a href="mailto:info@l-it.am">info@l-it.am</a></p>
+                        <p>{{$t('contact_for_footer.addres')}}</p>
+                    </div>
                 </div>
           </div>
       </div> 
@@ -37,16 +39,16 @@
 
 export default {
   name: 'Header',
-  props: {
+//   props: {
    
-  },
-   components: {
+//   },
+//    components: {
   
-  },
-  data() {
-    return {    
-    }
-  },
+//   },
+//   data() {
+//     return {    
+//     }
+//   },
   methods:{
     trackScroll() {
         var scroll = this.$refs.scroll
@@ -87,7 +89,8 @@ export default {
   height: 2.5rem;
   text-align: center;
   line-height: 1.875rem;
-  background: linear-gradient(90deg, rgba(146,64,252,1) 0%, rgba(225,153,252,1) 100%);
+  /* background: linear-gradient(90deg, rgba(146,64,252,1) 0%, rgba(225,153,252,1) 100%); */
+  background: linear-gradient(90deg, rgb(146 64 252 / 32%) 0%, rgb(225 153 252 / 47%) 100%);
   color: #FFFFFF;
   cursor: pointer;
   border-radius: 50%;
@@ -189,9 +192,24 @@ label:before {
     color: var( --texts_color);
     max-width: 333px;
 }
-.contents_footer_bloc>p, .contents_footer_bloc>p>a{
+ .contents_footer_bloc>div>p, .contents_footer_bloc>div>p>a{
     text-decoration: none;
-    margin-top:1.25rem;
+    font-family: var( --font_texts);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: var( --texts_color);
+    max-width: 250px;
+}
+.contents_footer_bloc>div {
+    margin-top: 0.815rem;
+}
+
+.contents_footer_bloc>p {
+    text-decoration: none;
+    margin-top: 0.815rem;
     font-family: var( --font_texts);
     font-style: normal;
     font-weight: 400;
@@ -269,6 +287,9 @@ label:before {
       width: 100%; */
   }
   .contents_footer_bloc>p{
+      text-align: center;
+  }
+  .contents_footer_bloc>div>p{
       text-align: center;
   }
   .contents_footer_bloc>h3{

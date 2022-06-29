@@ -16,7 +16,7 @@
                   <nav v-show="navOpen">
                     <div class="sidemenu__wrapper">
                       <Menu :page="page" />
-                      <CustomSelect :options="this.lang" :default="this.lokallang ? this.lokallang  : this.lang[0]"  class="select"/>
+                      <CustomSelect :options="this.lang" :default="this.locallang ? this.locallang  : this.lang[0]"  class="select"/>
                     </div>
                   </nav>
                 </transition>
@@ -31,7 +31,6 @@
                  </router-link>
                 </div>
                 <div class="content_left_left_texts">
-                  
                     <h1>{{ $t(head_text) }}</h1>
                     <h4>{{ $t(content_text) }}</h4>
                     <router-link to="/about">
@@ -80,6 +79,7 @@
           &times;
         </span>
         <div class="modal_info">
+          
           <p>Email: L-it@mail.com</p>
           <p>Phone: +374-55-55-55-55</p>
           <p><router-link to="/contact">{{ $t("menu.contact") }}</router-link></p>
@@ -89,9 +89,11 @@
 </template>
 
 <script>
+import axios from 'axios';
 import CustomSelect from '@/components/CustomSelect.vue';
 import Buttons from '@/components/Buttons.vue';
 import Menu from '@/components/Menu.vue';
+
 
 export default {
   name: 'Header',
@@ -107,40 +109,54 @@ export default {
   },
   data() {
     return {
+      info: [],
       lang: ['EN','РУ', 'Հայ'],
       open: false,
       modal: false,
-      navOpen:false,
-      lokallang:localStorage.getItem('lang'),
+      navOpen: false,
+      locallang: localStorage.getItem('lang'),
+
     }
   },
   mounted() {
 
+
+  // axios.get('http://127.0.0.1:8000/api/getHeaderDataVue')
+  // .then(response => this.info = response.data).catch(error => console.log(error));
+  //  console.log( this.info);
   },
   methods:{
+
+    
     select_lang: function (){
         if(localStorage.getItem('lang') == "ru"){
-          this.lokallang = this.lang[1];
-          return this.lokallang;
+          this.locallang = this.lang[1];
+          return this.locallang;
         }
         if(localStorage.getItem('lang') == "en"){
-          this.lokallang = this.lang[0];
-          return this.lokallang;
+          this.locallang = this.lang[0];
+          return this.locallang;
         }
          if(localStorage.getItem('lang') == "arm"){
-          this.lokallang = this.lang[2];
-          return this.lokallang;
+          this.locallang = this.lang[2];
+          return this.locallang;
         }
         return  this.lang[0];
     },
+
      close_modal: function (event) {
       let close = event.target.className;
       if (close == 'modal') {
         this.close = false;
       }
-    }
+    },
+
+
+
   },
   computed: {
+       created() {
+},
   iconClass() {
       return this.modal ? '' : 'close_modal';
     }

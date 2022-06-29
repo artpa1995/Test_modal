@@ -1,6 +1,15 @@
 import { createI18n } from 'vue-i18n'
+import  en  from './langs/en.json'
+import  ru  from './langs/ru.json'
+import  am  from './langs/am.json'
 
-const messages = {
+// const messages = {
+//     ru :ru,
+//     en :en,
+//     amr :am
+// }
+//console.log(test);
+var messages = {
     en: {
         not_found: "Page not found",
         home_page: "Web Design & Development Agency",
@@ -10,7 +19,7 @@ const messages = {
         team_page: "Highly qualified employees with extensive experience",
         home_content_text: "We build stunning websites and robust software applications",
         about_content_text: "Our qualified specialists will create a website in a short time according to your wishes, without complaints",
-        contact_content_text: "You can contact us, fill out the form on the website, and we will call you back!",
+        contact_content_text: "For any inquiries, contact us, fill out the form on the website, and we will call you back!",
         service_content_text: "Our web development team have solid experience with small, medium, large and complex builds. We have built custom CRM systems, online subscription platforms, advanced booking applications, media distribution systems, accounting and management applications and many more.",
         team_content_text: "Our team consists of qualified specialists, including project managers, web developers, layout designers, designers, SEO specialists, content managers, copywriters.",
         head_button: "More",
@@ -89,11 +98,11 @@ const messages = {
         },
         advertising_title: { title: 'Our Services'},
         advertising_content: [
-            { img:require('./assets/svg/16.svg'), title: 'Launch efficiency', description: 'One specialist manages no more than 3 clients at the same time - this allows you to quickly solve the problems of your business'},
-            { img:require('./assets/svg/17.svg'), title: 'Rational use of the budget', description: 'We don`t waste a single ruble. The cost of the work is fully justified!'},
-            { img:require('./assets/svg/18.svg'), title: 'Efficiency and guarantee of results', description: 'We are responsible for our work and do everything to achieve our goals'},
+            { img:require('./assets/svg/16.svg'), title: 'Launch efficiency', description: 'Our professionals possess agile mindset and this allows our clients to quickly solve the problems of their business.'},
+            { img:require('./assets/svg/17.svg'), title: 'Rational use of the budget', description: 'We don`t waste a single penny. The cost of the work is fully justified!'},
+            { img:require('./assets/svg/18.svg'), title: 'Efficiency and guarantee of results', description: 'We are responsible for our work and do everything to achieve our goals.'},
             { img:require('./assets/svg/19.svg'), title: 'Only targeted traffic', description: 'It is important for us not only to create the visible popularity of the resource, but to convert it into your real income.'},
-            { img:require('./assets/svg/20.svg'), title: 'Development and training', description: 'We will tell and show everything about marketing activities as clearly as possible.'}
+            { img:require('./assets/svg/20.svg'), title: 'Development and training', description: 'We will tell and show everything about professional programming.'}
         ],
         createds_title: { title: 'The working process',  title2: 'Creating a structure for the site pages'},
         createds_content: [
@@ -147,7 +156,7 @@ const messages = {
         team_page: "Высококлассные сотрудники с большим опытом",
         home_content_text: "Мы создаем потрясающие веб-сайты и надежные программные приложения",
         about_content_text: "Наши квалифицированные специалисты создадут сайт за короткий срок по вашим пожеланиям, без жалоб",
-        contact_content_text: "Вы  можете связаться с нами, заполним форму на сайте, и мы вам обязательно перезвоним!",
+        contact_content_text: "По любым вопросам обращайтесь к нам, заполните форму на сайте, и мы Вам перезвоним!",
         service_content_text: "Наша команда веб-разработчиков имеет большой опыт работы с малыми, средними, большими и сложными сборками. Мы создали собственные CRM-системы, платформы онлайн-подписки, расширенные приложения для бронирования, системы распространения медиа, приложения для учета и управления и многое другое.",
         team_content_text: "Наша команда состоит из квалифицированных специалистов, в их числе менеджеры проектов, веб-разработчики, верстальщики, дизайнеры,  SEO специалисты, контент-менеджеры, копирайтеры.",
         head_button: "Больше",
@@ -233,11 +242,11 @@ const messages = {
         },
         advertising_title: { title: 'Наши услуги'},
         advertising_content: [
-            { img:require('./assets/svg/16.svg'), title: 'Оперативность запуска', description: 'Один специалист ведет не более 3 клиентов одновременно — это позволяет оперативно решать задачи вашего бизнеса.'},
-            { img:require('./assets/svg/17.svg'), title: 'Рациональность использования бюджета', description: 'Мы не расходуем ни одного рубля впустую. Стоимость работ полностью оправдана!'},
-            { img:require('./assets/svg/18.svg'), title: 'Эффективность и гарантия результата', description: 'Мы отвечаем за свою работу и делаем все, чтобы достичь поставленных целей.'},
+            { img:require('./assets/svg/16.svg'), title: 'ЭФФЕКТИВНОСТЬ ЗАПУСКА', description: 'Наши специалисты обладают гибким мышлением, что позволяет нашим клиентам быстро решать задачи своего бизнеса.'},
+            { img:require('./assets/svg/17.svg'), title: 'РАЦИОНАЛЬНОЕ ИСПОЛЬЗОВАНИЕ БЮДЖЕТА', description: 'Мы не тратим ни копейки. Стоимость работ полностью оправдана'},
+            { img:require('./assets/svg/18.svg'), title: ' ЭФФЕКТИВНОСТЬ И ГАРАНТИЯ РЕЗУЛЬТАТА', description: 'Мы отвечаем за свою работу и делаем все для достижения поставленных целей'},
             { img:require('./assets/svg/19.svg'), title: 'Только целевой трафик', description: 'Нам важно не просто создать видимую популярность ресурса, а конвертировать ее в ваш реальный доход.'},
-            { img:require('./assets/svg/20.svg'), title: 'Развитие и обучение', description: 'Мы максимально доходчиво расскажем и покажем все про маркетинговые активности.'}
+            { img:require('./assets/svg/20.svg'), title: 'Развитие и обучение', description: 'Подробно расскажем и покажем все о профессиональной програмирование.'}
         ],
         createds_title: { title: 'Рабочий процесс',  title2: 'Создаем структуру для страниц сайта'},
         createds_content: [
@@ -260,7 +269,7 @@ const messages = {
         contacts_content_head: { title: 'Свяжитесь с нами', description: 'Если у вас есть дополнительные вопросы, пожалуйста, не стесняйтесь обращаться к нам.'},
         contacts_content_bloc_items: [
             {icon:require('./assets/svg/ph.svg'), title :'Телефон', value: '+37496433673'},
-            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info@l-it.am'},
+            {icon:require('./assets/svg/em.svg'), title :'Email', value: 'info`@`l-it.am'},
             {icon:require('./assets/svg/ad.svg'), title :'АДРЕС', value: 'Азатутян 24/17, E Plaza'},
          ],
         contact_for_footer :  {title:'Contacts', tel: '+37496433673', email:'info@l-it.am', addres:'Азатутян 24/17, E Plaza'},
@@ -290,7 +299,7 @@ const messages = {
         team_page: "Բարձր որակավորում ունեցող աշխատակիցներ՝ մեծ փորձով",
         home_content_text: "Մենք ստեղծում ենք զարմանալի կայքեր և հուսալի ծրագրային հավելվածներ",
         about_content_text: "Մեր որակյալ մասնագետները կարճ ժամանակում կստեղծեն կայք ձեր ցանկությամբ՝ առանց բողոքների",
-        contact_content_text: "Դուք կարող եք կապվել մեզ հետ, լրացնել ձևը կայքում, և մենք կզանգահարենք ձեզ:",
+        contact_content_text: "Հարցերի դեպքում կապ հաստատեք մեզ հետ, լրացրեք կայքում տեղադրված ձևաչափը, և ​​մենք կզանգահարենք ձեզ:",
         service_content_text: "Մեր ծրագրավորողների թիմը մեծ փորձ ունի փոքր, միջին, մեծ և բարդ համակարգերի հետ: Մենք ստեղծել ենք մեր սեփական CRM համակարգերը, առցանց բաժանորդագրության հարթակներ, առաջադեմ ամրագրման հավելվածներ, լրատվամիջոցների բաշխման համակարգեր, հաշվապահական հաշվառման և կառավարման հավելվածներ և շատ ավելին:",
         team_content_text: "Ծանոթացեք L-IT Armenia ընտանիքին: Ստեղծագործների և նորարարների մեր դինամիկ թիմը սիրում է աշխատել միասին՝ ձեր գաղափարները կյանքի կոչելու համար:",
         head_button: "Ավելին",
@@ -372,11 +381,11 @@ const messages = {
         },
         advertising_title: { title: 'Համատեքստային գովազդ'},
         advertising_content: [
-            { img:require('./assets/svg/16.svg'), title: 'Գործարկման արդյունավետություն', description: 'Մեկ մասնագետը միաժամանակ ղեկավարում է ոչ ավելի, քան 3 հաճախորդ. սա թույլ է տալիս արագ լուծել ձեր բիզնեսի խնդիրները'},
-            { img:require('./assets/svg/17.svg'), title: 'Բյուջեի ռացիոնալ օգտագործումը', description: 'Մենք ոչ մի դրամ չենք վատնում։ Աշխատանքի արժեքը լիովին արդարացված է:'},
-            { img:require('./assets/svg/18.svg'), title: 'Արդյունավետություն և արդյունքի երաշխիք', description: 'Մենք պատասխանատու ենք մեր աշխատանքի համար և անում ենք ամեն ինչ մեր նպատակներին հասնելու համար'},
+            { img:require('./assets/svg/16.svg'), title: 'ԹՈՂԱՐԿՄԱՆ ԱՐԴՅՈՒՆԱՎԵՏՈՒԹՅՈՒՆ', description: 'Մեր մասնագետներն օժտված են ճկուն մտածելակերպով, և դա թույլ է տալիս մեր հաճախորդներին արագ լուծել իրենց բիզնեսի խնդիրները:'},
+            { img:require('./assets/svg/17.svg'), title: 'Բյուջեի ռացիոնալ օգտագործումը', description: 'Լումա անգամ հենց այնպես չենք վատնում: Աշխատանքի արժեքը լիովին արդարացված է:'},
+            { img:require('./assets/svg/18.svg'), title: 'Արդյունավետություն և արդյունքի երաշխիք', description: 'Մենք պատասխանատու ենք մեր կատարած աշխատանքի համար և անում ենք ամեն ինչ մեր նպատակներին հասնելու համար:'},
             { img:require('./assets/svg/19.svg'), title: 'Միայն նպատակային տրաֆիկ', description: 'Մեզ համար կարևոր է ոչ միայն ռեսուրսի տեսանելի ժողովրդականություն ստեղծելը, այլև այն վերածել ձեր իրական եկամտի:'},
-            { img:require('./assets/svg/20.svg'), title: 'Զարգացում և ուսուցում', description: 'Մենք հնարավորինս պարզ կասենք և ցույց կտանք մարքեթինգային գործունեության մասին ամեն ինչ։'}
+            { img:require('./assets/svg/20.svg'), title: 'Զարգացում և ուսուցում', description: 'Պրոֆեսիոնալ ծրագրավորման մասին ամեն ինչ կպատմենք ու ցույց կտանք։'}
         ],
         createds_title: {title: 'Կայքի մշակում', title2: 'Կայքի էջերի համար կառուցվածքի ստեղծում'},
         createds_content: [
@@ -396,7 +405,7 @@ const messages = {
             {icon:require('./assets/team/7.jpg'), title: 'SEO վերլուծաբան և օպտիմիզատոր', description: 'Մենք ուղեկցում ենք ինչպես այն նախագծերը, որոնք մենք ինքներս ենք արել, այնպես էլ ցանկացած այլ, որը եկել է մեզ ծառայության համար:'},
          ],
 
-        contacts_content_head: { title: 'Կապվեք մեզ հետ', description: 'Եթե ​​ունեք լրացուցիչ հարցեր, խնդրում ենք ազատ զգալ կապվել մեզ հե'},
+        contacts_content_head: { title: 'Կապվեք մեզ հետ', description: 'Եթե ​​ունեք լրացուցիչ հարցեր, խնդրում ենք ազատ զգալ կապվել մեզ հետ'},
         contacts_content_bloc_items: [
             {icon:require('./assets/svg/ph.svg'), title :'Հեռախոս', value: '+37496433673'},
             {icon:require('./assets/svg/em.svg'), title :'Էլ. ՀԱՍՑԵՆ', value: 'info@l-it.am'},
@@ -421,18 +430,56 @@ const messages = {
         }
     },
 };
+import axios from 'axios';
+ 
+async function axiosData(){
+    // const res = axios.get('http://127.0.0.1:8000/api/getHeaderDataVue');
+    //  console.log(res.text());
 
-function langs(){
+
+   await axios.get('http://127.0.0.1:8000/api/getHeaderDataVue')
+    
+    
+  
+    .then(function(response){
+ 
+        for (let iterator of response.data) {
+            
+            if(iterator.language == "RU"){
+            //  console.log(messages.ru.home_page);
+            // console.log(iterator.home_page_title);
+            messages.ru.home_page = iterator.home_page_title;
+            // console.log(messages.ru.home_page);
+               
+            }
+        }
+        return messages;
+     })
+     .catch(function(error){
+            //console.log(error);
+      });
+      
+}
+console.log(axiosData());
+console.log(messages);
+function langs()
+{
+    axiosData()
     let lang = localStorage.getItem('lang');
-    if(lang){
-        return lang;
-    }
+    if(lang){return lang;}
     return "en";
 }
 
-const i18n = createI18n({
-    locale: langs(),
-    messages: messages,
-});
+var i18n = [];
+function test(){
+     i18n = createI18n({
+        locale: langs(),
+        messages:  messages,
+    });
+}
+
+test()
+
+
 
 export default i18n;

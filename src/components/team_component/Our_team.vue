@@ -18,7 +18,7 @@
                    </div>
                </div>
            </div>
-      </div>
+      </div> 
   </div>
 </template>
 
@@ -33,8 +33,7 @@ export default {
 
 <style scoped>
 .bloks_line{
-     border: 1px dashed transparent;
-     
+    border: 1px dashed transparent;
     border-top-color: grey;
     width: 90%;
     margin: 0 auto;
@@ -68,7 +67,7 @@ export default {
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(256.38deg, var( --color1) -47.45%, var( --color2)46.11%);
-    margin-top: 25px; 
+    margin-top: 1.56rem; 
 }
 .our_team_content_head>p{
     font-family: var( --font_texts);
@@ -92,33 +91,15 @@ export default {
 .our_team_content_bloc_item{
     margin-top: 3.125rem;
     position: relative;
-    /* max-width: 50%; */
     width: 50%;
-    /* padding: 10px; */
     box-sizing: border-box;
-    /* border-bottom: 1px dashed grey; */
-    /* padding-top: 3.125rem;
-    padding-left: 3.125rem; */
 }
-.our_team_content_bloc_item::after{
-    /* content: " ";
-    position: absolute;
-    border-bottom: 1px dashed grey;
-    max-width: 88%;
-    width: 100%;
-    top: -21px; */
-}
-
 .our_team_content_bloc_item:first-child{
-width: 50.1%;
-
+    width: 50.1%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* .our_team_content_bloc:nth-child(2n + 1)::before{
-    border-right: 1px dashed rgb(175, 31, 31);
-} */
 .our_team_content_bloc_item:nth-child(2n - 2)>.our_team_content_bloc_item_title {
     border-right: 1px dashed grey;
 }
@@ -176,7 +157,7 @@ width: 50.1%;
     width: 3rem;
     height: 0.25rem;
     background: linear-gradient(265.11deg, var( --color-head_r1)-0.1%, var( --color-head_r2) 97.28%);
-    margin-top: 15px; 
+    margin-top: 0.5rem; 
 }
 .our_team_content_bloc_item_title>p{
     font-family: var( --font_texts);
@@ -188,28 +169,11 @@ width: 50.1%;
     margin-top: 15px;
     max-width: 370px;
 }
-@media screen and (max-width: 1349px) {
- 
-   .our_team_content_bloc_item{
-       /* max-width: 545px; */
-   }
-   .our_team_content_bloc_item::after{
-        /* max-width: 29rem; */
-    }
-}
-@media screen and (max-width: 1149px) {
-   .our_team_content_bloc_item{
-       /* max-width: 445px; */
-   }
-   .our_team_content_bloc_item::after{
-        /* max-width: 23rem; */
-    }
-}
+
 @media screen and (max-width: 992px) {
     .our_team_content_bloc_item:nth-child(2n - 2)>.our_team_content_bloc_item_title {
      border-right: unset;
     }
-
     .our_team_content_bloc_item_title{
         padding-left: unset;
         display: flex;
@@ -219,29 +183,17 @@ width: 50.1%;
    .our_team_content_bloc_item{
        width: 85%!important;
    }
-
    .our_team_content_bloc_item:first-child{
         width: 85%;
     }
     .our_team_content_bloc_item_title>p{
         text-align: center;
     }
-  
 }
 @media screen and (max-width: 749px) {
    .our_team_content_bloc_item{
        border-right: unset !important;;
    }
 }
-@media screen and (max-width: 450px) {
-   /* .our_team_content_bloc_item_title>p{
-       text-align: center;
-   }
-   .our_team_content_bloc_item_title>h3 {
-       text-align: center;
-   } */
-   .our_team_content_bloc_item::after{
-        /* max-width: 14rem; */
-    }
-}
+
 </style>

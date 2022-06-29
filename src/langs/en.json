@@ -1,0 +1,137 @@
+{
+    "not_found": "Page not found",
+    "home_page": "Web Design & Development Agency",
+    "about_page": "Development of turnkey websites and their subsequent promotion",
+    "contact_page": "How to contact us",
+    "service_page": "Web & Software development",
+    "team_page": "Highly qualified employees with extensive experience",
+    "home_content_text": "We build stunning websites and robust software applications",
+    "about_content_text": "Our qualified specialists will create a website in a short time according to your wishes, without complaints",
+    "contact_content_text": "For any inquiries, contact us, fill out the form on the website, and we will call you back!",
+    "service_content_text": "Our web development team have solid experience with small, medium, large and complex builds. We have built custom CRM systems, online subscription platforms, advanced booking applications, media distribution systems, accounting and management applications and many more.",
+    "team_content_text": "Our team consists of qualified specialists, including project managers, web developers, layout designers, designers, SEO specialists, content managers, copywriters.",
+    "head_button": "More",
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "service": "Service",
+        "team": "Team",
+        "contact": "Contact"
+    },
+    "about_content_bloc_items": [
+        { "icon": "require('./assets/svg/4.svg')", "title": "Information analysis", "description": "We receive data and discuss the wishes of the client. We analyze the specifics of the company`s activities, set tasks."},
+        { "icon": "require('./assets/svg/5.svg')", "title": "Structure design", "description": "We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks."},
+        { "icon": "require('./assets/svg/6.svg')", "title": "Interface", "description": "We individually approach the formation of an adaptive interface, carefully work out the details and graphic elements."}
+    ],
+    "about_content_bloc_items_2": [
+        {"icon":"require('./assets/svg/7.svg')", "title": "Technical implementation", "description": "We approach the resource in terms of its scalability. We take into account the usability indicator, i.e. ease of use."},
+        {"icon":"require('./assets/svg/8.svg')", "title": "Promotion and optimization", "description": "We are working hard on search promotion. Internal and external project optimization."},
+        {"icon":"require('./assets/svg/9.svg')", "title": "Follow-up site support", "description": "We accompany both those projects that we have done ourselves, and any others that have come to us for service."}
+    ],
+    "about_content_head": {
+        "title": "ABOUT COMPANY",
+        "description": "L-IT Armenia formed in 2021 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team."
+    },
+    "home_service_content_heads": {
+        "title": "Our services",
+        "description": "We create and promote sites for software applications of various types, we are engaged in their subsequent support."
+    },
+    "service_content_blocs": [
+        {"icon":"require('./assets/svg/1.svg')", "title": "Website development", "description": "Our skillful team of developers take pride and care in every line of code to bring performant projects to life."},
+        {"icon":"require('./assets/svg/2.svg')", "title": "API system integration", "description": "We can tightly integrate your existing business systems using API integrations."},
+        {"icon":"require('./assets/svg/3.svg')", "title": "UI/UX website design", "description": "We will create for you an individual website design, with an attractive interface, with a well-thought-out website architecture and with convenience and ease of use that meets business goals."}
+    ],
+    "mission_content_heads": {
+        "title": "OUR MISSION",
+        "description": "To be a trusted digital technology partner to our customers by proactively engaging and understanding their business needs and deliver outcomes as one united team."
+    },
+    "home_team_content": {
+        "title": "Team",
+        "description": "Meet the L-IT Armenia Family! Our dynamic team of creatives and innovators love working collaboratively to turn your visions into a reality."
+    },
+    "more_info": "More",
+    "footer_contacts": {"title":"contacts", "tel": "+37455555555", "email":"L-it@mail.com", "addres":"Erevani komery eli"},
+    "info": "Info",
+    "info_menu": [
+        {"url": "/", "name": "Home"},
+        {"url": "/about", "name": "About"},
+        {"url": "/service", "name": "Service"},
+        {"url": "/team", "name": "Team"},
+        {"url": "/contact", "name": "Contact"}
+    ], 
+    "contents_footer_mission": {
+        "title": "OUR MISSION",
+        "description": "To be a trusted digital technology partner to our customers by proactively engaging and understanding their business needs and deliver outcomes as one united team."
+    },
+    "dop_info":"For more information, you can subscribe to our news", 
+    "write_email":"write your email address",
+    "subscription":"Subscription",
+    "methods_content_bloc_items": [
+        {"icon":"require('./assets/svg/10.svg')", "title": "Information analysis", "description": "We receive data and discuss the wishes of the client. We analyze the specifics of the company`s activities, set tasks."},
+        {"icon":"require('./assets/svg/11.svg')", "title": "Structure design", "description": "We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks."},
+        {"icon":"require('./assets/svg/12.svg')", "title": "Interface", "description": "We individually approach the formation of an adaptive interface, carefully work out the details and graphic elements."},
+        {"icon":"require('./assets/svg/13.svg')", "title": "Technical implementation", "description": "We approach the resource in terms of its scalability. We take into account the usability indicator, i.e. ease of use."},
+        {"icon":"require('./assets/svg/14.svg')", "title": "Promotion and optimization", "description": "We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks."},
+        {"icon":"require('./assets/svg/15.svg')", "title": "Follow-up site support", "description": "We accompany both those projects that we have done ourselves, and any others that have come to us for service."}
+        
+    ],
+    "methods_content_head":{
+        "title": "WEB DEVELOPMENT - OUR METHODS",
+        "description": "We are a company engaged in the creation and development of websites, their optimization and maintenance."
+    },
+    "page_content_head":{
+        "title": "ABOUT COMPANY",
+        "description": "L-IT Armenia formed in 2021 with a motor power of providing outstaffing and outsourcing services ranging from strategic IT consultancy to solutions implementation. We are made up of bold and creative thinkers that come from every walk of life. ",
+        "description2": "Our open culture drives success for our clients and our focus on company-wide inclusion, which creates a great opportunity for our team."
+    },
+    "advertising_title": { "title": "Our Services"},
+    "advertising_content": [
+        { "img":"require('./assets/svg/16.svg')", "title": "Launch efficiency", "description": "Our professionals possess agile mindset and this allows our clients to quickly solve the problems of their business."},
+        { "img":"require('./assets/svg/17.svg')", "title": "Rational use of the budget", "description": "We don`t waste a single penny. The cost of the work is fully justified!"},
+        { "img":"require('./assets/svg/18.svg')", "title": "Efficiency and guarantee of results", "description": "We are responsible for our work and do everything to achieve our goals."},
+        { "img":"require('./assets/svg/19.svg')", "title": "Only targeted traffic", "description": "It is important for us not only to create the visible popularity of the resource, but to convert it into your real income."},
+        { "img":"require('./assets/svg/20.svg')", "title": "Development and training", "description": "We will tell and show everything about professional programming."}
+    ],
+    "createds_title": { "title": "The working process",  "title2": "Creating a structure for the site pages"},
+    "createds_content": [
+       { "img":"require('./assets/svg/21.svg')", "description": "The site structure is the logical construction of all pages of the resource. The scheme by which the path to folders, categories, subcategories is distributed"},
+       { "img":"require('./assets/svg/21.svg')", "description": "Based on the website architecture, we prepare a design taking into account your brand book, corporate style and preferred colors"},
+       { "img":"require('./assets/svg/21.svg')",  "description": "We start developing the site back to back, using different programming languages"},
+       { "img":"require('./assets/svg/21.svg')", "title": "YOUR SITE IS READY!", "description": "Adding the last elements and that`s it"}
+    ],
+    "our_team_content_head":  { "title": "Our employees", "description": "In our team, everything is debugged, everyone is doing their part in creating and promoting the project"},
+    "our_team_content_bloc_items": [
+        {"icon":"require('./assets/team/1.jpg')", "title": "PROJECT MANAGER", "description": "We receive data and discuss the wishes of the client. We analyze the specifics of the company`s activities, set tasks."},
+        {"icon":"require('./assets/team/2.jpg')", "title": "WEB DESIGNER", "description": "We think over the presentation of information, data output, taking into account the behavioral factor. Laying conversion blocks."},
+        {"icon":"require('./assets/team/3.jpg')", "title": "DESIGNER", "description": "We individually approach the formation of an adaptive interface, carefully work out the details and graphic elements."},
+        {"icon":"require('./assets/team/4.jpg')", "title": "WEB PROGRAMMER", "description": "We approach the resource in terms of its scalability. We take into account the usability indicator, i.e. ease of use."},
+        {"icon":"require('./assets/team/5.jpg')", "title": "COPYWRITER", "description": "We are working hard on search promotion. Internal and external project optimization."},
+        {"icon":"require('./assets/team/6.jpg')", "title": "CONTENT MANAGER", "description": "We accompany both those projects that we have done ourselves, and any others that have come to us for service."},
+        {"icon":"require('./assets/team/7.jpg')", "title": "SEO Analyst and Optimizer", "description": "We accompany both those projects that we have done ourselves, and any others that have come to us for service."}
+        
+    ],
+    "contacts_content_head": { "title": "Contact us", "description": "If you have further questions, please feel free to contact us."},
+    "contacts_content_bloc_items": [
+        {"icon":"require('./assets/svg/ph.svg')", "title" :"Phone", "value": "+37496433673"},
+        {"icon":"require('./assets/svg/em.svg')", "title" :"Email", "value": "info@l-it.am"},
+        {"icon":"require('./assets/svg/ad.svg')", "title" :"Address", "value": "Azatutyan 24/17, E Plaza"}
+    ],
+    "contact_for_footer" :  {"title":"Contacts", "tel": "+37496433673", "email":"info@l-it.am", "addres":"Azatutyan 24/17, E Plaza"},
+    "form_content_head":{ "title": "Write your message", "description": "Our project manager will contact you after filling out this form"},
+    "form_inputs":{
+        "form_check_text":"By submitting the form, I consent to the processing of personal data",
+        "submit":"Order a Consultation",
+        "message":"Message",
+        "phone":"Phone",
+        "name":"Full name"
+    },
+    "error_inputs":{
+        "names":"Name is required.",
+        "email": "Email is required.",
+        "invalid_email": "Please enter a valid email address.",
+        "check": "It is not possible to send a message without your consent.",
+        "phone": "Required to specify a  Phone.",
+        "message": "A message is required."
+    }
+           
+}
